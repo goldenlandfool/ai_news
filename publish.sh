@@ -35,7 +35,7 @@ page = f"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>每日 AI 英语朗读稿目录</title>
+<title>Daily AI News</title>
 <style>
   body {{ font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 40px 24px; color: #2c3e50; background: #f7f9fb; }}
   h1 {{ font-size: 1.6em; color: #1a5276; border-bottom: 3px solid #3498db; padding-bottom: 10px; }}
@@ -49,8 +49,8 @@ page = f"""<!DOCTYPE html>
 </style>
 </head>
 <body>
-<h1>📚 每日 AI 英语朗读稿</h1>
-<p class="sub">每天早上 8:30 自动更新 ｜ 点击链接打开当日朗读稿</p>
+<h1>📚 Daily AI News</h1>
+<p class="sub">每天早上 8:30 自动更新</p>
 <ul>
 {items_html}
 </ul>

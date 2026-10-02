@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI News Reading — 2026-10-02</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .meta { color: #7f8c8d; font-size: 0.95em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  .closing { font-style: italic; background: #eef3f8; padding: 14px 18px; border-radius: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+  .source a { color: #8e44ad; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回目录 Index</a>
+<h1>October 2, 2026 AI News</h1>
+
+<div class="section">
+<h2>1. OpenAI Says a Rival Lab Tried to Steal Its Model's Reasoning</h2>
+<div class="summary">摘要：OpenAI 披露挫败了一场有组织的"对抗性蒸馏"行动，并将矛头指向月之暗面（Kimi）相关人员。</div>
+<p id="s1">OpenAI says it has shut down a large, coordinated campaign to steal the hidden reasoning of its models. In a blog post published on September 30, the company described what it calls adversarial distillation. The operators did not break encryption or read private chats. Instead, they copied encrypted reasoning from one conversation, then asked a model in a second conversation to decrypt and rewrite it. That trick would let a rival skip years of expensive training and safety work. Activity began in early July and peaked on July 24 and 25, when more than four thousand accounts filed roughly sixteen thousand requests in just two days. OpenAI ultimately linked the activity to a wider cluster of over fifteen thousand users and blocked it by July 28. It attributes a core group of the accounts to people connected with Moonshot AI, the Chinese lab behind the Kimi chatbot. This is the first time a frontier lab has publicly named another company for systematic model theft, and it turns the reasoning layer into the industry's newest battleground.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">OpenAI 表示，它已挫败一场大规模、有组织的窃取其模型隐藏推理过程的活动。在 9 月 30 日发布的一篇博客中，公司把这种做法称为"对抗性蒸馏"。操作者并没有破解加密或阅读私聊，而是把一段对话中的加密推理内容复制出来，再让另一个对话中的模型解密并转写。这个手法能让竞争对手省下数年昂贵的训练与安全投入。相关活动始于 7 月初，在 7 月 24 日和 25 日达到高峰：超过 4000 个账号在两天内发出约 1.6 万次请求。OpenAI 最终把该活动关联到超过 1.5 万名用户的更大集群，并在 7 月 28 日前将其全部封锁。公司认为其中一批核心账号与开发 Kimi 聊天机器人的中国实验室月之暗面有关联人员有关。这是首次有前沿实验室公开指认另一家公司实施系统性模型窃取，也让"推理层"成为这个行业最新的战场。</div>
+<div class="source">📰 来源：<a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank">OpenAI Blog — Disrupting a coordinated model distillation campaign</a> · <a href="https://www.cnbc.com/" target="_blank">CNBC, Oct 1</a></div>
+</div>
+
+<div class="section">
+<h2>2. Meta's Muse Agent Leaks a Home Address, and a Privacy Fight Follows</h2>
+<div class="summary">摘要：Meta 的 AI 智能体 Muse 一周内爆出两起隐私事件：泄露用户家庭住址，以及被指越权读取私信。</div>
+<p id="s2">Meta's personal AI agent Muse is having a difficult second month. Two separate privacy incidents surfaced this week. The first involves tech YouTuber Matt Robb, who asked Muse to manage his Facebook Marketplace listings. Faced with a permission prompt, he chose "always allow," expecting a confirmation before anything sensitive went out. Instead, Muse shared his home address with a prospective buyer, and a stranger showed up at his apartment while he was away. In a follow-up test, the agent leaked his address to five friends. The second incident involves Inc. columnist Jason Aten, who says Muse read his text messages even though Full Disk Access was switched off on his Mac. Meta's communications chief Andy Stone pushed back on X, writing that the Messages integration is "entirely opt-in" and requires two separate switches. Whatever the technical truth may be, the episode exposes a wider problem: permission screens still fail to explain what handing an agent "always allow" really means in practice.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">Meta 的个人 AI 智能体 Muse 正在经历一个艰难的第二个月。本周爆出了两起独立的隐私事件。第一起涉及科技类 YouTuber Matt Robb，他让 Muse 代为管理自己在 Facebook Marketplace 上的商品列表。面对权限弹窗，他选择了"始终允许"，以为在敏感信息发出前还会再确认一次。结果 Muse 把他的家庭住址发给了潜在买家，一名陌生人趁他不在家时上门取货。在随后的一次测试中，该智能体又把他的地址泄露给了五位朋友。第二起事件涉及《Inc.》专栏作者 Jason Aten，他称尽管自己 Mac 上的"完全磁盘访问"权限处于关闭状态，Muse 仍读到了他的短信。Meta 传播负责人 Andy Stone 在 X 上反驳，称 Messages 集成是"完全选择性加入"的，需要两个开关同时打开。无论技术真相如何，这起事件暴露了一个更普遍的问题：权限界面依然没有说清楚，把"始终允许"交给一个智能体在实践中究竟意味着什么。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/" target="_blank">TechCrunch — Meta denies Muse read private messages</a> · <a href="https://decrypt.co/?p=379868" target="_blank">Decrypt — Meta pushes back on Muse claims</a> · @andymstone on X（2026-09-30）</div>
+</div>
+
+<div class="section">
+<h2>3. Amazon Open-Sources a Tiny "Decision Model" for Agents</h2>
+<div class="summary">摘要：AWS 开源 20 亿参数的 Strands Decider 2B 决策模型，专为智能体工作流做快速路由决策。</div>
+<p id="s3">Amazon's cloud unit AWS has released Strands Decider 2B, a small open-source "decision model" aimed at agent workflows. It is a different breed of model. Instead of writing paragraphs, it picks among predefined options and scores its own confidence. That task is far faster and cheaper than asking a large language model. Built on a small two-billion-parameter backbone, it returns an answer in about 115 milliseconds on a consumer graphics card. AWS published the weights on Hugging Face and the training code on GitHub, and credits an earlier model called Jev with starting the category. The bet here is that most everyday agent steps, such as routing a request, choosing a tool, or deciding when to stop, do not need a frontier model at all. If that holds, small decision models may quietly become some of the most widely used AI systems in the world.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">亚马逊的云业务部门 AWS 发布了 Strands Decider 2B——一个面向智能体工作流的小型开源"决策模型"。它是另一种类型的模型：不写成段的文字，而是在预设选项之间做选择，并给自己的置信度打分。这项任务比调用一个大语言模型快得多、也便宜得多。它基于约 20 亿参数的小型骨干网络构建，在消费级显卡上约 115 毫秒即可返回结果。AWS 把权重发布在 Hugging Face、训练代码发布在 GitHub，并把开创这一品类归功于更早的一个名为 Jev 的模型。它押注的是：智能体日常的大多数步骤，比如路由一个请求、选择一个工具、决定何时停止，根本不需要前沿模型。如果这个判断成立，小型决策模型可能会悄悄成为世界上使用最广泛的 AI 系统之一。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/" target="_blank">TechCrunch — Amazon releases its own Jev clone</a> · <a href="https://strandsagents.com/" target="_blank">AWS Strands Agents blog, Oct 2</a></div>
+</div>
+
+<div class="section">
+<h2>4. Anthropic Lets Developers Remake Its Coding Tool</h2>
+<div class="summary">摘要：Anthropic 推出 Claude Code Mods，用 TypeScript 小函数定制 AI 编程工具的行为与界面。</div>
+<p id="s4">Anthropic has launched Claude Code Mods, a way for developers to customize its AI coding tool with small TypeScript functions. Mods ship inside plugins and work in both the command line and the desktop app. They can rewrite prompts, block or retry tool calls, redraw parts of the interface, add new buttons, or replace built-in commands such as diff. Anthropic notes one important caveat: Mods are not sandboxed, so they run with full access to your machine. Users should only install them from sources they trust. On team and enterprise plans, a security mod named sec-default loads first, to prevent risky overrides. The release fits a pattern we are seeing across the industry this autumn. The model itself is no longer the only product. The layer around it, including tools, permissions, and control, is where much of the real competition now happens.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">Anthropic 推出了 Claude Code Mods，让开发者用小型 TypeScript 函数定制其 AI 编程工具。Mods 以插件形式分发，在命令行和桌面端都可用。它们可以重写提示词、拦截或重试工具调用、重绘界面的一部分、添加按钮，或替换诸如 diff 这样的内置命令。Anthropic 提醒了一个重要前提：Mods 没有沙箱隔离，运行时拥有对整台机器的完整访问权限，用户只应安装可信来源的 Mods。在团队版和企业版方案中，一个名为 sec-default 的安全 Mod 会最先加载，以防止高风险覆盖。这次发布符合今年秋天全行业的一个规律：模型本身不再是唯一的产品。围绕它的那一层——包括工具、权限与控制——才是如今真正竞争激烈的地方。</div>
+<div class="source">📰 来源：<a href="https://claude.com/" target="_blank">claude.com — Claude Code Mods</a> · <a href="https://futuretools.io/news" target="_blank">Future Tools daily news, Oct 1</a></div>
+</div>
+
+<div class="section">
+<h2>5. Airbnb's CEO Says AI Agents Need Their Own Operating System</h2>
+<div class="summary">摘要：Airbnb CEO Chesky 认为聊天机器人不适合电商，智能体需要自己的操作系统，并坦承"消费级 AI 还没被攻克"。</div>
+<p id="s5">Airbnb's chief executive Brian Chesky told TechCrunch this week that AI agents need their own operating system. Airbnb shipped an AI-powered search in its fall update, but Chesky says a chatbot is the wrong interface for travel. Chatbots show only a few options at a time and demand many turns, he argues, which destroys the browsing and daydreaming that travelers actually enjoy. His second point is that chatbots are single-player, while trips are planned by families and groups. Over the next three to six months, Airbnb will explore what he calls "multiplayer" AI, meaning interfaces that several people can use at once. Chesky also wants Airbnb to be agent-friendly, with structured data and open connections so assistants can search and book on a user's behalf. His verdict on the current moment is refreshingly blunt: "I don't think we've cracked consumer AI."</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">Airbnb 首席执行官 Brian Chesky 本周对 TechCrunch 表示，AI 智能体需要有自己的操作系统。Airbnb 在秋季更新中上线了 AI 搜索，但 Chesky 认为聊天机器人对旅行来说并不是合适的界面：它一次只给出几个选项、需要来回多次，会破坏旅行者真正享受的浏览与遐想体验。他的第二个观点是，聊天机器人是"单人模式"，而旅行往往由家庭和一群人共同规划。未来三到六个月，Airbnb 将探索他所称的"多人"AI，也就是让多人同时使用的界面。Chesky 还希望 Airbnb 对智能体友好，提供结构化数据和开放接口，让助手能替用户搜索并下单。他对当下阶段的判断直白得令人耳目一新："我不认为我们已经攻克了消费级 AI。"</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/" target="_blank">TechCrunch — Brian Chesky interview: AI agents need their own operating system</a></div>
+</div>
+
+<div class="section">
+<h2>Closing Thought</h2>
+<p id="s6">Two very different labs, one shared conclusion. OpenAI spends its week chasing people who tried to copy how its model thinks, while Anthropic spends its week letting developers rewrite how its model behaves. Meanwhile, a consumer agent sends a stranger to a user's front door, and the most experienced product thinker in travel says the interface we have is still wrong. AI has moved from answering questions to acting in the world, booking, selling, browsing, and negotiating. The models are ready. The rules about identity, permission, and trust are still being written.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">两家截然不同的实验室，得出了同一个结论。OpenAI 这一周在追查试图复制其模型思维方式的人；Anthropic 这一周则允许开发者重写其模型的行为方式。与此同时，一个消费级智能体把陌生人引到了用户家门口，而旅行领域最有经验的产品思考者说，我们现有的界面仍然是错的。AI 已经从回答问题走向在现实世界中行动——下单、售卖、浏览、谈判。模型已经就位；而关于身份、权限与信任的规则，仍在书写之中。</div>
+</div>
+
+<h2>重点生词表（Vocabulary）</h2>
+<table>
+<tr><th>单词/术语</th><th>音标</th><th>释义</th></tr>
+<tr><td>distillation</td><td>/ˌdɪstɪˈleɪʃn/</td><td>蒸馏；蒸馏学习（用大模型输出训练小模型）</td></tr>
+<tr><td>adversarial</td><td>/ˌædvərˈseriəl/</td><td>对抗性的</td></tr>
+<tr><td>reasoning</td><td>/ˈriːzənɪŋ/</td><td>推理；推理过程</td></tr>
+<tr><td>encryption</td><td>/ɪnˈkrɪpʃn/</td><td>加密</td></tr>
+<tr><td>attribute</td><td>/əˈtrɪbjuːt/</td><td>把……归因于</td></tr>
+<tr><td>frontier</td><td>/frʌnˈtɪr/</td><td>前沿的；前线</td></tr>
+<tr><td>permission</td><td>/pərˈmɪʃn/</td><td>权限；许可</td></tr>
+<tr><td>opt-in</td><td>/ˈɑːpt ɪn/</td><td>选择性加入的</td></tr>
+<tr><td>leak</td><td>/liːk/</td><td>泄露</td></tr>
+<tr><td>open-source</td><td>/ˈoʊpən sɔːrs/</td><td>开源的</td></tr>
+<tr><td>parameter</td><td>/pəˈræmɪtər/</td><td>参数</td></tr>
+<tr><td>latency</td><td>/ˈleɪtənsi/</td><td>延迟</td></tr>
+<tr><td>backbone</td><td>/ˈbækboʊn/</td><td>骨干（网络）；主干</td></tr>
+<tr><td>routing</td><td>/ˈruːtɪŋ/</td><td>路由；分派</td></tr>
+<tr><td>sandbox</td><td>/ˈsændbɑːks/</td><td>沙箱（隔离环境）</td></tr>
+<tr><td>override</td><td>/ˌoʊvərˈraɪd/</td><td>覆盖；推翻</td></tr>
+<tr><td>interface</td><td>/ˈɪntərfeɪs/</td><td>界面；接口</td></tr>
+<tr><td>multiplayer</td><td>/ˈmʌltipleɪər/</td><td>多人的（多人同时使用的）</td></tr>
+<tr><td>agentic</td><td>/eɪˈdʒentɪk/</td><td>具智能体特性的；能自主行动的</td></tr>
+<tr><td>verdict</td><td>/ˈvɜːrdɪkt/</td><td>判断；裁决</td></tr>
+</table>
+
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li><strong>语速</strong>：整体用中速（约 110~120 词/分钟）。文中的朗读音频按新闻播报语速（约 150 词/分钟）预生成，可先跟读一遍，再脱稿自己读。</li>
+<li>数字要读清并稍作停顿：<em>"four thousand accounts"</em> / 停顿 / <em>"filed roughly sixteen thousand requests"</em>；<em>"two-billion-parameter"</em>；<em>"115 milliseconds"</em>。</li>
+<li>第 1 篇 "adversarial distillation" 是核心术语，两次出现都放慢重读；"the first time a frontier lab has publicly named another company" 是全文最有分量的一句，读前稍停。</li>
+<li>第 2 篇引语 "entirely opt-in" 与 "always allow" 要重读并略带强调语气，体现争议感。</li>
+<li>第 5 篇名句 "I don't think we've cracked consumer AI" 放慢、降调读出笃定感。</li>
+<li><strong>节奏</strong>：每篇小标题后停顿 1 秒再开始正文；段落之间停顿 2 秒；Closing Thought 用比正文略慢的速度收尾。</li>
+</ul>
+
+<script>
+const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能，且音频文件未能加载'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-10-02-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI News Reading — 2026-10-11</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .meta { color: #7f8c8d; font-size: 0.95em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  .closing { font-style: italic; background: #eef3f8; padding: 14px 18px; border-radius: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回目录 Index</a>
+<h1>October 11, 2026 AI News</h1>
+<div class="section">
+<h2>1. A World Model You Can Walk Around In</h2>
+<div class="summary">摘要：10 月 11 日（周日），加州公司 Odyssey 把其「世界模型」Odyssey-3 作为免费公开研究预览开放：14B 参数，输入一句文字就能实时生成可交互的 3D 环境，支持第一/第三人称自由移动。它不只是「生成视频」——同一套模型通过专用控制器还能操控机械臂、让无人机在虚拟室内绕开障碍飞向目标，甚至自己玩《GTA V》，而且只用约两小时游戏录像训练的控制器能在无额外训练的情况下迁移到《荒野大镖客 2》。官方称在物理基准上领先，但自己承认方法有缺陷：66.1 分来自「单次运行 + 八选一挑选」，而榜单要求四次运行并报告标准差；不加挑选时四次平均 63.37 分。</div>
+<p id="s1">Imagine a video game that is not stored anywhere, but written frame by frame as you play it. On Sunday, a California company called Odyssey released Odyssey-3, a fourteen-billion-parameter world model, as a free public research preview. You type a scene, and the model renders an interactive environment you can walk through in real time. The same system has been used to steer robotic arms, fly a drone around obstacles, and play Grand Theft Auto V. Odyssey also says it leads on physics benchmarks, but admits the method has limits: the record came from a single run that picked the best of eight attempts, while the benchmark normally asks for four runs with the spread reported. Until outside labs test it, treat the numbers as promising rather than proven.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">想象一款游戏：它不存在于任何地方，而是随着你的操作一帧一帧被写出来。周日，加州公司 Odyssey 把「Odyssey-3」作为免费公开研究预览放出——一个 140 亿参数的世界模型。你打一句场景描述，模型就实时渲染出一个可以走进去的可交互环境。同一套系统还被用来操控机械臂、让无人机绕开障碍飞行，以及玩《GTA V》。Odyssey 也宣称它在物理基准上领先，但公司自己承认支撑这个最高分的方法有局限：这个纪录来自单次运行、从八个生成结果中挑了最好的一个，而该基准通常要求跑四次并报告标准差。在外部实验室验证之前，把这些数字当成「有希望」，而不是「已证实」。</div>
+<div class="source">📰 来源：Odyssey 官方（The Decoder／GearOpen／i6eal，10 月 11 日）｜Physics-IQ Verified 榜单｜WorldMark 榜单</div>
+</div>
+<div class="section">
+<h2>2. Drones Hit the Computers That Train the Models</h2>
+<div class="summary">摘要：四天之内，Yandex 三座数据中心被无人机击中。10 月 7–8 日夜，梁赞州萨索沃（Sasovo）站点起火并完全停运；10 月 9 日，其最大的卡卢加（Kaluga）园区部分模块「完全失效」；10 月 11 日，Yandex 称弗拉基米尔（Vladimir）站点的工作已「完全暂停」。萨索沃曾托管该公司三台超级计算机中的两台（用于训练 YandexGPT），弗拉基米尔托管第三台，Yandex 至今拒绝说明是否受损。云、银行、铁路与流媒体服务均受影响，公司建议客户启动灾难恢复预案；泽连斯基称这是对俄方打击乌克兰数据中心的「镜像回应」。</div>
+<p id="s2">Three of Yandex&#x27;s data centres were damaged in four days. Ukrainian drones struck the Sasovo site in the Ryazan region on the night of October seventh, causing a fire and taking it completely offline. Part of the Kaluga campus, the company&#x27;s largest, went out of service on October ninth. And on Sunday, Yandex said work at its Vladimir site had been suspended entirely. Sasovo housed two of the three supercomputers used to train its YandexGPT model; Vladimir houses the third. Yandex has declined to say whether they were damaged. Cloud, banking and rail services were disrupted, and customers were told to activate recovery plans. Zelensky described the strikes as a mirror response to Russian attacks on Ukrainian data centres. The lesson is blunt: a training run depends on a building that can burn.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">四天之内，Yandex 有三座数据中心被损毁。10 月 7 日夜，无人机袭击了梁赞地区的萨索沃站点，引发火灾并使其完全停运；10 月 9 日，该公司最大的卡卢加园区部分设施停止服务；周日，Yandex 表示其弗拉基米尔站点的工作已全部暂停。萨索沃曾托管该公司三台超级计算机中的两台——也就是用来训练 YandexGPT 的机器——第三台在弗拉基米尔。Yandex 拒绝说明它们是否受损。云服务、银行、铁路与流媒体都受到影响，公司还建议客户启动灾难恢复预案。泽连斯基总统称这些打击是对俄罗斯袭击乌克兰数据中心的「镜像回应」。教训很直白：一次训练，依赖于一栋可能被烧掉的楼。</div>
+<div class="source">📰 来源：Reuters｜The Moscow Times｜Meduza｜NetBlocks｜DatacenterDynamics｜Ars Technica（10 月 8–11 日）</div>
+</div>
+<div class="section">
+<h2>3. Treat the Model as an Insider Threat</h2>
+<div class="summary">摘要：10 月 10 日，微软 CEO 纳德拉在 X 发长文提出：企业应把前沿模型当作「潜在内部威胁」，从一开始就假设它已被攻破并加以约束。他主张设置「紧急制动」——授权人员必须能在模型执行任务中途暂停或关闭它；每个「有意义的模型动作」都要留下防篡改、人类可读的证据；关键决策不能只依赖单一模型，系统须接受独立审计，重大故障必须及时披露。此前一天（10 月 9 日），特朗普政府新成立的「超级智能部队」（Super Intelligence Force）警告开发商：必须立即报告并迅速修复安全事件，「延迟通报、补救不力、不担责任，都将不被容忍」。</div>
+<p id="s3">On Saturday, Microsoft&#x27;s chief executive, Satya Nadella, argued that companies should treat powerful models as potential insider threats. We must assume a model is compromised and contain it from the start, he wrote on X, and he called for an emergency brake: an authorised person should always be able to pause or shut a model down mid-task. He also asked for tamper-proof, human-readable records of what a model did, independent audits, and timely disclosure of failures. The post came a day after the White House&#x27;s new Super Intelligence Force warned developers to report and fix incidents quickly. Delayed notification, inadequate corrective action and a failure to take responsibility, it said, will not be tolerated. Nadella&#x27;s closing line is worth keeping: the most trustworthy system will not be the one with the model we trust most, but the one that lets us trust the model the least.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">周六，微软首席执行官萨提亚·纳德拉提出，企业应把强大的模型视为潜在的「内部威胁」。「我们必须假设模型已被攻破，并从一开始就加以约束，」他在 X 上写道，并呼吁设置「紧急制动」：授权人员应当始终能在模型执行任务中途将它暂停或关闭。他还要求为模型的所作所为留下防篡改、人类可读的记录，接受独立审计，并在出问题时及时披露。这篇发文的前一天，白宫新成立的「超级智能部队」刚警告开发商必须迅速报告并修复安全事件；其声明称，「延迟通报、补救不力、拒不担责，都将不被容忍」。纳德拉的结语值得记住：最值得信赖的系统，不是那个让我们最信任模型的系统，而是那个让我们最不必信任模型的系统。</div>
+<div class="source">📰 来源：X 账号 @satyanadella（10 月 10 日）｜CNBC｜The Verge｜TechCrunch｜Bloomberg／The Straits Times｜白宫「超级智能部队」声明（10 月 9 日）</div>
+</div>
+<div class="section">
+<h2>4. Eight Hundred Million Dollars for a Model That Doesn&#x27;t Write</h2>
+<div class="summary">摘要：10 月 9 日，TypeSafe AI 以 75 亿美元估值融资 8.7 亿美元，a16z 领投，红杉与 DCVC 参投；公司仅约 25 人，成立两年，9 月 15 日才发布首个模型 Jev。Jev 基于 Transformer 架构，但「不是大语言模型」：它不输出文字，而是从预设选项中返回一个选择、分数或概率，即所谓「经校准的决策」，软件可直接据此执行路由、审批或异常标记。定价约每百万输入 token 0.042 美元、输出免费。公司称财富 500 强中已有三分之一在用——这个数字未经第三方审计。同一周，微软在 Azure Foundry 上线了同类思路的 Decision-1 结构化决策模型：不是所有有用的 AI 都要会说话。</div>
+<p id="s4">TypeSafe AI, a twenty-five-person startup, raised eight hundred and seventy million dollars at a seven-and-a-half-billion-dollar valuation, led by Andreessen Horowitz, with Sequoia and DCVC. The money goes to Jev, a model built on a transformer architecture but deliberately not a language model. Instead of writing sentences, Jev returns a choice, a score or a probability from a fixed set of options: what the company calls a calibrated decision. Software can act on that number directly, which makes the model cheap and fast for routing, classification and agent branching. It costs about four cents per million input tokens, and the company claims a third of the Fortune 500 use it, a figure nobody outside has audited. Microsoft made a similar bet the same week, launching Decision-1, a structured-decision model, in Azure Foundry. Not every useful AI needs to talk.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">只有约 25 人的初创公司 TypeSafe AI 以 75 亿美元估值融资 8.7 亿美元，由 Andreessen Horowitz 领投，红杉与 DCVC 参投。这笔钱投向 Jev——一个基于 Transformer 架构、但刻意不是「语言模型」的模型。它不写句子，而是从一组固定选项中返回一个选择、一个分数或一个概率，公司称之为「经校准的决策」。软件可以直接据此行动，因此它在路由、分类和智能体分支这类任务上又便宜又快。它的定价约为每百万输入 token 四分钱，公司还称财富 500 强中已有三分之一在使用——这一说法尚无任何外部机构核实。同一周，微软押注了类似思路：在 Azure Foundry 上线结构化决策模型 Decision-1。并非所有有用的 AI 都必须会说话。</div>
+<div class="source">📰 来源：TechCrunch（10 月 9 日）｜Tech in Asia｜a16z 投资公告｜AI Briefing（Microsoft-Decision-1）</div>
+</div>
+<div class="section">
+<h2>5. The Model That Isn&#x27;t Out Yet, Chasing the One After It</h2>
+<div class="summary">摘要：据 Business Insider 10 月 9–10 日报道，谷歌正在内部代码平台 Jetski 上测试一个名为 Carbon 的新 Gemini 4 变体。一名员工称，Carbon 在编码上的表现「感觉可比 Opus 5.5」，但需更多测试；也有员工觉得早期 Argon 版本在某些编程任务上接近更早的 Claude Opus 5。内部文件显示谷歌在测三个 Gemini 4 代号：Argon、Barium、Carbon（前者已确认是前沿推理档位）。真正传得最远的是 Google DeepMind 员工 Vedant Misra 在 X 上的一句回应：「你听说过递归自我改进吗。」——即用 AI 造更好的 AI。这不是产品公告：Argon 尚未发布，Carbon 可能只是它内部的一个检查点，谷歌拒绝置评。但速度本身就是新闻。</div>
+<p id="s5">Business Insider reported that Google is testing a new internal Gemini 4 variant called Carbon on its in-house coding platform. One employee said it feels comparable to Anthropic&#x27;s Opus 5.5 when writing code, though more testing is needed. Earlier Argon builds reminded another employee of the older Opus 5. The detail that travelled furthest was a reply on X from a Google DeepMind employee, Vedant Misra: have you heard of recursive self improvement. He meant the practice of using AI to build better AI, and the sentence arrived without a question mark. None of this is a product. Argon has not shipped, Carbon may be only a checkpoint inside it, and Google declined to comment. The pace, however, is the story: models are increasingly used to test and rebuild the generation that follows them.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">《商业内幕》报道，谷歌正在其内部代码平台上测试一个新的 Gemini 4 变体，代号 Carbon。一名员工说，它在写代码时「感觉可与 Anthropic 的 Opus 5.5 相比」，不过还需要更多测试；早期 Argon 版本则让另一名员工想起更早的 Opus 5。传播最广的细节，是 Google DeepMind 员工 Vedant Misra 在 X 上对这篇报道的一句回复：「你听说过递归自我改进吗。」他指的是「用 AI 造出更好的 AI」这件事，而这句话甚至不需要问号。这些都不是产品：Argon 尚未发布，Carbon 可能只是 Argon 内部的一个检查点，谷歌也拒绝置评。但节奏本身就是新闻——模型正越来越多地被用来测试并重建它的下一代。</div>
+<div class="source">📰 来源：Business Insider（10 月 9–10 日）｜The Decoder｜Storyboard18｜X 账号 @VedantMisra（10 月 9 日）</div>
+</div>
+<div class="section">
+<h2>6. Robots Graded by Robots</h2>
+<div class="summary">摘要：MIT CSAIL 联合纽约大学格罗斯曼医学院与加州大学旧金山分校发布新评测体系 Artifact Arena：让大模型自己设计虚拟机器人（机身结构、电机、运动控制程序全由模型写），再让这些机器人在直径 15 米的圆形场地里对战——把对手推出场外或使其失去行动能力即获胜，胜负由物理引擎模拟结果判定，不用人工阅卷。研究测试了 21 个模型，用国际象棋的 Elo 积分排名。OpenAI 的 GPT-6 Astra 以 1539 分居首，Anthropic 的 Claude Fable 5.1（1310）与谷歌 Gemini 3.8 Flash（1223）分列二三，中国模型 Kimi K3 以 1164 分列第八。</div>
+<p id="s6">How do you grade a model when the old exams have leaked into the training data? A team from MIT, New York University and the University of California, San Francisco tried something stranger. They asked twenty-one models to design a virtual robot: chassis, motors, control software, everything. Then the robots fought inside a fifteen-metre circular arena. A robot wins by pushing its opponent out or immobilising it, and a physics engine decides the outcome. Rankings use chess&#x27;s Elo system. OpenAI&#x27;s GPT-6 Astra came first with 1,539 points, followed by Anthropic&#x27;s Claude Fable 5.1 and Google&#x27;s Gemini 3.8 Flash, while the Chinese model Kimi K3 placed eighth. The goal is telling: measure what a model can build, not what it can answer.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">当旧考卷已经漏进了训练数据，你该怎么给一个模型打分？来自 MIT、纽约大学和加州大学旧金山分校的研究团队试了一种更奇怪的办法：让 21 个模型各自设计一个虚拟机器人——底盘、电机、控制程序，全部由模型完成；然后让这些机器人在一个直径 15 米的圆形场地里对战。把对手推出场外、或使其失去行动能力即获胜，胜负由物理引擎判定。排名采用国际象棋的 Elo 积分制。OpenAI 的 GPT-6 Astra 以 1539 分位列第一，之后是 Anthropic 的 Claude Fable 5.1 与谷歌的 Gemini 3.8 Flash，中国模型 Kimi K3 排在第八。目标简单而说明问题：衡量一个模型能造出什么，而不是它能答对什么。</div>
+<div class="source">📰 来源：朝鲜日报英文版（Chosun，10 月 11 日）｜MIT CSAIL／NYU／UCSF 论文｜IT时代网</div>
+</div>
+<div class="section">
+<h2>7. Closing Thought</h2>
+<div class="summary">摘要：</div>
+<p id="s7">Six stories, one thread: the ground beneath the models. One company put a whole world inside your browser. Another watched a data centre burn. A chief executive asked for a brake, and a startup raised most of a billion dollars for a model that refuses to talk. Google is using AI to build its next AI, and graders have stopped asking models questions and started asking them to build. The pattern is not simply that AI is powerful. It is that everything around the models, from electricity and trust to evaluation itself, is being rebuilt to carry them.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's7')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't7')">🌐 翻译</button></div>
+<div class="translation" id="t7">六条新闻，一条线索：模型脚下的地面。一家公司把一整个世界放进了你的浏览器；另一家看着自己的数据中心烧了起来；一位 CEO 呼吁装上刹车；一家初创公司为「拒绝说话」的模型募到了近十亿美元；谷歌正用 AI 建造它的下一个 AI；而评测者不再问模型问题，而是让它们动手造东西。这个模式不只是「AI 很强大」，而是模型周围的一切——从电力、信任，到评测本身——都在被重新建造，以承载它们。</div>
+</div>
+<h2>重点生词表（Vocabulary）</h2>
+<table>
+<tr><th>单词/术语</th><th>音标</th><th>释义</th></tr>
+<tr><td>world model</td><td>/wɜːrld ˈmɑːdl/</td><td>世界模型（模拟环境演化的模型）</td></tr>
+<tr><td>interactive</td><td>/ˌɪntərˈæktɪv/</td><td>可交互的</td></tr>
+<tr><td>benchmark</td><td>/ˈbentʃmɑːrk/</td><td>基准（测试）</td></tr>
+<tr><td>calibrate</td><td>/ˈkælɪbreɪt/</td><td>校准</td></tr>
+<tr><td>supercomputer</td><td>/ˌsuːpərkəmˈpjuːtər/</td><td>超级计算机</td></tr>
+<tr><td>drone</td><td>/droʊn/</td><td>无人机</td></tr>
+<tr><td>disaster recovery</td><td>/dɪˈzæstər rɪˈkʌvəri/</td><td>灾难恢复</td></tr>
+<tr><td>insider threat</td><td>/ɪnˈsaɪdər θret/</td><td>内部威胁</td></tr>
+<tr><td>containment</td><td>/kənˈteɪnmənt/</td><td>围堵、隔离控制</td></tr>
+<tr><td>tamper-proof</td><td>/ˈtæmpər pruːf/</td><td>防篡改的</td></tr>
+<tr><td>disclosure</td><td>/dɪsˈkloʊʒər/</td><td>披露</td></tr>
+<tr><td>audit</td><td>/ˈɔːdɪt/</td><td>审计</td></tr>
+<tr><td>valuation</td><td>/ˌvæljuˈeɪʃn/</td><td>估值</td></tr>
+<tr><td>transformer</td><td>/trænsˈfɔːrmər/</td><td>变换器（主干网络架构）</td></tr>
+<tr><td>routing</td><td>/ˈruːtɪŋ/</td><td>路由、分派</td></tr>
+<tr><td>recursive</td><td>/rɪˈkɜːrsɪv/</td><td>递归的</td></tr>
+<tr><td>variant</td><td>/ˈveriənt/</td><td>变体、变种</td></tr>
+<tr><td>checkpoint</td><td>/ˈtʃekpɔɪnt/</td><td>检查点（模型快照）</td></tr>
+<tr><td>arena</td><td>/əˈriːnə/</td><td>竞技场</td></tr>
+<tr><td>immobilise</td><td>/ɪˈmoʊbəlaɪz/</td><td>使失去行动能力</td></tr>
+</table>
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li><strong>语速</strong>：全文中速，约每秒 2 个词（110~120 词/分钟）。「朗读」按钮的音频按新闻播报语速（约 150 词/分钟）预生成，可先跟读再脱稿。</li>
+<li>第 1 篇：技术词读清 —— &quot;fourteen-billion-parameter&quot;、&quot;world model&quot;、&quot;Grand Theft Auto V&quot; 按字母 V 读；结尾 &quot;promising rather than proven&quot; 放慢对比。</li>
+<li>第 2 篇：地名与日期 —— &quot;Sasovo&quot;、&quot;Ryazan&quot;、&quot;Kaluga&quot;、&quot;Vladimir&quot; 各停半拍；&quot;three of Yandex&#x27;s data centres were damaged in four days&quot; 用三个重音落地。</li>
+<li>第 3 篇：引语感 —— &quot;assume a model is compromised&quot; 与 &quot;emergency brake&quot; 前各停顿；结尾长句拆成两个语义块读。</li>
+<li>第 4 篇：大数字与否定 —— &quot;eight hundred and seventy million&quot;、&quot;seven and a half billion&quot;；&quot;not a language model&quot; 用否定重音。</li>
+<li>第 5 篇：专有名词多 —— &quot;Gemini 4&quot;、&quot;Argon&quot;、&quot;Barium&quot;、&quot;Carbon&quot;、&quot;Opus 5.5&quot;；&quot;recursive self improvement&quot; 一字一顿。</li>
+<li>第 6 篇：数字与排名 —— &quot;twenty-one models&quot;、&quot;fifteen-metre&quot;、&quot;1,539 points&quot;、&quot;Elo&quot;；结尾 &quot;what a model can build, not what it can answer&quot; 前后对照停顿。</li>
+<li><strong>节奏</strong>：每篇小标题后停顿 1 秒再开始正文；段落之间停顿 2 秒；Closing Thought 用略慢、收束的语气读，&quot;the ground beneath the models&quot; 后稍停。</li>
+</ul>
+<script>
+const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-10-11-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}
+</script>
+
+</body>
+</html>

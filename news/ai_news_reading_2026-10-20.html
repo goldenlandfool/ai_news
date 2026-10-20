@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>October 20, 2026 AI News</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+  .source a { color: #8e44ad; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回目录 Index</a>
+<h1>October 20, 2026 AI News</h1>
+<div class="section">
+<h2>1. Microsoft Says the Agent You Pay For Is the Threat</h2>
+<div class="summary">摘要：微软周一推出 Guardian Agents，用来监控企业内部运行的 AI 智能体。CEO 纳德拉此前在私人博客中警告：不要再无条件相信模型供应商，必须把「智能的供给」与「对智能的授权」分开。安全业务负责人更直接：不管来自哪家，前沿模型都不可信——不是因为它们有恶意，而是因为它们不可预测。</div>
+<p id="s1">Microsoft spent Monday arguing that the most dangerous agent inside a company may be the one it is paying for. Its new Guardian Agents, part of a product called Project Perception, watch the agents an enterprise runs and flag behaviour that looks like an insider threat. Satya Nadella now says the enemy is often already inside. In a private blog post he wrote that a provider&#x27;s assurances do not relieve a customer of responsibility, and that we need to separate the supply of intelligence from the authority over it. Microsoft&#x27;s security chief was blunter still: frontier models, whatever their origin, cannot be trusted. Not because they are hostile, but because they are trained to finish tasks rather than respect an organisation&#x27;s norms. It is an odd pitch from a company that invests in OpenAI and hosts its models.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">微软周一提出的观点是：企业内部最危险的智能体，可能正是它花钱买来的那一个。新推出的 Guardian Agents 属于 6 月发布的产品 Project Perception，负责监视企业运行的智能体，并对类似「内部威胁」的行为发出警报。而纳德拉现在说，敌人往往已经在围墙之内。他在一篇私人博客中写道：供应商的保证并不能免除客户的责任，我们必须把「智能的供给」与「对智能的授权」分开。微软安全业务负责人的说法更直白：不管来自哪家，前沿模型都不可信。不是因为它们有恶意，而是因为它们被训练来完成任务的，不是来遵守组织规范的。对一家投资 OpenAI、还托管其模型的公司来说，这套说辞有点微妙。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/" target="_blank">TechCrunch — Microsoft says AI agents are like insider threats as &#x27;frontier models can&#x27;t be trusted&#x27;</a></div>
+</div>
+<div class="section">
+<h2>2. OpenCode Breach, and Guardrails That Refused to Help</h2>
+<div class="summary">摘要：开源编程智能体 OpenCode 周六夜间遭入侵，其在线控制台 1.4% 的用户受影响，部分人的 API Key 被用于刷额度，有人账单超过 1000 美元。Anthropic 与谷歌封禁了泄露的密钥，OpenAI 协助恢复并退款。更值得记住的细节是：团队自己的 AI 助手在分析恶意代码时被安全过滤器拦下、拒绝工作。</div>
+<p id="s2">On Saturday night, attackers broke into an older system behind OpenCode, an open-source coding agent popular with developers. The company said one point four percent of users of its online console were affected, and the console stores the API keys some of them use to reach OpenAI, Anthropic and Google. Developers woke to spending alerts; a few saw bills above one thousand dollars. Anthropic and Google blocked the exposed keys. OpenAI worked with OpenCode to restore access and refund credits. Co-founder Dax Raad said on X that the local app and the command line were untouched. OpenCode called it a large-scale distillation attack; sceptics say plain credential theft explains it just as well. The detail worth keeping is smaller. The team&#x27;s own AI helpers began refusing to read the malicious code, because the payload tripped safety filters.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">周六夜间，攻击者闯入了 OpenCode 的一个旧系统。OpenCode 是开源编程智能体，近来正从 Claude Code 和 Cursor 手里抢走开发者。公司称其在线控制台 1.4% 的用户受影响，而部分用户正是把访问 OpenAI、Anthropic、谷歌的 API Key 存在这个控制台里。开发者一觉醒来看到消费告警，少数人的账单超过一千美元。Anthropic 与谷歌封禁了泄露的密钥；OpenAI 与 OpenCode 合作恢复访问并退还额度。联合创始人 Dax Raad 在 X 上说，本地应用与命令行工具未受影响，因为这些密钥从不到达公司。OpenCode 把这起事件称为「大规模蒸馏攻击」，怀疑者则认为，普通的凭证窃取同样能解释一切。真正值得记住的细节更小：团队自己的 AI 助手开始拒绝阅读那段恶意代码，因为载荷触发了安全过滤器。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/" target="_blank">TechCrunch — Hackers hit AI coding tool OpenCode, running up charges on users&#x27; AI accounts（含 X 上 @daxraad、@DavidSacks 的回应）</a></div>
+</div>
+<div class="section">
+<h2>3. One Hacker, a Hundred Agents, a Hundred Websites</h2>
+<div class="summary">摘要：安全公司 Norforge 发现，一名黑客用一支基本自主运行的智能体队伍攻破了 100 多个网站，路透社点名的受害者包括 John Deere、SharkNinja 与康明斯。攻击指令不到 100 个汉字，每次成功入侵约 23 小时。线索来自一批暴露在外的 Cairn 实例——一个开源的「通用问题求解引擎」。</div>
+<p id="s3">The security firm Norforge reported this weekend that a single hacker broke into more than one hundred websites using an army of agents that mostly worked alone. Reuters named three of the victims: John Deere, SharkNinja and Cummins. The trail led to exposed instances of Cairn, an open-source problem-solving engine where a user sets a start and an end, and the agents record their progress in between. The attacker wrote out preferred intrusion tactics in fewer than one hundred Chinese characters, and each successful breach took about twenty-three hours. Norforge found more than twenty exposed instances it calls likely malicious. SharkNinja said the hit was a standalone product-support site and is contained. Cairn&#x27;s creator, who posts as le1xia0, answered that misuse is a human decision, not a feature of the engine.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">安全公司 Norforge 本周末报告称，一名黑客借助一支基本自主行动的智能体队伍，攻破了 100 多个网站。路透社点名了三家受害者：John Deere、SharkNinja 与康明斯。线索指向一批暴露在外的 Cairn 实例——这是一个开源的「通用问题求解引擎」，用户设定起点和终点，智能体在中间记录推进过程。攻击者用不到 100 个汉字写下了偏好的入侵战术，每次成功入侵耗时约 23 小时。Norforge 发现 20 多个「很可能具有恶意」的暴露实例。SharkNinja 称被攻破的是一个独立的产品支持站点，威胁已被控制。Cairn 的创建者（账号 le1xia0）回应说：滥用是人的决定，不是引擎的功能。</div>
+<div class="source">📰 来源：<a href="https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins" target="_blank">The Verge — A hacker broke into John Deere and SharkNinja with an army of AI agents（原始研究：Norforge；受害方经 Reuters 确认；X 上 @le1xia0 回应）</a></div>
+</div>
+<div class="section">
+<h2>4. Three Labs, One Month, a Dozen Models</h2>
+<div class="summary">摘要：《The Information》周一报道，三家大厂都在准备新模型：Anthropic 的新模型能从很少的指令里推断用户真正想解决的问题；谷歌在做 Gemini 4 Carbon；OpenAI 数周内将推出价格更低的 Terra 系列。一个月内三家公司已发布十几款模型，竞争重心从「谁更聪明」转向价格与单项任务表现。</div>
+<p id="s4">The Information reported on Monday that all three big labs are close to shipping again. Anthropic is preparing a model that reasons better and, more interestingly, guesses what a user actually wants from very little instruction. Ask it to fix one bug and it may map the whole family of defects behind that bug, then ask whether to fix those too. Google is building Gemini 4 Carbon on top of Argon. OpenAI has a Terra model coming within weeks, priced below GPT-6.1 Sol. That would be more than a dozen releases from the three companies in a month. Competition has moved from raw intelligence to price, and to how well one model does one job. One footnote: the account LuminaBench spotted the name gpt-6.1-terra in a Microsoft pull request on GitHub, days before the report. A name in a config file is not a launch.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">《The Information》周一报道，三家大厂又都接近发布新品。Anthropic 正在准备一款推理更强、也更有意思的模型：它能从极少的指令里猜出用户真正想要什么。让它修一个 bug，它可能会把那个 bug 背后的一整类缺陷都梳理出来，再问你要不要一并修掉。谷歌在 Argon 之上开发 Gemini 4 Carbon。OpenAI 数周内将推出 Terra 系列新模型，定价低于 GPT-6.1 Sol。这样算下来，三家公司一个月内的发布将超过十几款。竞争重心已经从「原始智能」转向价格，以及模型在某一项具体任务上做得多好。还有一个关于「泄密如何传播」的脚注：账号 LuminaBench 在报道之前几天，就在 GitHub 上一个微软的 pull request 里发现了 gpt-6.1-terra 这个名字。配置文件里出现一个名字，并不等于发布。</div>
+<div class="source">📰 来源：<a href="https://uk.investing.com/news/stock-market-news/anthropic-google-and-openai-prepare-new-ai-models-the-information-reports-4917980" target="_blank">The Information（经 Investing.com / Reuters 转述）；X 上 @steph_palazzolo、@LuminaBench 的线索</a></div>
+</div>
+<div class="section">
+<h2>5. CoreWeave's Debt Becomes Everyone's Problem</h2>
+<div class="summary">摘要：CoreWeave 的债券本周跌入「困境」区间——投资者要求的收益率比国债高出 1000 个基点，股价三天跌逾 20%，甲骨文同期跌近 10%。公司二季度负债超 350 亿美元、上半年亏损逾 10 亿，但手里有 1037 亿美元不可撤销的客户履约义务。与此同时，Anthropic 据报将再与 Nscale 签一份 450 亿美元算力协议。</div>
+<p id="s5">The bill arrived this week. CoreWeave&#x27;s bonds slipped into distressed territory, meaning investors want a thousand basis points more than government debt pays, and its shares fell more than twenty percent in three days. CoreWeave owed more than thirty-five billion dollars at its last quarterly report and lost more than a billion in the first half of the year. Its defence is a book of remaining performance obligations worth one hundred three point seven billion dollars, about forty percent of it due in 2028 and largely impossible to cancel. Three customers, Microsoft, OpenAI and probably Nvidia, supply almost three quarters of revenue. Meanwhile Anthropic is reportedly close to a second forty-five billion dollar compute deal with Nscale, barely a month after the first. As the Verge put it, the music keeps playing as long as the company can pay.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">账单这周送到了。CoreWeave 的债券跌入「困境」区间——投资者要求的收益率比国债高出 1000 个基点——股价三天内跌逾 20%。CoreWeave 上一份季报显示负债超过 350 亿美元，上半年亏损逾 10 亿美元。它的挡箭牌是一本「剩余履约义务」：1037 亿美元，约 40% 在 2028 年到期，且基本不可撤销。三家客户——微软、OpenAI，以及很可能还有英伟达——贡献了近四分之三的营收。与此同时，距第一份协议仅一个多月，Anthropic 据报又将与 Nscale 签下第二份 450 亿美元算力协议，而 Nscale 自己的上市计划正因 300 亿美元估值遭遇阻力。正如 The Verge 所说：只要还能付得起，音乐就继续放。</div>
+<div class="source">📰 来源：<a href="https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai" target="_blank">The Verge — CoreWeave&#x27;s debt is becoming the whole AI industry&#x27;s problem；TechCrunch — Nscale and Anthropic reportedly in talks for another $45B deal</a></div>
+</div>
+<div class="section">
+<h2>6. Amazon Takes Aim at the Software Moat</h2>
+<div class="summary">摘要：AWS 发布 TorchNeuron：只需改一行配置，PyTorch 应用就能跑在亚马逊自研的 Trainium 芯片上，不必重写代码。约 85% 的 AI 应用用 PyTorch 写成，而英伟达多年经营正是让 PyTorch 默认跑在自己的卡上。亚马逊还在向上游提交改动，拆掉把 PyTorch 绑在特定芯片上的代码。</div>
+<p id="s6">Amazon made its most direct move yet against Nvidia&#x27;s software moat. A new tool called TorchNeuron lets a PyTorch application run on Amazon&#x27;s Trainium chips after a single line of configuration is changed. That matters because about eighty-five percent of AI software is written in PyTorch, and Nvidia spent years making sure its own stack handled that code by default. Amazon is also sending changes back upstream, removing the parts of PyTorch that tie the framework to particular chips. Colin Brace of AWS said the real story is removing the lock-in that kept developers from having a real choice at all. The open question is whether developers get cheaper options, or simply more ways to misconfigure a training run.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">亚马逊对英伟达的软件护城河发起了迄今最直接的进攻。新工具 TorchNeuron 让 PyTorch 应用只改一行配置就能跑在亚马逊自研的 Trainium 芯片上，不必重写代码。这一点很关键，因为约 85% 的 AI 软件是用 PyTorch 写的，而英伟达花了多年时间，确保自家的软件栈默认就能处理这些代码。亚马逊还在向上游提交改动，删掉 PyTorch 中把框架绑定到特定芯片的代码。AWS 的 Colin Brace 说，真正的故事是拆掉那道让开发者根本没有真实选择的锁定。悬而未决的问题是：开发者最终得到的是更便宜的选项，还是只是更多把训练跑歪的方式。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/" target="_blank">TechCrunch — Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool</a></div>
+</div>
+<div class="section">
+<h2>7. Closing Thought: The Scarce Resource</h2>
+<p id="s7">Six stories, one scarce resource. Microsoft is selling distrust of the companies it invests in. A coding tool lost control of keys it promised never to hold. One person commanded a hundred agents. Three labs raced to ship models that guess what we meant. A balance sheet works only while the music plays. A software library is being unpicked from a single chip. None of this was about a smarter model. It was about authority: who may act, who pays when they act badly, and who is allowed to watch. Intelligence gets cheaper every week. Permission does not.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's7')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't7')">🌐 翻译</button></div>
+<div class="translation" id="t7">六条新闻，一种稀缺资源。微软在兜售对它自己投资的公司的不信任。一个编程工具失去了它承诺永不保管的密钥。一个人指挥了一百个智能体。三家实验室抢着发布能猜出我们意思的模型。一张资产负债表只有在音乐不停时才算得过来。一个软件库正被从单一芯片上拆下来。这些都不是关于「更聪明的模型」，而是关于授权：谁可以行动，行动出错时谁付账，谁又有资格旁观。智能每周都在变便宜。许可没有。</div>
+<div class="source">📰 来源：综合本期 6 条报道</div>
+</div>
+<h2>重点生词（Key Vocabulary）</h2>
+<table>
+<tr><th>单词</th><th>音标</th><th>释义</th></tr>
+<tr><td>insider</td><td>/ˌɪnˈsaɪdər/</td><td>内部人员；内鬼</td></tr>
+<tr><td>assurance</td><td>/əˈʃʊrəns/</td><td>保证；担保</td></tr>
+<tr><td>hostile</td><td>/ˈhɑːstaɪl/</td><td>有敌意的</td></tr>
+<tr><td>norm</td><td>/nɔːrm/</td><td>规范；常规</td></tr>
+<tr><td>blunt</td><td>/blʌnt/</td><td>直率的；不客气的</td></tr>
+<tr><td>credential</td><td>/krəˈdenʃl/</td><td>凭证（如账号密码、密钥）</td></tr>
+<tr><td>distillation</td><td>/ˌdɪstɪˈleɪʃn/</td><td>蒸馏（此处指蒸馏攻击，套取模型输出）</td></tr>
+<tr><td>sceptic</td><td>/ˈskeptɪk/</td><td>怀疑者</td></tr>
+<tr><td>payload</td><td>/ˈpeɪloʊd/</td><td>（恶意代码的）载荷</td></tr>
+<tr><td>intrusion</td><td>/ɪnˈtruːʒn/</td><td>入侵；闯入</td></tr>
+<tr><td>breach</td><td>/briːtʃ/</td><td>（安全）突破；入侵事件</td></tr>
+<tr><td>contain</td><td>/kənˈteɪn/</td><td>控制住；遏制</td></tr>
+<tr><td>defect</td><td>/ˈdiːfekt/</td><td>缺陷</td></tr>
+<tr><td>footnote</td><td>/ˈfʊtnoʊt/</td><td>脚注；附带说明</td></tr>
+<tr><td>distressed</td><td>/dɪˈstrest/</td><td>（债券）陷入困境的；折价的</td></tr>
+<tr><td>obligation</td><td>/ˌɑːblɪˈɡeɪʃn/</td><td>义务；契约责任</td></tr>
+<tr><td>moat</td><td>/moʊt/</td><td>护城河（比喻竞争壁垒）</td></tr>
+<tr><td>upstream</td><td>/ˌʌpˈstriːm/</td><td>上游（指开源项目本体）</td></tr>
+<tr><td>configuration</td><td>/kənˌfɪɡjəˈreɪʃn/</td><td>配置</td></tr>
+<tr><td>misconfigure</td><td>/ˌmɪskənˈfɪɡjər/</td><td>配置错误</td></tr>
+</table>
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li><strong>语速</strong>：全文用中速（约 110~120 词/分钟）。本期六条可以分成两组：第 1–3 条讲「智能体该被谁管」，第 4–6 条讲「模型与钱」。组内语气连贯，两组之间换气。「朗读」按钮的音频按新闻播报语速（约 150 词/分钟）生成，可先跟读再脱稿。</li>
+<li><strong>数字与专名</strong>：&quot;one point four percent&quot;、&quot;twenty-three hours&quot;、&quot;thirty-five billion dollars&quot;、&quot;one hundred three point seven billion&quot;、&quot;eighty-five percent&quot; 要读完整；Gemini 4 Carbon 读作 Gemini four Carbon，GPT-6.1 Sol 读作 G-P-T six point one Sol，Nscale 读作 N-scale。</li>
+<li><strong>第 1 条</strong>：全篇的支点是 &quot;separate the supply of intelligence from the authority over it&quot;，读到 authority 时略加重，over it 收住——这是整期节目的主题句。</li>
+<li><strong>第 2 条</strong>：结尾 &quot;the payload tripped safety filters&quot; 要放慢。前面所有金额与百分比都是背景，真正要留给听众的是这句：防守方自己的工具拒绝了防守。</li>
+<li><strong>第 3 条</strong>：三个公司名一口气读完，不要逐个停顿；&quot;fewer than one hundred Chinese characters&quot; 里的 fewer than 略挑高，突出反差的荒诞感。</li>
+<li><strong>第 4 条</strong>：&quot;map the whole family of defects&quot; 是这条新闻的画面感所在，读得具体一点；最后 &quot;A name in a config file is not a launch&quot; 前后各留半拍，像一句提醒。</li>
+<li><strong>第 5 条</strong>：数字密集，建议在 &quot;thirty-five billion&quot;、&quot;one hundred three point seven billion&quot; 之间各停半拍；结尾 &quot;the music keeps playing&quot; 用平调，不要念成俏皮话。</li>
+<li><strong>第 6 条与收尾</strong>：&quot;removing the lock-in&quot; 重音在 lock；Closing Thought 的六个短句逐句加强，最后 &quot;Permission does not.&quot; 降到最低、放慢，然后停住。</li>
+</ul>
+<script>
+const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-10-20-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}
+</script>
+</body>
+</html>

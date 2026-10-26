@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI News Reading — 2026-10-25</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  .closing { font-style: italic; background: #eef3f8; padding: 14px 18px; border-radius: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+  .source a { color: #8e44ad; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回目录 Index</a>
+<h1>October 25, 2026 AI News</h1>
+
+<div class="section">
+<h2>1. Google Cloud Starts Selling Its Rivals' Models</h2>
+<div class="summary">摘要：谷歌云 Vertex AI Model Garden 开放 OpenAI GPT-6 Astra / 6.1 Sol / Luna 私有预览，Anthropic 托管的 Claude 也正式商用——成为首家把 GPT、Claude 与自家 Gemini 放在同一张账单上的云厂商；Pichai 警告算力紧张或持续到 2027 年。</div>
+<p id="s1">Google Cloud spent the week doing something that would have sounded absurd two years ago: selling its competitors' models. Its Vertex AI Model Garden now offers private-preview access to OpenAI's GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna, and the Anthropic-managed deployment of Claude became generally available on Thursday. That makes Google the first cloud provider to bill GPT, Claude, and its own Gemini on a single invoice. Sundar Pichai also warned that compute shortages may last into 2027. The strategy is straightforward: whoever hosts the models collects the revenue, no matter whose logo is on them. For enterprises, one bill and one contract beat three. For OpenAI and Anthropic, distribution is widening even as their closest rival takes a cut.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">谷歌云这一周在做一件两年前听起来会很荒唐的事：卖竞争对手的模型。它的 Vertex AI Model Garden 现在提供 OpenAI GPT-6 Astra、GPT-6.1 Sol 和 GPT-6 Luna 的私有预览，Anthropic 托管部署的 Claude 也在周四正式商用。这让谷歌成为第一家把 GPT、Claude 和自家 Gemini 放在同一张账单上的云厂商。桑达尔·皮查伊同时警告，算力紧张可能会持续到 2027 年。策略很简单：不管模型上印着谁的名字，谁负责托管，谁就拿到收入。对企业来说，一张账单、一份合同，胜过三份。对 OpenAI 和 Anthropic 来说，分销渠道在变宽——尽管最大的竞争对手也要从中抽成。</div>
+<div class="source">📰 来源：<a href="https://dev.to/dongfutong/ai-this-week-oct-19-25-openai-claude-on-google-cloud-agent-skills-to-aaif-decisions-api-ga-31m1" target="_blank">AI This Week (dev.to) — OpenAI &amp; Claude on Google Cloud</a></div>
+</div>
+
+<div class="section">
+<h2>2. Anthropic Open-Sources the Sandbox Behind Claude Code</h2>
+<div class="summary">摘要：Anthropic 把 Claude Code 背后的沙箱开源：sandbox-runtime 在操作系统层面限制进程可访问的文件与网络，macOS 用 Seatbelt、Linux 用 bubblewrap，Apache 2.0 协议；内部使用中权限弹窗减少了 84%。</div>
+<p id="s2">Anthropic open-sourced the sandbox behind Claude Code. The tool, called sandbox-runtime, restricts what files a process can touch and which servers it can reach, at the operating system level, with no container required. On macOS it uses Apple's Seatbelt; on Linux, bubblewrap; an alpha Windows build is included. It ships under the Apache 2.0 license as an npm package, and any developer can wrap their own agents or MCP servers in it. Anthropic reports that sandboxing cut Claude Code permission prompts by 84 percent in internal use, because the agent can work freely inside a fixed boundary instead of asking constantly. It is the same philosophy as last week's offline world: give the agent a wall, and let it work inside.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">Anthropic 把 Claude Code 背后的沙箱开源了。这个叫 sandbox-runtime 的工具，在操作系统层面限制进程能碰哪些文件、能连哪些服务器，而且不需要容器。macOS 上它使用苹果的 Seatbelt，Linux 上用 bubblewrap，还附带一个 alpha 版的 Windows 构建。它以 npm 包的形式按 Apache 2.0 协议发布，任何开发者都可以用它包住自己的智能体或 MCP 服务器。Anthropic 称在内部使用中，沙箱让 Claude Code 的权限弹窗减少了 84%，因为智能体可以在固定边界内自由工作，而不用不停请求许可。这和上周「离线世界」的思路一脉相承：给智能体一堵墙，然后让它在墙里干活。</div>
+<div class="source">📰 来源：<a href="https://aiweekly.co/alerts/anthropic-open-sources-claude-code-sandbox-under-apache-20" target="_blank">AI Weekly — Anthropic Open-Sources Claude Code Sandbox Under Apache 2.0</a></div>
+</div>
+
+<div class="section">
+<h2>3. AWS Open-Sources Infinity, a Runtime for Waiting Agents</h2>
+<div class="summary">摘要：AWS 开源 Infinity 运行时，面向「大部分时间都在等工具」的智能体——20 分钟的构建、挂起的 PR、隔夜的审批；与传统保持智能体循环常驻的方案不同，它为海量并发、多数空闲的智能体而设计。</div>
+<p id="s3">AWS open-sourced a runtime for a problem most people have not noticed yet: agents mostly wait. A coding agent may spend twenty minutes on a build, or a day waiting on a pull request or an approval. Keeping a full agent loop alive for each of those is wasteful at scale. Amazon's Infinity is designed for huge numbers of concurrent, mostly idle agents, handing resources back while tools run and resuming when results arrive. Early users describe it as plumbing: invisible when it works, and exactly what you notice when it fails. It is infrastructure for a future in which agents outnumber people, and in which the idle ones, not the busy ones, are the default case.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">AWS 开源了一个运行时，解决的是一个大多数人还没注意到的问题：智能体大部分时间都在等。一个编码智能体可能要花二十分钟跑一次构建，或者等一天 Pull Request 和审批。为每一次等待都维持一个完整的智能体循环，在规模化时非常浪费。亚马逊的 Infinity 专为海量并发、多数时间空闲的智能体设计：工具运行时把资源交回去，结果到达时再恢复执行。早期用户把它形容为「水管」：好用时完全隐形，出问题时你第一个想到的就是它。这是为「智能体数量超过人类」的未来准备的基础设施——在那个未来里，默认状态不是忙碌，而是空闲。</div>
+<div class="source">📰 来源：<a href="https://aibriefing.dev/" target="_blank">AI Briefing — AWS open-sources Infinity, a runtime for extreme agent concurrency</a></div>
+</div>
+
+<div class="section">
+<h2>4. AWS Is Sold Out Through 2027</h2>
+<div class="summary">摘要：AWS 上季度营收增 37% 至 422 亿美元，创 18 个季度最快增速；CEO 贾西称 2026 年产能已售罄、2027 年大体售罄、2028 年已有部分预订，2026 年资本开支约 2200 亿美元，积压订单近 5000 亿美元。</div>
+<p id="s4">The reason for all this infrastructure plumbing is simple: capacity is gone. AWS grew 37 percent to 42.2 billion dollars last quarter, its fastest growth in eighteen quarters, and chief executive Andy Jassy said capacity is sold out for 2026, largely sold out for 2027, and partly committed into 2028. Amazon plans roughly 220 billion dollars in capital spending next year, and its AI business already runs above a 25-billion-dollar annual rate, up from almost nothing two years ago. Behind the numbers sits a backlog of nearly half a trillion dollars. The bottleneck is no longer demand. It is land, power, chips, and time, and everyone is waiting in the same line.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">所有这些基础设施工程的背后原因很简单：产能卖光了。AWS 上季度营收增长 37%，达到 422 亿美元，是 18 个季度以来最快的增速；首席执行官安迪·贾西表示，2026 年的产能已经售罄，2027 年大体售罄，2028 年也已有部分预订。亚马逊计划明年投入约 2200 亿美元资本开支，其 AI 业务的年化收入已超过 250 亿美元——两年前这几乎还是零。这些数字背后，是近 5000 亿美元的积压订单。瓶颈已经不再是需求，而是土地、电力、芯片和时间——而且所有人都在排同一条队。</div>
+<div class="source">📰 来源：<a href="https://aibriefing.dev/" target="_blank">AI Briefing — Jassy: AWS capacity sold out for 2026, largely for 2027</a></div>
+</div>
+
+<div class="section">
+<h2>5. Nvidia Open-Sources Flora to Label Robot Video for Pennies</h2>
+<div class="summary">摘要：英伟达开源数据引擎 Flora：三个微调的 Qwen 模型覆盖机器人视频所需的三类标注，已为 GR00T 每天标注至多 20 万小时；每小时的标注成本约 0.72 美元，对比 GPT-6 Astra 的约 88.5 美元（为预测值）。</div>
+<p id="s5">Nvidia open-sourced Flora, a data engine that labels robot videos. Training robots needs three kinds of annotation: what action happens when, how well each step goes, and whether the task succeeded. Frontier models can produce all three but are too expensive at scale. Flora combines three fine-tuned Qwen models that cover them, and Nvidia says it already annotates up to two hundred thousand hours of video a day for its GR00T robots. The claimed economics are striking: about 72 cents per hour of video, against roughly 88 dollars for GPT-6 Astra, and Nvidia says Flora even scored slightly higher in its quality test. The cost figures are projections rather than production measurements, but the direction is clear.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">英伟达开源了 Flora，一个给机器人视频打标注的数据引擎。训练机器人需要三类标注：什么时候发生了什么动作、每一步完成得怎么样、任务是否成功。前沿模型能产出这三类标注，但规模化使用太贵。Flora 把三个微调过的 Qwen 模型组合起来覆盖这三类需求，英伟达说它已经在为自己的 GR00T 机器人每天标注至多 20 万小时视频。宣称的经济性相当惊人：每小时视频约 0.72 美元，而用 GPT-6 Astra 大约要 88 美元；英伟达还称 Flora 在其质量测试中得分略高。这些成本数字是预测值而非生产实测——但方向已经很清楚了。</div>
+<div class="source">📰 来源：<a href="https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/" target="_blank">The Decoder — Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra</a></div>
+</div>
+
+<div class="section">
+<h2>6. Apollo Economist: AI Has Delivered "Zero Financial Payoff" Outside Tech</h2>
+<div class="summary">摘要：阿波罗全球管理首席经济学家托斯滕·斯洛克称，剔除七大科技巨头后的标普 493 利润率与人均营收基本持平——AI 尚未给科技业之外的企业带来回报；「AI 也许是很棒的算力，但商业中的智能主要是判断力」。</div>
+<p id="s6">And now the cold water. Torsten Slok, chief economist at Apollo Global Management, published a note arguing that AI has delivered, in his words, zero financial payoff to corporate America outside of tech. Looking at the S&amp;P 493, the index minus the seven giants, he finds profit margins and revenue per worker essentially flat, with no clear productivity gain despite massive investment. His deeper point is about judgment: AI may be a great calculator, but in business, intelligence is mostly judgment, and machines do not understand accountability, trust, culture, or fairness. It is one note, and skeptics of the skeptics exist. But after a weekend of open runtimes and sold-out capacity, it is worth asking who is actually earning a return.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">现在来泼一盆冷水。阿波罗全球管理首席经济学家托斯滕·斯洛克发布报告称，用他的话说，AI 给科技行业之外的美国企业带来的是「零财务回报」。观察剔除七大巨头后的标普 493，他发现利润率和人均营收基本持平——巨额投资之下，看不到明确的生产率提升。他更深一层的观点关于判断力：AI 也许是很棒的算力，但在商业中，智能主要是判断力，而机器并不理解问责、信任、文化或公平。这只是一家之言，怀疑「怀疑者」的人也大有人在。但在这个开源运行时、产能售罄的周末之后，值得问一句：到底谁真正赚到了回报。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/" target="_blank">TechCrunch — AI delivers 'zero financial payoff' to most companies, Apollo economist says</a></div>
+</div>
+
+<div class="section">
+<h2>Closing Thought</h2>
+<p id="s7">Sunday's theme was sharing: rivals hosting rivals, sandboxes given away, runtimes opened, and a data engine free for anyone. Sharing works when there is something worth sharing. The economist's question hangs over all of it: enormous infrastructure, handed out cheap, in search of a payoff that has not shown up yet. Someone, eventually, will collect.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's7')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't7')">🌐 翻译</button></div>
+<div class="translation" id="t7">周日的主题是「分享」：对手替对手托管模型，沙箱送出去，运行时开放，数据引擎人人可用。分享之所以成立，是因为有值得分享的东西。而那位经济学家的提问悬在这一切之上：如此庞大的基础设施，以低廉的价格交出去，却还在寻找一个尚未出现的回报。总有一天，会有人来收账。</div>
+</div>
+
+<h2>重点生词表（Vocabulary）</h2>
+<table>
+<tr><th>单词/术语</th><th>音标</th><th>释义</th></tr>
+<tr><td>invoice</td><td>/ˈɪnvɔɪs/</td><td>发票；账单</td></tr>
+<tr><td>private preview</td><td>/ˈpraɪvət ˈpriːvjuː/</td><td>私有预览（未公开测试）</td></tr>
+<tr><td>generally available</td><td>/ˈdʒenrəli əˈveɪləbl/</td><td>正式发布的（GA）</td></tr>
+<tr><td>compute</td><td>/kəmˈpjuːt/</td><td>算力</td></tr>
+<tr><td>distribution</td><td>/ˌdɪstrɪˈbjuːʃn/</td><td>分销；分发渠道</td></tr>
+<tr><td>sandbox</td><td>/ˈsændbɑːks/</td><td>沙箱（隔离环境）</td></tr>
+<tr><td>runtime</td><td>/ˈrʌntaɪm/</td><td>运行时</td></tr>
+<tr><td>container</td><td>/kənˈteɪnər/</td><td>容器</td></tr>
+<tr><td>concurrent</td><td>/kənˈkɜːrənt/</td><td>并发的</td></tr>
+<tr><td>idle</td><td>/ˈaɪdl/</td><td>空闲的</td></tr>
+<tr><td>resume</td><td>/rɪˈzuːm/</td><td>恢复（执行）</td></tr>
+<tr><td>backlog</td><td>/ˈbæklɔːɡ/</td><td>积压订单</td></tr>
+<tr><td>capital spending</td><td>/ˈkæpɪtl ˈspendɪŋ/</td><td>资本开支</td></tr>
+<tr><td>annotation</td><td>/ˌænəˈteɪʃn/</td><td>标注</td></tr>
+<tr><td>projection</td><td>/prəˈdʒekʃn/</td><td>预测值</td></tr>
+<tr><td>payoff</td><td>/ˈpeɪɔːf/</td><td>回报</td></tr>
+<tr><td>accountability</td><td>/əˌkaʊntəˈbɪləti/</td><td>问责</td></tr>
+<tr><td>productivity</td><td>/ˌproʊdʌkˈtɪvəti/</td><td>生产率</td></tr>
+<tr><td>permission prompt</td><td>/pərˈmɪʃn prɑːmpt/</td><td>权限弹窗</td></tr>
+</table>
+
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li><strong>语速</strong>：全文用中速（约 110~120 词/分钟），小标题稍放慢、加重音。「朗读」按钮的音频按新闻播报语速（约 150 词/分钟）生成，可先跟读再脱稿。</li>
+<li>第 1 篇模型名要读顺："GPT-6 Astra"、"GPT-6.1 Sol"、"GPT-6 Luna"，三个并列时节奏保持一致</li>
+<li>"on a single invoice" 是第 1 篇落点，重读 single</li>
+<li>第 4 篇的年份递进要清晰："sold out for 2026"、"largely sold out for 2027"、"partly committed into 2028"</li>
+<li>第 5 篇金额对比是全篇最戏剧性的数字："72 cents" 对 "88 dollars"，读出反差</li>
+<li>第 6 篇 "zero financial payoff" 是引语重点，放慢并重读 zero</li>
+<li>第 6 篇引语 "intelligence is mostly judgment" 也是金句，可在 judgment 前微顿</li>
+<li>结尾 "Someone, eventually, will collect" 放慢、逐词读，留白收尾</li>
+<li><strong>节奏</strong>：每篇小标题后停顿 1 秒再开始正文；段落之间停顿 2 秒。</li>
+</ul>
+
+<script>
+const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-10-25-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}
+</script>
+
+</body>
+</html>

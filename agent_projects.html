@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent 搭建项目大全（2026-10-28）</title>
+<style>
+  body { font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 24px; color: #2c3e50; background: #f7f9fb; line-height: 1.7; }
+  h1 { font-size: 1.6em; color: #1a5276; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+  h2 { font-size: 1.3em; color: #2471a3; margin-top: 1.8em; }
+  h3 { font-size: 1.1em; color: #2e86c1; }
+  blockquote { background: #eaf2f8; border-left: 4px solid #3498db; padding: 8px 16px; margin: 12px 0; color: #2c3e50; border-radius: 0 6px 6px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 0.92em; }
+  th, td { border: 1px solid #d6eaf8; padding: 8px 12px; text-align: left; }
+  th { background: #d4e6f1; color: #1a5276; }
+  tr:nth-child(even) { background: #f4f9fd; }
+  tr:hover { background: #eaf2f8; }
+  a { color: #2980b9; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 2px solid #d6eaf8; margin: 24px 0; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; font-size: 0.95em; }
+  a.back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<a class="back" href="ai_agents_news.html">← 返回索引</a>
+<h1>AI Agent 搭建项目大全（2026-10-28）</h1>
+<h1>AI Agent 搭建项目大全</h1>
+<blockquote>最后更新：2026-10-28 | 共 6 层 60 个项目</blockquote>
+<hr>
+<h2>L0 - 模型推理层</h2>
+<p>负责大模型的本地部署与高效推理，是整个 Agent 体系的算力底座。</p>
+<table>
+  <tr>
+    <th>#</th>
+    <th>项目名</th>
+    <th>作者/组织</th>
+    <th>简介</th>
+    <th>官网</th>
+    <th>核心优势</th>
+    <th>行业地位</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>vLLM</td>
+    <td>UC Berkeley</td>
+    <td>高吞吐 LLM 推理引擎，PagedAttention 技术</td>
+    <td>https://github.com/vllm-project/vllm</td>
+    <td>吞吐量领先，支持多 GPU 分布式推理</td>
+    <td>生产级推理部署首选方案</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Ollama</td>
+    <td>Ollama Inc.</td>
+    <td>一键本地运行大模型，极简 CLI 体验</td>
+    <td>https://ollama.com</td>
+    <td>零配置上手，模型库丰富</td>
+    <td>开发者本地推理入口级工具</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>llama.cpp</td>
+    <td>ggerganov</td>
+    <td>纯 C/C++ 实现的 LLM 推理，支持消费级硬件</td>
+    <td>https://github.com/ggerganov/llama.cpp</td>
+    <td>极致轻量，CPU 推理，跨平台</td>
+    <td>边缘/端侧推理的事实标准</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>SGLang</td>
+    <td>Stanford</td>
+    <td>结构化生成语言，加速 LLM 交互与推理</td>
+    <td>https://github.com/sgl-project/sglang</td>
+    <td>RadixAttention 加速，结构化输出极快</td>
+    <td>学术前沿，结构化推理新星</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>TensorRT-LLM</td>
+    <td>NVIDIA</td>
+    <td>NVIDIA 官方 LLM 推理优化引擎</td>
+    <td>https://github.com/NVIDIA/TensorRT-LLM</td>
+    <td>GPU 深度优化，性能极致</td>
+    <td>NVIDIA 生态官方推理方案</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>LocalAI</td>
+    <td>Ettore Di Giacino</td>
+    <td>开源 AI 推理 API 兼容层，替代 OpenAI API</td>
+    <td>https://github.com/mudler/LocalAI</td>
+    <td>OpenAI API 兼容，多模型支持</td>
+    <td>本地替代 OpenAI 的首选网关</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>LM Studio</td>
+    <td>LM Studio</td>
+    <td>桌面端 LLM 运行工具，图形化界面</td>
+    <td>https://lmstudio.ai</td>
+    <td>GUI 友好，一键下载运行</td>
+    <td>非技术用户本地模型首选</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>MLX</td>
+    <td>Apple</td>
+    <td>Apple Silicon 原生机器学习框架</td>
+    <td>https://github.com/ml-explore/mlx</td>
+    <td>Apple 芯片深度优化</td>
+    <td>Mac 生态模型推理标准框架</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>colibri</td>
+    <td>JustVugg</td>
+    <td>纯 C 零依赖推理引擎，25GB 内存跑 744B MoE 模型</td>
+    <td>https://github.com/JustVugg/colibri</td>
+    <td>极致轻量，消费级硬件跑超大模型</td>
+    <td>推理引擎新星，35K★</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>DeepInfer</td>
+    <td>DeepSeek</td>
+    <td>DeepSeek 开源生产级推理框架，支撑 V4.1 Flash 大规模服务</td>
+    <td>https://github.com/deepseek-ai/DeepInfer</td>
+    <td>Apache 2.0，支持 NVIDIA/昇腾，分布式推理+结构化输出</td>
+    <td>10 月 20 日开源即登 HN 榜首，生产级推理基础设施</td>
+  </tr>
+</table>
+<hr>
+<h2>L1 - 协议与工具连接层</h2>
+<p>提供 Agent 与外部工具、API、数据源的标准化连接协议。</p>
+<table>
+  <tr>
+    <th>#</th>
+    <th>项目名</th>
+    <th>作者/组织</th>
+    <th>简介</th>
+    <th>官网</th>
+    <th>核心优势</th>
+    <th>行业地位</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>MCP (Model Context Protocol)</td>
+    <td>Anthropic</td>
+    <td>Agent 工具调用标准协议，统一上下文接口</td>
+    <td>https://modelcontextprotocol.io</td>
+    <td>Anthropic 主导，生态快速扩张</td>
+    <td>Agent 工具连接事实标准</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>A2A (Agent-to-Agent)</td>
+    <td>Google</td>
+    <td>Agent 间通信协议，支持跨系统协作</td>
+    <td>https://github.com/google/A2A</td>
+    <td>Google 背书，跨 Agent 互操作</td>
+    <td>多 Agent 协作协议新星</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Google ADK</td>
+    <td>Google</td>
+    <td>Agent 开发工具包，原生 A2A 支持</td>
+    <td>https://github.com/google/adk-python</td>
+    <td>与 Gemini 深度集成</td>
+    <td>Google Agent 生态核心框架</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>LlamaHub</td>
+    <td>LlamaIndex</td>
+    <td>Agent 工具与数据连接器市场</td>
+    <td>https://llamahub.ai</td>
+    <td>500+ 数据连接器，即插即用</td>
+    <td>Agent 数据接入最大生态</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Composio</td>
+    <td>Composio</td>
+    <td>100+ 工具集成平台，一行代码接入</td>
+    <td>https://composio.dev</td>
+    <td>工具数量多，认证管理完善</td>
+    <td>Agent 工具集成聚合平台</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Switchyard</td>
+    <td>NVIDIA NeMo</td>
+    <td>Agent 多模型路由网关，每步自动选最优模型</td>
+    <td>https://github.com/NVIDIA-NeMo/Switchyard</td>
+    <td>Rust 高性能，Agent 循环内逐轮路由</td>
+    <td>NVIDIA 官方模型路由基础设施</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>MarkItDown</td>
+    <td>Microsoft</td>
+    <td>万能文档转 Markdown 工具，支持 15+ 格式</td>
+    <td>https://github.com/microsoft/markitdown</td>
+    <td>185K★，格式覆盖广，Agent 数据预处理首选</td>
+    <td>Agent 文档接入事实标准</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Agent-Reach</td>
+    <td>Panniantong</td>
+    <td>给 AI Agent 装上互联网能力，支持 15+ 平台零 API 费</td>
+    <td>https://github.com/Panniantong/Agent-Reach</td>
+    <td>Python CLI，零 API 费，多平台接入</td>
+    <td>Agent 互联网接入标杆，36.8K★</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>REA</td>
+    <td>morluto</td>
+    <td>逆向工程 MCP 工具，让 Agent 逆向一切软件，从 App 行为到二进制</td>
+    <td>https://github.com/morluto/rea</td>
+    <td>380K★，17 类分析目标，MCP 原生，Agent 直接调用</td>
+    <td>10 天 380K★，GitHub 现象级，Agent 逆向工程新范式</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>chrome-devtools-mcp</td>
+    <td>ChromeDevTools</td>
+    <td>Chrome DevTools MCP 协议，让 Agent 直接操控浏览器调试</td>
+    <td>https://github.com/ChromeDevTools/chrome-devtools-mcp</td>
+    <td>5.1万★，浏览器调试标准化</td>
+    <td>Agent 浏览器调试连接新标准</td>
+  </tr>
+</table>
+<hr>
+<h2>L2 - Agent 编排框架层</h2>
+<p>Agent 的核心大脑，负责任务规划、工具调用、多步推理的编排引擎。</p>
+<table>
+  <tr>
+    <th>#</th>
+    <th>项目名</th>
+    <th>作者/组织</th>
+    <th>简介</th>
+    <th>官网</th>
+    <th>核心优势</th>
+    <th>行业地位</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>LangGraph</td>
+    <td>LangChain</td>
+    <td>基于图的 Agent 编排框架，支持循环与状态</td>
+    <td>https://github.com/langchain-ai/langgraph</td>
+    <td>状态机模型，复杂流程控制强</td>
+    <td>Agent 编排框架领导者</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>AutoGen</td>
+    <td>Microsoft</td>
+    <td>多 Agent 对话框架，支持人机协作</td>
+    <td>https://github.com/microsoft/autogen</td>
+    <td>多 Agent 协作，微软背书</td>
+    <td>多 Agent 对话框架标杆</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>CrewAI</td>
+    <td>CrewAI</td>
+    <td>多 Agent 角色协作框架，简单易用</td>
+    <td>https://github.com/crewAIInc/crewAI</td>
+    <td>角色分工明确，上手快</td>
+    <td>多 Agent 协作最流行框架</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>DeepSeek Harness</td>
+    <td>DeepSeek</td>
+    <td>Agent 运行时基础设施，Model+Harness 理念</td>
+    <td>https://github.com/deepseek-ai/harness</td>
+    <td>运行时抽象，解耦模型与工具</td>
+    <td>Agent 运行时架构新范式</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>OpenAI Agents SDK</td>
+    <td>OpenAI</td>
+    <td>官方 Agent 开发 SDK，原生工具调用</td>
+    <td>https://github.com/openai/openai-agents-python</td>
+    <td>与 GPT 深度集成，官方维护</td>
+    <td>OpenAI 生态 Agent 首选</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>ponytail</td>
+    <td>DietrichGebert</td>
+    <td>最小代码 Agent 框架，让 AI 像最懒资深开发只写必要代码</td>
+    <td>https://github.com/DietrichGebert/ponytail</td>
+    <td>极简代码哲学，Agent 自动精简实现</td>
+    <td>9 月 GitHub 月榜 TOP1，141K★</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Mastra</td>
+    <td>Mastra</td>
+    <td>TypeScript 原生 Agent 框架</td>
+    <td>https://github.com/mastra-ai/mastra</td>
+    <td>JS/TS 生态原生，类型安全</td>
+    <td>前端开发者 Agent 首选</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>paperclip</td>
+    <td>paperclipai</td>
+    <td>Agent 团队管理编排平台，管理多智能体团队协作</td>
+    <td>https://github.com/paperclipai/paperclip</td>
+    <td>85K★，Agent 团队编排，多智能体协作管理</td>
+    <td>GitHub 9 月日榜/周榜 TOP3，Agent 团队编排新标杆</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>agent-skills</td>
+    <td>Addy Osmani (Google)</td>
+    <td>AI Agent 生产级工程技能集，24+ 可安装 Skill</td>
+    <td>https://github.com/addyosmani/agent-skills</td>
+    <td>资深工程师经验技能化，即插即用</td>
+    <td>Agent 技能范式开创者，97K★</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>ruflo</td>
+    <td>ruvnet</td>
+    <td>多 Agent 集群编排框架，支持自适应记忆与自主工作流调度</td>
+    <td>https://github.com/ruvnet/ruflo</td>
+    <td>多 Agent 集群调度，自适应记忆，10 月 GitHub 热榜</td>
+    <td>Agent 集群编排新标杆</td>
+  </tr>
+</table>
+<hr>
+<h2>L3 - 知识与记忆层</h2>
+<p>为 Agent 提供持久化知识检索、长期记忆和向量存储能力。</p>
+<table>
+  <tr>
+    <th>#</th>
+    <th>项目名</th>
+    <th>作者/组织</th>
+    <th>简介</th>
+    <th>官网</th>
+    <th>核心优势</th>
+    <th>行业地位</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>LlamaIndex</td>
+    <td>LlamaIndex</td>
+    <td>数据连接与 RAG 框架</td>
+    <td>https://github.com/run-llama/llama_index</td>
+    <td>数据接入丰富，RAG 管线完善</td>
+    <td>RAG 框架领导者</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>RAGFlow</td>
+    <td>InfiniFlow</td>
+    <td>深度文档理解的 RAG 引擎</td>
+    <td>https://github.com/infiniflow/ragflow</td>
+    <td>文档解析精准，可视化好</td>
+    <td>开源 RAG 引擎标杆</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>GraphRAG</td>
+    <td>Microsoft</td>
+    <td>基于知识图谱的 RAG 增强方案</td>
+    <td>https://github.com/microsoft/graphrag</td>
+    <td>图谱增强，全局理解强</td>
+    <td>图谱 RAG 开创者</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Mem0</td>
+    <td>Mem0</td>
+    <td>Agent 长期记忆层，个性化记忆管理</td>
+    <td>https://github.com/mem0ai/mem0</td>
+    <td>记忆持久化，个性化适配</td>
+    <td>Agent 记忆层事实标准</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Letta (MemGPT)</td>
+    <td>Letta</td>
+    <td>无限上下文记忆管理 Agent</td>
+    <td>https://github.com/letta-ai/letta</td>
+    <td>虚拟无限上下文，记忆分层</td>
+    <td>记忆管理研究先驱</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Milvus</td>
+    <td>Zilliz</td>
+    <td>开源向量数据库，支持万亿级向量</td>
+    <td>https://github.com/milvus-io/milvus</td>
+    <td>分布式架构，性能卓越</td>
+    <td>向量数据库领导者</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Chroma</td>
+    <td>Chroma</td>
+    <td>轻量级嵌入式向量数据库</td>
+    <td>https://github.com/chroma-core/chroma</td>
+    <td>极简 API，开发友好</td>
+    <td>开发阶段向量库首选</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Qdrant</td>
+    <td>Qdrant</td>
+    <td>Rust 实现的高性能向量搜索引擎</td>
+    <td>https://github.com/qdrant/qdrant</td>
+    <td>Rust 性能，过滤查询强</td>
+    <td>高性能向量数据库代表</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Hindsight</td>
+    <td>vectorize-io</td>
+    <td>Agent 自我复盘长期记忆系统，支持记忆沉淀与经验学习</td>
+    <td>https://github.com/vectorize-io/hindsight</td>
+    <td>30K★，Agent 记忆自我复盘，经验积累学习</td>
+    <td>GitHub 9 月日榜 TOP3，Agent 记忆系统新标杆</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Headroom</td>
+    <td>headroomlabs-ai</td>
+    <td>Agent 上下文压缩层，工具输出/日志/RAG 进模型前智能压缩</td>
+    <td>https://github.com/headroomlabs-ai/headroom</td>
+    <td>76K★，省 20-95% token，可逆压缩 CCR，本地运行</td>
+    <td>Agent 效率基础设施，累计省 70 万美元 API 费</td>
+  </tr>
+</table>
+<hr>
+<h2>L4 - 应用平台层</h2>
+<p>低代码/无代码 Agent 搭建平台，让非开发者也能构建 AI 应用。</p>
+<table>
+  <tr>
+    <th>#</th>
+    <th>项目名</th>
+    <th>作者/组织</th>
+    <th>简介</th>
+    <th>官网</th>
+    <th>核心优势</th>
+    <th>行业地位</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Dify</td>
+    <td>Dify</td>
+    <td>开源 LLM 应用开发平台，可视化编排</td>
+    <td>https://github.com/langgenius/dify</td>
+    <td>可视化编排，企业功能全</td>
+    <td>国内开源 AI 平台领导者</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>n8n</td>
+    <td>n8n</td>
+    <td>工作流自动化平台，AI Agent 节点</td>
+    <td>https://github.com/n8n-io/n8n</td>
+    <td>工作流成熟，集成丰富</td>
+    <td>工作流自动化领导者</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Langflow</td>
+    <td>Langflow</td>
+    <td>可视化 LangChain 流程搭建工具</td>
+    <td>https://github.com/langflow-ai/langflow</td>
+    <td>拖拽式搭建，直观易懂</td>
+    <td>LangChain 可视化首选</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Coze</td>
+    <td>字节跳动</td>
+    <td>字节 AI Bot 搭建平台，插件生态丰富</td>
+    <td>https://www.coze.com</td>
+    <td>零代码搭建，多渠道发布</td>
+    <td>国内 Bot 平台流量最大</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Flowise</td>
+    <td>Flowise</td>
+    <td>开源低代码 LLM 应用搭建工具</td>
+    <td>https://github.com/FlowiseAI/Flowise</td>
+    <td>轻量开源，部署简单</td>
+    <td>轻量级可视化搭建代表</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>FastGPT</td>
+    <td>Labra</td>
+    <td>开源知识库问答系统，支持工作流</td>
+    <td>https://github.com/labring/FastGPT</td>
+    <td>知识库+工作流，中文优化好</td>
+    <td>国内知识库问答平台代表</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>MaxKB</td>
+    <td>1Panel</td>
+    <td>开箱即用的智能知识库问答平台</td>
+    <td>https://github.com/1Panel-dev/MaxKB</td>
+    <td>开箱即用，企业友好</td>
+    <td>企业知识库问答快速方案</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>LibreChat</td>
+    <td>danny-avila</td>
+    <td>增强型 ChatGPT 克隆，支持 Agent/MCP/多模型/自托管</td>
+    <td>https://github.com/danny-avila/LibreChat</td>
+    <td>多模型支持，MCP 集成，自托管</td>
+    <td>开源 AI 对话平台代表，44K★</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>WeKnora</td>
+    <td>腾讯</td>
+    <td>开源 LLM 知识平台，文档→知识库+Agent+自维护Wiki</td>
+    <td>https://github.com/Tencent/WeKnora</td>
+    <td>2.37万★，微信系RAG，文档变知识库</td>
+    <td>腾讯开源知识平台新星</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Refly</td>
+    <td>Refly AI</td>
+    <td>开源 AI 创作引擎，集成知识库与工作流</td>
+    <td>https://github.com/Refly-AI/refly</td>
+    <td>多模态创作，知识库集成</td>
+    <td>AI 创作平台新星</td>
+  </tr>
+</table>
+<hr>
+<h2>L5 - 垂直 Agent 产品层</h2>
+<p>面向具体场景的 Agent 终端产品，直接解决用户问题。</p>
+<table>
+  <tr>
+    <th>#</th>
+    <th>项目名</th>
+    <th>作者/组织</th>
+    <th>简介</th>
+    <th>官网</th>
+    <th>核心优势</th>
+    <th>行业地位</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>HyperFrames</td>
+    <td>HeyGen</td>
+    <td>HTML→视频渲染引擎，AI Agent 可编程自动生产视频</td>
+    <td>https://github.com/heygen-com/hyperframes</td>
+    <td>写 HTML 即可出片，Agent 自动渲染</td>
+    <td>AI 视频创作 Agent 标杆，49K★</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>OpenMAIC</td>
+    <td>清华大学</td>
+    <td>开源多 Agent 互动课堂，一句话生成 AI 教学场景</td>
+    <td>https://github.com/THU-MAIC/OpenMAIC</td>
+    <td>多 Agent 互动教学，全球 154 国使用</td>
+    <td>教育 Agent 新星，一周涨 8K★</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>browser-use</td>
+    <td>browser-use</td>
+    <td>浏览器自动化 Agent，网页操作</td>
+    <td>https://github.com/browser-use/browser-use</td>
+    <td>网页操作自动化</td>
+    <td>浏览器 Agent 领导者</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>ASPIRE</td>
+    <td>NVIDIA</td>
+    <td>自改进机器人 Agent 框架，机器人自主积累 Skill 并持续进化</td>
+    <td>https://github.com/NVIDIA/ASPIRE</td>
+    <td>NVIDIA 开源，自我改进，接入大模型刷爆基准</td>
+    <td>10 月 GitHub 现象级，机器人 Agent 新标杆</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>OpenHands</td>
+    <td>OpenHands</td>
+    <td>开源 AI 软件工程智能体</td>
+    <td>https://github.com/All-Hands-AI/OpenHands</td>
+    <td>全栈开发能力</td>
+    <td>AI 软件工程 Agent 标杆</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Qwen Code</td>
+    <td>阿里通义</td>
+    <td>通义开源终端编程 Agent，SWE-bench 77.8%</td>
+    <td>https://github.com/QwenLM/qwen-code</td>
+    <td>开源编程Agent，Skills+SubAgents工作流</td>
+    <td>国产开源编程Agent标杆</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>cua</td>
+    <td>trycua</td>
+    <td>计算机使用 Agent 基础设施，AI 直接操控图形界面</td>
+    <td>https://github.com/trycua/cua</td>
+    <td>GUI 交互自动化，通用计算机操作</td>
+    <td>计算机使用 Agent 新范式，25K★</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>OpenCode</td>
+    <td>Anomaly (anomalyco)</td>
+    <td>开源编程 Agent，内置 build/plan/general 三类智能体</td>
+    <td>https://github.com/anomalyco/opencode</td>
+    <td>219K★，不锁定供应商，Tab 切换 Agent，多平台安装</td>
+    <td>开源编程 Agent 赛道绝对头部</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Cursor</td>
+    <td>Anysphere</td>
+    <td>AI-first 代码编辑器</td>
+    <td>https://cursor.com</td>
+    <td>编辑器集成体验极致</td>
+    <td>AI 编程编辑器领导者</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Claude Code</td>
+    <td>Anthropic</td>
+    <td>Anthropic 官方终端编程 Agent</td>
+    <td>https://docs.anthropic.com/en/docs/claude-code</td>
+    <td>深度理解代码库</td>
+    <td>终端编程 Agent 代表</td>
+  </tr>
+</table>
+<hr>
+<h2>企业选型速查</h2>
+<table>
+  <tr>
+    <th>场景</th>
+    <th>推荐组合</th>
+  </tr>
+  <tr>
+    <td>快速搭建内部知识库问答</td>
+    <td>Dify + RAGFlow + Milvus</td>
+  </tr>
+  <tr>
+    <td>多 Agent 协作开发</td>
+    <td>LangGraph + CrewAI + paperclip + ruflo + MCP</td>
+  </tr>
+  <tr>
+    <td>本地私有化部署</td>
+    <td>vLLM/Ollama + LocalAI + Dify</td>
+  </tr>
+  <tr>
+    <td>自动化工作流</td>
+    <td>n8n + LangGraph + Composio</td>
+  </tr>
+  <tr>
+    <td>AI 编程助手</td>
+    <td>Cursor / OpenCode / Qwen Code / Claude Code + ponytail</td>
+  </tr>
+  <tr>
+    <td>企业级多用户平台</td>
+    <td>LibreChat + Dify + Mem0</td>
+  </tr>
+</table>
+<hr>
+<p><em>数据来源：GitHub Trending、Product Hunt、Hacker News、网络搜索</em></p>
+<p><em>本项目列表每日更新，变更详见 <a href="agent搭建项目大全changelog.md" target="_blank">更新日志</a></em></p>
+</body>
+</html>

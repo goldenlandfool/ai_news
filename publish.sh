@@ -21,7 +21,8 @@ for f in os.listdir(f"{SRC}/news/audio"):
         shutil.copy2(f"{SRC}/news/audio/{f}", f"{DST}/news/audio/{f}")
 
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-files = sorted([f for f in os.listdir(f"{DST}/news") if f.endswith(".html")], reverse=True)
+files = sorted([f for f in os.listdir(f"{DST}/news")
+                if f.startswith("ai_news_reading_") and f.endswith(".html")], reverse=True)
 items = []
 for f in files:
     mtime = datetime.datetime.fromtimestamp(os.path.getmtime(f"{DST}/news/{f}")).strftime("%Y-%m-%d %H:%M")

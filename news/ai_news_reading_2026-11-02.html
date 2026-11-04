@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI News Reading — 2026-09-29</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+  .source a { color: #8e44ad; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回目录 Index</a>
+<h1>November 2, 2026 AI News</h1>
+<div class="section">
+<h2>1. Forty-Eight Hours, No Human Hands</h2>
+<div class="summary">摘要：开源权重模型 GLM-5.3 在不到 48 小时、零人工介入的条件下，构建出针对 Firefox 的完整漏洞利用链（The Decoder）。「利用链」意味着把多个漏洞串起来连续攻破，过去这是熟练人类研究员数周的工作量；而权重公开意味着任何拿到模型的人都能在本地反复尝试。</div>
+<p id="s1">An open weight model built a working attack in two days, and nobody touched the keyboard. The Decoder reported that GLM-5.3 produced a complete exploit chain against Firefox in under forty-eight hours with zero human input. The word chain matters. A single bug is a door left open. A chain is a sequence of small openings that add up to control of the machine, and assembling one has traditionally been the work of skilled researchers over weeks. Two other details make this more than a stunt. First, the model is open weight, so anyone who downloads it can run the same experiment at home, at night, without permission. Second, defenders get the identical tool. That symmetry is the honest way to describe the situation. The gap between finding a flaw and weaponising it has narrowed to the point where patch schedules, not secrets, are what protect software now.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">一个开源权重的模型用两天时间构建出一套可用的攻击，而且没有人碰键盘。The Decoder 报道，GLM-5.3 在不到四十八小时、零人工介入的条件下，产出了针对 Firefox 的完整漏洞利用链。「链」这个字很关键：单个漏洞是一扇没关的门，而利用链是一连串小缺口叠加成对机器的控制权，把这样一条链拼起来，传统上是熟练研究员数周的工作。还有两个细节让它不只是一次炫技。第一，这个模型是开放权重的，任何下载它的人都能在家里、在深夜、不需要任何人批准地复现同一个实验。第二，防守方拿到的是完全相同的工具。这种对称性才是描述现状的诚实方式：从「发现缺陷」到「武器化」之间的距离，已经缩短到如今保护软件的是补丁节奏，而不是秘密。</div>
+<div class="source">📰 来源：<a href="https://the-decoder.com/open-weight-model-glm-5-3-built-full-firefox-exploit-chains-with-zero-human-input-in-under-48-hours/">The Decoder — Open-weight model GLM-5.3 built full Firefox exploit chains with zero human input in under 48 hours</a></div>
+</div>
+<div class="section">
+<h2>2. Viruses Designed by Software, Tested in a Dish</h2>
+<div class="summary">摘要：斯坦福与 Arc 研究所的研究人员用 AI 设计新型病毒，在实验室中成功杀灭细菌（The Decoder）。这项工作的正当用途是抗菌治疗——抗生素耐药性正让这类工具变得迫切；同时它也把「设计可自我复制的生物体」的门槛又降了一档，双重用途风险随之上升。</div>
+<p id="s2">The same week brought a quieter result with a much longer shadow. Researchers at Stanford and the Arc Institute used AI to design new viruses that killed bacteria in the laboratory, according to The Decoder. The legitimate purpose is easy to defend. Antibiotic resistance is one of the few problems where the world genuinely needs new tools, and engineered viruses that target bacteria are a serious candidate. But notice what happens to the skill requirement. Designing a virus used to demand years of training and a great deal of luck. If a model can propose candidate designs and a laboratory can test them quickly, then the bottleneck moves from knowledge to equipment. That is a familiar pattern by now, and it is the reason biosecurity people sound less worried about any single paper than about the trend line. The gap between reading about a capability and having it keeps shrinking.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">同一周还有一个安静得多的结果，投下的阴影却长得多。据 The Decoder 报道，斯坦福与 Arc 研究所的研究人员用 AI 设计新型病毒，并在实验室中成功杀灭细菌。它的正当用途很容易辩护：抗生素耐药性是世界上少数真正需要新工具的问题之一，而专门攻击细菌的工程化病毒是一个严肃的候选方案。但请注意技能门槛发生了什么变化——设计病毒过去需要多年训练和大量运气。如果一个模型能提出候选设计、实验室能快速验证，那么瓶颈就从「知识」移到了「设备」。这个模式现在已经很熟悉了，也正是生物安全专家听起来不那么担心某一篇论文、而更担心趋势线的原因：从「读到某种能力」到「拥有这种能力」之间的间隔一直在缩短。</div>
+<div class="source">📰 来源：<a href="https://the-decoder.com/stanford-and-arc-institute-scientists-used-ai-to-design-new-viruses-that-killed-bacteria-in-the-lab/">The Decoder — Stanford and Arc Institute scientists used AI to design new viruses that killed bacteria in the lab</a></div>
+</div>
+<div class="section">
+<h2>3. A Religious Exemption Without a Religion</h2>
+<div class="summary">摘要：据 The Verge，一位世俗人道主义者成功获得宗教性质的豁免，可以在工作中拒绝使用 AI 工具，理由并非信仰上帝。这暴露了一个法律缝隙：为宗教自由写下的条款，正在被用来保护一种「不信仰」的选择。</div>
+<p id="s3">A secular humanist has won the right to refuse AI tools at work on religious grounds, and the case is stranger than it sounds. The Verge reported the exemption was granted even though the person does not believe in a god. Read that again, because it is not a joke about bureaucracy. Religious accommodation law was written to protect worship, and it now covers a worldview built on the absence of one. The practical effect is that &quot;I would rather not use this tool&quot; has a legal route that &quot;I find it unreliable&quot; does not. Employers will notice. Every workplace that rolls out an assistant now has to answer a question it did not plan for: is using this software a condition of the job, or a preference? The ruling does not settle that. It only proves that the argument has somewhere to go. Expect the next case to be about the opposite request, from someone who says the tool is required for them to keep up.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">一位世俗人道主义者以宗教理由赢得了在工作中拒绝使用 AI 工具的权利，而这个案子比听起来更奇特。The Verge 报道，这项豁免获得批准，尽管当事人并不信仰神。再读一遍——这不是关于官僚体系的笑话。宗教便利条款本来是为保护礼拜行为而写的，如今却覆盖了一种建立在「无神」之上的世界观。实际效果是：「我更愿意不用这个工具」有了一条法律路径，而「我觉得它不可靠」没有。雇主会注意到这一点。每一家正在推行 AI 助手的公司现在都得回答一个它没计划过的问题：使用这个软件是岗位条件，还是个人偏好？这项裁决并没有解决它，只是证明了这个争论有地方可去。可以预见下一个案子会反过来：有人主张必须给他这个工具，否则他跟不上。</div>
+<div class="source">📰 来源：<a href="https://www.theverge.com/ai-artificial-intelligence/1024249/you-can-get-a-religious-exemption-from-using-ai-at-work">The Verge — You can get a religious exemption from using AI at work</a></div>
+</div>
+<div class="section">
+<h2>4. A Bank Draws a Line Around the Code</h2>
+<div class="summary">摘要：彭博报道，高盛更新内部合规政策，把 Claude Code 与 GitHub 代码工具的使用权限严格限制在软件工程师范围内，禁止交易员与投资银行家使用，理由是金融业务合规与数据外泄风险。</div>
+<p id="s4">Goldman Sachs answered the question from the other side. According to Bloomberg, the bank narrowed access to Claude Code and GitHub&#x27;s coding tools so that only software engineers may use them, cutting off traders and investment bankers. The reasoning is not that the tools are bad. It is that a coding agent with repository access inside a regulated institution is a data governance problem wearing a productivity costume. A trader with a clever agent can move code, and with it data, in ways that no compliance officer will ever see in a chat log. Banks have quietly become the strictest test environment for these products, and their answer is consistent: give the tools to the people whose job is to write software, and nobody else. That will be uncomfortable for vendors selling seat licences by the thousand, and it is probably correct.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">高盛从另一侧回答了这个问题。据彭博报道，这家银行收窄了 Claude Code 与 GitHub 代码工具的使用权限，只有软件工程师可以使用，交易员与投资银行家被排除在外。理由不是这些工具不好，而是：在一个受监管机构内部，拥有代码仓库权限的编码智能体，是一个穿着「提效」外衣的数据治理问题。一个聪明的智能体配上交易员，能用合规官在聊天记录里永远看不到的方式搬运代码，以及代码背后的数据。银行已经悄悄成为这类产品最严格的测试环境，而它们的答案是一致的：把工具交给以写软件为职业的人，其他人不在此列。这对按千份席位卖许可证的厂商会很难受，而这个判断大概是对的。</div>
+<div class="source">📰 来源：<a href="https://www.communeify.com/tw">Bloomberg / The Decoder — 高盛限缩 AI 代码工具使用权限，禁止交易员与投资银行家使用 Claude Code</a></div>
+</div>
+<div class="section">
+<h2>5. One Hundred Billion Yuan, and a Share for the State</h2>
+<div class="summary">摘要：据 The Information，DeepSeek 第二轮融资总额达 1055 亿元人民币、投后估值约 6155 亿元，近 30 家投资方参与；国有投资者合计占比升至 27%（首轮仅 2%），中国移动出资 80 亿、中国电信数十亿，腾讯累计 200 亿、宁德时代 100 亿。运营商资本直接嵌入头部开源模型生态。</div>
+<p id="s5">The financing news out of China reads like a different genre of story, and the numbers deserve a second look. The Information reported that DeepSeek closed a second round of one hundred five and a half billion yuan, roughly fifteen billion dollars, at a post money valuation near eighty-six billion. Two details carry the meaning. First, almost thirty investors took part, which is a wide base rather than a single patron. Second, state owned investors now hold twenty seven percent, up from two percent in the first round. China Mobile put in eight billion yuan, China Telecom several billion, Tencent has now committed twenty billion in total, and CATL one hundred billion. Read those names as a list of companies that need cheap intelligence inside their own operations, not as charity. Telecom operators running networks, a battery maker running factories, a platform company running games: each one is buying a stake in the thing it intends to use.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">来自中国的融资新闻读起来像另一种体裁，数字值得再看一遍。The Information 报道，DeepSeek 完成第二轮融资 1055 亿元人民币——约合 150 亿美元——投后估值接近 860 亿美元。两个细节承载了含义。第一，近三十家投资方参与，这是宽阔的股东基础，而不是单一金主。第二，国有投资者如今持股 27%，首轮仅 2%。中国移动出资 80 亿元，中国电信数十亿元，腾讯累计承诺 200 亿元，宁德时代 100 亿元。把这些名字读成一份「需要在自己业务里用上廉价智能」的公司名单，而不是慈善名单：运营商在跑网络，电池厂在跑工厂，平台公司在跑游戏——每一家买的都是它打算使用的那个东西的股份。</div>
+<div class="source">📰 来源：<a href="http://mp.weixin.qq.com/s?__biz=MzY4MjMyNjIyNQ==&amp;mid=2247489350&amp;idx=1&amp;sn=0ecd656c5458c07f6561d1e05f16b81e">The Information（转引自腾讯新闻 · 2026-11-04 AI 科技日报）</a></div>
+</div>
+<div class="section">
+<h2>Closing Thought</h2>
+<p id="s6">Four of these five stories are about permission rather than capability. Who may build an exploit, who may print a virus, who may refuse a tool, who may hand code to an agent, and who gets to own the lab that makes it. The models keep getting better on a schedule nobody controls. The permissions are where the real negotiation is happening, and it is happening quietly, in compliance memos and accommodation letters rather than in launch posts. That is where the next year will be decided.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">这五条新闻里有四条讲的是许可，而不是能力。谁可以构建漏洞利用，谁可以打印病毒，谁可以拒绝一个工具，谁可以把代码交给智能体，以及谁有资格拥有制造这一切的实验室。模型在一条没人控制的轨道上持续变强；而真正的谈判发生在「许可」这一侧，并且是安静的——在合规备忘录和便利申请批复里，而不在发布会上。明年将由这些地方决定。</div>
+</div>
+<h2>重点生词表（Vocabulary）</h2>
+<table>
+<tr><th>单词/术语</th><th>音标</th><th>释义</th></tr>
+<tr><td>exploit</td><td>/ɪkˈsplɔɪt/</td><td>漏洞利用；攻击程序（exploit chain 漏洞利用链）</td></tr>
+<tr><td>chain</td><td>/tʃeɪn/</td><td>链条；一连串（a sequence of small openings）</td></tr>
+<tr><td>weaponise</td><td>/ˈwepənaɪz/</td><td>武器化；使具备攻击性</td></tr>
+<tr><td>patch</td><td>/pætʃ/</td><td>补丁；修补（patch schedules 补丁节奏）</td></tr>
+<tr><td>antibiotic</td><td>/ˌæntibaɪˈɑːtɪk/</td><td>抗生素（antibiotic resistance 抗生素耐药性）</td></tr>
+<tr><td>resistance</td><td>/rɪˈzɪstəns/</td><td>抵抗力；耐药性</td></tr>
+<tr><td>candidate</td><td>/ˈkændɪdət/</td><td>候选者；候选项（a serious candidate 一个严肃的候选方案）</td></tr>
+<tr><td>bottleneck</td><td>/ˈbɑːtlnek/</td><td>瓶颈</td></tr>
+<tr><td>biosecurity</td><td>/ˌbaɪoʊsɪˈkjʊrəti/</td><td>生物安全</td></tr>
+<tr><td>secular</td><td>/ˈsekjələr/</td><td>世俗的（secular humanist 世俗人道主义者）</td></tr>
+<tr><td>exemption</td><td>/ɪɡˈzempʃn/</td><td>豁免；免除</td></tr>
+<tr><td>accommodation</td><td>/əˌkɑːməˈdeɪʃn/</td><td>便利；照顾性安排（religious accommodation 宗教便利）</td></tr>
+<tr><td>worldview</td><td>/ˈwɜːrldvjuː/</td><td>世界观</td></tr>
+<tr><td>compliance</td><td>/kəmˈplaɪəns/</td><td>合规（compliance officer 合规官）</td></tr>
+<tr><td>repository</td><td>/rɪˈpɑːzətɔːri/</td><td>代码仓库；储存库</td></tr>
+<tr><td>governance</td><td>/ˈɡʌvərnəns/</td><td>治理（data governance 数据治理）</td></tr>
+<tr><td>licence</td><td>/ˈlaɪsns/</td><td>许可证；授权（seat licences 席位许可）</td></tr>
+<tr><td>valuation</td><td>/ˌvæljuˈeɪʃn/</td><td>估值（post money valuation 投后估值）</td></tr>
+<tr><td>patron</td><td>/ˈpeɪtrən/</td><td>资助人；金主</td></tr>
+<tr><td>stake</td><td>/steɪk/</td><td>股份；持股（buying a stake 买下股份）</td></tr>
+</table>
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li>全文用中速朗读（约 110~120 词/分钟）；「朗读」按钮的音频按新闻播报语速（约 150 词/分钟）生成，可先跟读再脱稿。</li>
+<li>第 1 篇 &quot;The word chain matters.&quot; 极短句，前面停一拍再说，matters 重读</li>
+<li>第 1 篇 &quot;A single bug is a door left open.&quot; 比喻句，door left open 三词均匀、稍慢</li>
+<li>第 2 篇 &quot;The legitimate purpose is easy to defend.&quot; 语气放正，不要带怀疑；后面转折处（But notice）才收紧</li>
+<li>第 2 篇 &quot;from knowledge to equipment&quot; 两个名词对比重读，中间的 to 轻带</li>
+<li>第 3 篇 &quot;Read that again&quot; 命令句，直接、停顿明显，模仿播报员的提醒口吻</li>
+<li>第 4 篇 &quot;a data governance problem wearing a productivity costume&quot; 整句放慢，wearing a productivity costume 略带讽意但不夸张</li>
+<li>第 5 篇四个数字（eight billion / several billion / twenty billion / one hundred billion）逐个读清，每读一个停半拍</li>
+<li>结尾 &quot;That is where the next year will be decided.&quot; 全篇最慢，decided 降调收尾</li>
+</ul>
+<script>
+const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-09-29-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}
+</script>
+
+</body>
+</html>

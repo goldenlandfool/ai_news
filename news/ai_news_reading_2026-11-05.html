@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily AI News Reading — 2026-09-29</title>
+<title>Daily AI News Reading — 2026-11-05</title>
 <style>
   body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
   h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
@@ -148,7 +148,7 @@ function speak(btn, id) {
   resetBtn();
   if (wasPlaying) return;
   currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
-  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-09-29-' + id + '.m4a'); }
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-11-05-' + id + '.m4a'); }
   const a = audioCache[id];
   currentAudio = a;
   a.onended = function() { resetBtn(); };

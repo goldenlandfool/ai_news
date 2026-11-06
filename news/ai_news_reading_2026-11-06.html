@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI News Reading — 2026-11-06</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+  .source a { color: #8e44ad; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回目录 Index</a>
+<h1>November 6, 2026 AI News</h1>
+<div class="section">
+<h2>1. The Locksmith Gets Careful</h2>
+<div class="summary">摘要：OpenAI 11/5 发布网络安全专用模型 GPT-6 Cyber：ExploitGym 利用指定漏洞得分 48.5%，较上代 GPT-5.6 Cyber 的 32.1% 相对提升约 51%；蜜罐测试中越权行为率降到 1% 以下（无安全提示时 99.93% 守在权限内）。实战中复现 1,724 个 Linux 内核漏洞、为 948 个写出可用提权利用，并在 Firefox 找到 81 个此前未知的高危漏洞，Mozilla 已开始发布修复。按 OpenAI 准备框架被评为 Critical（关键），初期仅向经审核的 Daybreak Red 客户开放。</div>
+<p id="s1">OpenAI released GPT-6 Cyber on Thursday, a model trained specifically to find, verify and fix software vulnerabilities. On ExploitGym, a benchmark that tests whether a model can exploit a named bug on a remote machine, it scored forty-eight point five percent, against thirty-two point one for its predecessor — a relative jump of about fifty-one percent. But reliability is the real headline. In a honeypot test that watches for a model going outside its permissions, the new system stayed in bounds more than ninety-nine percent of the time, even without a safety prompt. In practice, the model reproduced over seventeen hundred Linux kernel bugs, built working exploits for nine hundred and forty-eight of them, and found eighty-one previously unknown high-severity flaws in Firefox; Mozilla has already begun shipping fixes. OpenAI rates it Critical, and access stays limited to vetted customers under heavy monitoring.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">OpenAI 周四发布了 GPT-6 Cyber，一个专门训练来发现、验证并修复软件漏洞的模型。在 ExploitGym——一项测试模型能否在远程机器上利用指定漏洞的基准——它拿到百分之四十八点五，上一代是百分之三十二点一，相对提升约百分之五十一。但真正的头条是可靠性：在一项观察模型是否越出权限范围的蜜罐测试里，新系统超过百分之九十九的时间都守在边界内，甚至在没有安全提示的情况下也是如此。在实际应用中，这个模型复现了一千七百多个 Linux 内核漏洞，为其中九百四十八个写出了可用的利用程序，并在 Firefox 里找到八十一个此前未知的高危漏洞；Mozilla 已经开始发布修复。OpenAI 将其评为「关键」级，访问仍限于经过严格审核、处于重度监控之下的客户。</div>
+<div class="source">📰 来源：<a href="https://deploymentsafety.openai.com/gpt-6-cyber">OpenAI — GPT-6 Cyber System Card</a> ｜ <a href="https://view.inews.qq.com/a/20261106A039AR00">路透社（经腾讯新闻转述）— OpenAI发布GPT-6 Cyber网络安全模型</a> ｜ <a href="https://tech.ifeng.com/c/8xp8aTDgBIO">IT之家（经凤凰网科技转述）— GPT-6 Cyber 登场，性能提高 51%</a></div>
+</div>
+<div class="section">
+<h2>2. The Cat Learns to Dance</h2>
+<div class="summary">摘要：OpenAI 11/4 在 ChatGPT、Codex 和 API 全线发布图像模型 Images 2.6：原生支持一句话生成 GIF 动图（可调速、逐帧编辑、分享），生成速度提升 50%；用户每周通过其产品生成图片已超 40 亿张（9 月为 30 亿）。API 拆成两款：Flare 低画质最快 6 秒出图，Sunburst 主打多轮编辑一致性；另提供参考图复用、图像标注、SVG 导出与复杂度参数。</div>
+<p id="s2">ChatGPT learned to move. On Tuesday OpenAI shipped Images 2.6, its newest image model, across ChatGPT, Codex and the API. The headline feature is native GIFs: type something like &quot;Can you make a GIF of a cat dancing?&quot; and the app returns a looping animation you can slow down, scrub through, edit frame by frame and share. Generation is about fifty percent faster, and people now produce roughly four billion images a week through OpenAI&#x27;s products, up from three billion in September. Developers get two models to choose between: Flare, which can return a low-quality image in about six seconds, and Sunburst, which keeps a character or product consistent across many rounds of edits.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">ChatGPT 学会了动起来。周二，OpenAI 在 ChatGPT、Codex 和 API 上全线发布了最新图像模型 Images 2.6。最显眼的新功能是原生 GIF：输入一句「能帮我做一张猫咪跳舞的 GIF 吗？」，应用就会返回一段循环动画，你可以放慢速度、逐帧查看、一帧一帧地编辑，然后分享出去。生成速度提升了约百分之五十，而现在用户通过 OpenAI 的产品每周大约生成四十亿张图片，九月时还是三十亿。开发者有两个模型可选：Flare 在低画质设置下约六秒就能返回一张图；Sunburst 则保证角色或产品在多轮修改中保持一致。</div>
+<div class="source">📰 来源：<a href="https://timesof.ai/2026/11/openai-images-2-6-gifs-flare-sunburst-4-billion-images-a-week">The Verge（经 Times of AI 转述）— ChatGPT will now make you animated GIFs</a> ｜ <a href="https://www.163.com/dy/article/LAVI1O5O05566ZHB.html">AI前线 — OpenAI 发布 ChatGPT Images 2.6</a> ｜ <a href="https://news.qq.com/rain/a/20261105A030DK00">凤凰网科技 — ChatGPT支持一句话生成GIF动图</a></div>
+</div>
+<div class="section">
+<h2>3. The Product Lead Crosses the Street</h2>
+<div class="summary">摘要：11/5，Anthropic Claude Code 产品负责人 Cat Wu（Catherine Wu）在 X 上宣布加入 OpenAI，出任核心产品（Core Products）产品管理负责人——上周五（10/30）是她在 Anthropic 的最后一个工作日，距 Anthropic 递交 IPO 文件不到一周；OpenAI 总裁 Greg Brockman 随即转发欢迎（来源账号：Cat Wu 于 X 个人账号发文，@gdb 转发）。她表示认可 OpenAI 触达超 10 亿用户的规模化能力，想打造「让用户保持控制权」的智能体产品；将与 Nick Turley（企业）、Ashley Alexander（消费）协作，向 Tibo Sottiaux 汇报。Business Insider 称这是一次重大挖角。</div>
+<p id="s3">The talent war picked a symbolic target. Cat Wu, the product lead who helped turn Claude Code from an internal experiment into Anthropic&#x27;s most-discussed product, announced on X that she is joining OpenAI to lead product management for its core products. Her last day at Anthropic was Friday, days after the company filed to go public, and Greg Brockman welcomed her with a repost within the hour. She wrote that she respects what OpenAI has done for more than a billion users, and wants to build agents that help people while keeping them in control. She will work alongside the enterprise and consumer product leads, reporting to Tibo Sottiaux. Business Insider called the hire a coup, and it is hard to argue: agentic coding is the most valuable fight in the industry right now.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">人才之战选中了一个颇具象征意义的目标。Cat Wu——这位产品负责人曾把 Claude Code 从一个内部实验做成 Anthropic 最受瞩目的产品——在 X 上宣布加入 OpenAI，领导其核心产品的产品管理工作。她在 Anthropic 的最后一天是上周五，距离公司递交上市文件只过了几天；格雷格·布罗克曼在一小时内就用转发表示了欢迎。她写道，她尊重 OpenAI 为超过十亿用户所做的一切，希望打造既能帮助人、又让用户保持控制权的智能体。她将与企业产品和消费级产品的两位负责人并肩工作，向 Tibo Sottiaux 汇报。《商业内幕》把这次招聘称为一场挖角胜利，这一点很难反驳：智能体编程是当下这个行业最值钱的战场。</div>
+<div class="source">📰 来源：X 平台 — Cat Wu 发文宣布加入，@gdb（Greg Brockman）转发欢迎 ｜ <a href="https://news.qq.com/rain/a/20261105A05I3P00">TechWeb（经腾讯新闻转述）— OpenAI 挖角成功：Cat Wu 无缝加盟</a> ｜ <a href="https://www.163.com/dy/article/LAVJ2IBF051180F7.html">智东西 — Claude Code产品一姐加入OpenAI</a></div>
+</div>
+<div class="section">
+<h2>4. &quot;I Think So. Yes.&quot;</h2>
+<div class="summary">摘要：OpenAI 总裁 Greg Brockman 11/4 在《华尔街日报》科技会议上表示：企业客户已成公司过半营收来源，OpenAI 预计 2027 年具备 IPO 条件（被问及时回答「我认为可以」）；今年上半年很艰难，在智能体编程领域 OpenAI「甚至不在话题里」，团队「埋头执行」；Q3 年化营收环比增长 70%，企业业务占比从约 30% 翻倍至过半，新客户包括摩根大通。Anthropic 预计年底前上市。</div>
+<p id="s4">Speaking at a Wall Street Journal technology conference, OpenAI president Greg Brockman said enterprise customers now bring in the majority of the company&#x27;s revenue, and that OpenAI could be ready for an IPO in 2027. Asked directly, he answered, &quot;I think so. Yes.&quot; His account of the year was candid. The first half was rough, he said, and in agentic coding OpenAI &quot;wasn&#x27;t even in the conversation&quot; — the market belonged to Claude Code. So the team, in his words, kept its head down and executed. In the third quarter annualized revenue grew seventy percent, the enterprise side doubled its share from around thirty percent to more than half, and new clients include JPMorgan Chase.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">在《华尔街日报》的一场科技会议上，OpenAI 总裁格雷格·布罗克曼表示，企业客户现已贡献公司过半营收，OpenAI 有望在 2027 年做好 IPO 准备。被直接问到时，他回答：「我认为可以。」他对这一年的回顾相当坦率：上半年很艰难；在智能体编程领域，OpenAI「甚至不在话题里」——市场属于 Claude Code。于是团队照他的说法「埋头执行」。第三季度，年化营收增长了百分之七十，企业业务占比从约百分之三十翻倍到过半，新客户名单里还包括摩根大通。</div>
+<div class="source">📰 来源：<a href="https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-says-180227696.html">Yahoo Finance — OpenAI president Greg Brockman says company could be IPO ready in 2027</a> ｜ <a href="https://www.cna.com.tw/news/afe/202611050168.aspx">路透社（经中央社转述）— OpenAI企業客戶撐起過半營收，2027年有望IPO</a></div>
+</div>
+<div class="section">
+<h2>5. Fifty Billion Dollars, No Patients Yet</h2>
+<div class="summary">摘要：彭博 11/4 报道：Alphabet 旗下、DeepMind 分拆的 AI 制药公司 Isomorphic Labs 洽谈新一轮融资约 50 亿美元，估值约 500 亿；今年 5 月刚完成 Thrive 领投的 21 亿美元。公司基于 AlphaFold（Hassabis 因此获诺贝尔奖）设计候选药物，与礼来、诺华等有合作，但管线仍处临床前阶段；Hassabis 此前称首批人体试验预计年底前启动，届时才算拿到第一个真实验证。</div>
+<p id="s5">Money keeps flowing into AI-run science. Bloomberg reports that Isomorphic Labs, Alphabet&#x27;s drug-discovery company spun out of DeepMind, is in talks to raise about five billion dollars at a valuation near fifty billion. That is a sharp step up from May, when it raised two point one billion led by Thrive Capital. The company designs candidate medicines on top of AlphaFold, the protein-structure model that earned Demis Hassabis a Nobel Prize, and it has partnerships with Eli Lilly and Novartis. What investors are not getting yet is proof: its work remains preclinical, though Hassabis has said the first human trials should begin by the end of this year.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">资金持续涌入 AI 主导的科学。彭博报道，Isomorphic Labs——Alphabet 旗下从 DeepMind 分拆出来的药物研发公司——正在洽谈约五十亿美元的新融资，估值接近五百亿。相比五月它刚完成由 Thrive Capital 领投的二十一点一亿美元，这是一次陡峭的跳升。这家公司基于 AlphaFold 设计候选药物——正是那个让 Demis Hassabis 拿到诺贝尔奖的蛋白质结构模型——并且与礼来、诺华有合作。投资者目前还拿不到的东西是证明：它的研究仍处于临床前阶段，不过 Hassabis 说过，首批人体试验应当在今年年底前启动。</div>
+<div class="source">📰 来源：<a href="https://www.bloomberg.com/news/articles/2026-11-04/isomorphic-labs-in-talks-for-about-5-billion-in-funding">Bloomberg — Isomorphic Labs in Talks for About $5 Billion in Funding</a> ｜ <a href="https://techfundingnews.com/isomorphic-labs-5b-raise-50b-valuation-first-clinical-trial/">Tech Funding News — Isomorphic Labs in talks to raise $5B at $50B valuation</a></div>
+</div>
+<div class="section">
+<h2>6. Google Signs Under the Rent</h2>
+<div class="summary">摘要：TeraWulf 11/4 宣布与 Google 达成信用支持协议，为其肯塔基州 Justified 园区融资兜底——即 Anthropic 7 月签署的 20 年期、约 190 亿美元、约 401 兆瓦租约。Google（标普 AA+/穆迪 Aa2）把自身资产负债表借给项目定价；若 Anthropic 违约，Google 可代付租金接管租约，或支付终止费换取项目公司股权；协议同时要求 Anthropic 全程使用 Google 认可的 TPU。另据报道，Anthropic 已在澳大利亚签下 2.16 吉瓦数据中心租约并洽谈日本项目。AI 基建的信用门槛正在由巨头兜底。</div>
+<p id="s6">Underneath everything else, the power bill came due in Kentucky. TeraWulf, a data center developer, announced that Google will provide credit support for the nineteen-billion-dollar, twenty-year lease Anthropic signed in July for about four hundred megawatts at its Justified campus. In plain terms, Google is lending its AA-plus balance sheet: lenders can price the project debt as if Google stood behind it. If Anthropic ever defaults, Google can pay the rent and take over the lease, or pay a termination fee and take an equity stake in the project. The contracts also require Anthropic to run Google-approved chips. Anthropic, meanwhile, has signed another lease in Australia for more than two gigawatts. AI construction has grown too big to finance on trust alone.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">在所有这些之下，肯塔基州的电费账单到期了。数据中心开发商 TeraWulf 宣布，Google 将为 Anthropic 七月签署的那份租约提供信用支持——二十年期、约一百九十亿美元、在 Justified 园区约四百兆瓦。说得直白些，Google 是把自己的 AA+ 资产负债表借出去：贷款方可以按「Google 在背后站着」来为项目债务定价。如果 Anthropic 某天违约，Google 可以代付租金接管租约，或者支付一笔终止费、换取项目公司的股权。合同还要求 Anthropic 全程使用 Google 认可的芯片。与此同时，Anthropic 又在澳大利亚签下了一笔超过两千兆瓦的租约。AI 建设已经大到无法单靠信任来融资了。</div>
+<div class="source">📰 来源：<a href="https://www.datacenterdynamics.com/en/news/google-to-serve-as-credit-backstop-for-terawulf-data-center-in-kentucky/">Data Center Dynamics — Google to serve as credit backstop for TeraWulf data center in Kentucky</a> ｜ <a href="https://www.siliconreport.com/google-backs-debt-for-terawulf-s-roughly-19b-anthropic-lease">Silicon Report — Google backs debt for TeraWulf&#x27;s roughly $19B Anthropic lease</a> ｜ <a href="https://www.tmtpost.com/8195291.html">钛媒体 — Edge AI Daily 早报（11月6日）</a></div>
+</div>
+<div class="section">
+<h2>7. Closing Thought</h2>
+<div class="summary">摘要：本周的六条新闻连起来是一张剖面图：一个模型专门学会闯进软件，好让软件更安全；一个聊天应用学会了画会动的猫；做出最好编程智能体的产品负责人被对手请走；一家还没有病人的制药公司按中型经济体的价格定价；一家搜索巨头把自己的资产负债表垫在电费单下面。AI 不再是一个产品品类，而正在变成基础设施——而基础设施的评判标准比演示更苛刻：盖在上面的楼层，撑不撑得住。</div>
+<p id="s7">Put the week side by side and a shape appears. One lab shipped a model that breaks into software so that software can be made safer. Another taught a chat app to animate a dancing cat. The person who built the best coding agent&#x27;s product was hired away the moment it mattered. A drug company with no patients yet is priced like a mid-sized economy. And a search giant is lending its balance sheet to keep the lights on. None of these stories is only about AI. Each is about AI becoming infrastructure — and infrastructure is judged by a harder question than demos: when you build on it, does the floor hold?</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's7')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't7')">🌐 翻译</button></div>
+<div class="translation" id="t7">把这一周并排放在眼前，一个形状浮现出来。一个实验室发布了专门闯进软件的模型，好让软件变得更安全。另一个教会聊天应用让一只跳舞的猫动起来。做出最好编程智能体的那位产品负责人，在最关键的时刻被对手请走了。一家还没有病人的制药公司，按一个中型经济体的价格定价。而一家搜索巨头正把自己的资产负债表借出去，好让灯一直亮着。这些故事没有一条只关于 AI。每一条讲的都是 AI 变成基础设施——而基础设施的评判标准比演示更苛刻：当你在上面盖楼的时候，地板撑不撑得住？</div>
+<div class="source">📰 来源：<a href="https://www.tmtpost.com/8195291.html">钛媒体 — Edge AI Daily 早报（11月6日）</a></div>
+</div>
+<h2>重点生词表（Vocabulary）</h2>
+<table>
+<tr><th>单词/术语</th><th>音标</th><th>释义</th></tr>
+<tr><td>vulnerabilities</td><td>/ˌvʌlnərəˈbɪlətiz/</td><td>漏洞（software vulnerabilities 软件漏洞）</td></tr>
+<tr><td>exploit</td><td>/ɪkˈsplɔɪt/</td><td>利用（漏洞）攻击；利用程序（exploit a named bug 利用指定漏洞；working exploits 可用的利用程序）</td></tr>
+<tr><td>honeypot</td><td>/ˈhʌnipɑːt/</td><td>蜜罐（诱捕测试环境）（a honeypot test 蜜罐测试）</td></tr>
+<tr><td>predecessor</td><td>/ˈpredəsesər/</td><td>前代；前任（for its predecessor 相对于上一代模型）</td></tr>
+<tr><td>reproduced</td><td>/ˌriːprəˈduːst/</td><td>复现（reproduced over seventeen hundred kernel bugs 复现了一千七百多个内核漏洞）</td></tr>
+<tr><td>flaws</td><td>/flɔːz/</td><td>缺陷；漏洞（high-severity flaws 高危缺陷）</td></tr>
+<tr><td>shipped</td><td>/ʃɪpt/</td><td>发布上线（OpenAI shipped Images 2.6 发布 Images 2.6；shipping fixes 发布修复）</td></tr>
+<tr><td>looping</td><td>/ˈluːpɪŋ/</td><td>循环播放的（a looping animation 循环动画）</td></tr>
+<tr><td>scrub</td><td>/skrʌb/</td><td>拖动浏览（进度/帧）（scrub through 逐段查看）</td></tr>
+<tr><td>consistent</td><td>/kənˈsɪstənt/</td><td>一致的（keeps a character consistent 保持角色形象一致）</td></tr>
+<tr><td>symbolic</td><td>/sɪmˈbɑːlɪk/</td><td>象征性的（a symbolic target 象征意义的目标）</td></tr>
+<tr><td>coup</td><td>/kuː/</td><td>妙举；挖角大胜（called the hire a coup 称这次招聘是重大挖角）</td></tr>
+<tr><td>candid</td><td>/ˈkændɪd/</td><td>坦率的（his account was candid 他的回顾相当坦率）</td></tr>
+<tr><td>annualized</td><td>/ˈænjuəlaɪzd/</td><td>年化的（annualized revenue 年化营收）</td></tr>
+<tr><td>valuation</td><td>/ˌvæljuˈeɪʃn/</td><td>估值（at a valuation near fifty billion 以近五百亿的估值）</td></tr>
+<tr><td>preclinical</td><td>/priːˈklɪnɪkl/</td><td>临床前的（its work remains preclinical 研究仍处临床前阶段）</td></tr>
+<tr><td>lease</td><td>/liːs/</td><td>租约（a twenty-year lease 二十年租约；take over the lease 接管租约）</td></tr>
+<tr><td>defaults</td><td>/dɪˈfɔːlts/</td><td>违约（if Anthropic ever defaults 若 Anthropic 违约）</td></tr>
+<tr><td>balance sheet</td><td>/ˈbæləns ʃiːt/</td><td>资产负债表（lending its balance sheet 借出自己的资产负债表）</td></tr>
+<tr><td>infrastructure</td><td>/ˈɪnfrəstrʌktʃər/</td><td>基础设施（AI becoming infrastructure AI 正在变成基础设施）</td></tr>
+</table>
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li>全文用中速朗读（约 110~120 词/分钟）；「朗读」按钮的音频按新闻播报语速（约 150 词/分钟）生成，可先跟读再脱稿。</li>
+<li>第 1 篇 &quot;But reliability is the real headline.&quot; 重读 real，前后各留一拍停顿，这是全段的转折句</li>
+<li>第 1 篇 数字密集：forty-eight point five、thirty-two point one、fifty-one percent 读成三组，组间停顿</li>
+<li>第 2 篇 起句 &quot;ChatGPT learned to move.&quot; 五个词单独成句，放慢读出画面感，move 上扬</li>
+<li>第 3 篇 &quot;a coup, and it is hard to argue&quot; 语速稍快，冒号后的结论句放慢加重</li>
+<li>第 4 篇 直接引语 &quot;I think so. Yes.&quot; 模仿采访口吻，Yes 单独一顿；&quot;wasn&#x27;t even in the conversation&quot; 重读 even</li>
+<li>第 5 篇 &quot;What investors are not getting yet is proof.&quot; proof 收尾下沉，冒号后解释放慢</li>
+<li>第 6 篇 &quot;In plain terms&quot; 像对朋友解释一样口语化，四百兆瓦、一百九十亿美元各成一拍</li>
+<li>第 7 篇 五个排比句（One lab… Another… The person… A drug company… And a search giant…）节奏一致，结尾 &quot;does the floor hold?&quot; 语调上扬收束</li>
+</ul>
+<script>
+const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-11-06-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}
+</script>
+
+</body>
+</html>

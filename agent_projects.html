@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Agent 搭建项目大全（2026-11-09）</title>
+<title>AI Agent 搭建项目大全（2026-11-10）</title>
 <style>
   body { font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 24px; color: #2c3e50; background: #f7f9fb; line-height: 1.7; }
   h1 { font-size: 1.6em; color: #1a5276; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
@@ -24,9 +24,9 @@
 </head>
 <body>
 <a class="back" href="ai_agents_news.html">← 返回索引</a>
-<h1>AI Agent 搭建项目大全（2026-11-09）</h1>
+<h1>AI Agent 搭建项目大全（2026-11-10）</h1>
 <h1>AI Agent 搭建项目大全</h1>
-<blockquote>最后更新：2026-11-09 | 共 6 层 60 个项目</blockquote>
+<blockquote>最后更新：2026-11-10 | 共 6 层 60 个项目</blockquote>
 <hr>
 <h2>L0 - 模型推理层</h2>
 <p>负责大模型的本地部署与高效推理，是整个 Agent 体系的算力底座。</p>
@@ -119,7 +119,7 @@
     <td>纯 C 零依赖推理引擎，25GB 内存跑 744B MoE 模型</td>
     <td>https://github.com/JustVugg/colibri</td>
     <td>极致轻量，消费级硬件跑超大模型</td>
-    <td>推理引擎新星，35K★</td>
+    <td>推理引擎新星，49.4K★（一个月内从 35K 飙升）</td>
   </tr>
   <tr>
     <td>10</td>
@@ -127,7 +127,7 @@
     <td>DeepSeek</td>
     <td>DeepSeek 开源生产级推理框架，支撑 V4.1 Flash 大规模服务</td>
     <td>https://github.com/deepseek-ai/DeepInfer</td>
-    <td>Apache 2.0，支持 NVIDIA/昇腾，分布式推理+结构化输出</td>
+    <td>Apache 2.0，支持 NVIDIA/昇腾，分布式推理+结构化输出，25.7K★</td>
     <td>10 月 20 日开源即登 HN 榜首，生产级推理基础设施</td>
   </tr>
 </table>
@@ -156,11 +156,11 @@
   <tr>
     <td>2</td>
     <td>A2A (Agent-to-Agent)</td>
-    <td>Google</td>
-    <td>Agent 间通信协议，支持跨系统协作</td>
-    <td>https://github.com/google/A2A</td>
-    <td>Google 背书，跨 Agent 互操作</td>
-    <td>多 Agent 协作协议新星</td>
+    <td>Google → Linux Foundation</td>
+    <td>Agent 间通信协议，v1.0 已发布并捐给 Linux Foundation（AAIF）</td>
+    <td>https://github.com/a2aproject/A2A</td>
+    <td>26.5K★，v1.0 签名 Agent Card + Agent Payments 支付协议</td>
+    <td>多 Agent 协作协议事实标准</td>
   </tr>
   <tr>
     <td>3</td>
@@ -173,12 +173,12 @@
   </tr>
   <tr>
     <td>4</td>
-    <td>LlamaHub</td>
-    <td>LlamaIndex</td>
-    <td>Agent 工具与数据连接器市场</td>
-    <td>https://llamahub.ai</td>
-    <td>500+ 数据连接器，即插即用</td>
-    <td>Agent 数据接入最大生态</td>
+    <td>CLI-Anything</td>
+    <td>港大数据智能实验室 (HKUDS)</td>
+    <td>&quot;让所有软件原生 Agent 化&quot;，为任意软件生成 CLI 接口</td>
+    <td>https://github.com/HKUDS/CLI-Anything</td>
+    <td>58.5K★，任意桌面/网页软件→Agent 可调 CLI 工具，配套 CLI-Hub 市场</td>
+    <td>Agent 工具原生化改造标杆，10 月 18 日 GitHub 热榜</td>
   </tr>
   <tr>
     <td>5</td>
@@ -191,12 +191,12 @@
   </tr>
   <tr>
     <td>6</td>
-    <td>Switchyard</td>
-    <td>NVIDIA NeMo</td>
-    <td>Agent 多模型路由网关，每步自动选最优模型</td>
-    <td>https://github.com/NVIDIA-NeMo/Switchyard</td>
-    <td>Rust 高性能，Agent 循环内逐轮路由</td>
-    <td>NVIDIA 官方模型路由基础设施</td>
+    <td>agent-browser</td>
+    <td>Vercel Labs</td>
+    <td>给 AI Agent 用的浏览器自动化 CLI，snapshot 编号化指代页面元素</td>
+    <td>https://github.com/vercel-labs/agent-browser</td>
+    <td>48.5K★，Rust/Apache-2.0，纯文本编号快照+按编号操作+复核，命令间浏览器常驻</td>
+    <td>Vercel Agent 工具链网页操控标准件，11 月 9 日日榜 +815★/天</td>
   </tr>
   <tr>
     <td>7</td>
@@ -213,8 +213,8 @@
     <td>NVIDIA</td>
     <td>Agent 安全运行时沙箱，内核级隔离+策略管控，防止 Agent 泄露数据或凭证</td>
     <td>https://github.com/NVIDIA/OpenShell</td>
-    <td>Rust 实现，内核级沙箱，声明式 YAML 策略，100+ 企业联盟支持</td>
-    <td>Agent 安全基础设施标杆，19K★，10 月 GitHub 日榜 TOP5</td>
+    <td>21.3K★，Rust 实现，内核级沙箱，声明式 YAML 策略，100+ 企业联盟支持</td>
+    <td>Agent 安全基础设施标杆，10 月 GitHub 日榜 TOP5</td>
   </tr>
   <tr>
     <td>9</td>
@@ -222,8 +222,8 @@
     <td>lightpanda-io</td>
     <td>AI Agent 专用无头浏览器，Zig 从零构建，原生 MCP Server</td>
     <td>https://github.com/lightpanda-io/browser</td>
-    <td>比 Chrome 轻 16 倍、快 9 倍，CDP 兼容，Playwright/Puppeteer 无缝迁移</td>
-    <td>Web Agent 底层基础设施标杆，39K★，11 月 GitHub 周榜热门</td>
+    <td>41.7K★，比 Chrome 轻 16 倍、快 9 倍，CDP 兼容，Playwright/Puppeteer 无缝迁移</td>
+    <td>Web Agent 底层基础设施标杆，11 月 GitHub 周榜热门</td>
   </tr>
   <tr>
     <td>10</td>
@@ -231,7 +231,7 @@
     <td>D4Vinci</td>
     <td>全能 Python 网页抓取框架，Agent 数据接入层，内置 MCP Server + Agent Skill</td>
     <td>https://github.com/D4Vinci/Scrapling</td>
-    <td>98K★，MCP 原生，隐身浏览器+JS 渲染+并发爬虫一站式，BSD-3-Clause</td>
+    <td>100.6K★（破十万），MCP 原生，隐身浏览器+JS 渲染+并发爬虫一站式，BSD-3-Clause</td>
     <td>Agent 网页数据接入事实标准，11 月 GitHub 周榜 TOP3</td>
   </tr>
 </table>
@@ -277,12 +277,12 @@
   </tr>
   <tr>
     <td>4</td>
-    <td>Agensh</td>
-    <td>Microsoft</td>
-    <td>去中心化多智能体框架，无中心编排器，支持 1024 个 Agent 自组织协同</td>
-    <td>https://github.com/microsoft/agensh</td>
-    <td>去中心化自组织，共享 Git 仓库+聊天频道同步，1024 Agent 规模</td>
-    <td>10 月 25 日开源，微软最新多智能体基础设施</td>
+    <td>Orca</td>
+    <td>Stably (stablyai)</td>
+    <td>编码 Agent 舰队编排平台，用一份订阅并行调度 Claude Code/Codex 等 30+ Agent</td>
+    <td>https://github.com/stablyai/orca</td>
+    <td>120.4K★，桌面+Web+iPhone/Android 全端，任务规划→执行→监督→合并 PR 全流程</td>
+    <td>多 Agent 舰队编排头部，10-11 月周榜持续 #1，回归即登顶</td>
   </tr>
   <tr>
     <td>5</td>
@@ -317,25 +317,25 @@
     <td>paperclipai</td>
     <td>Agent 团队管理编排平台，管理多智能体团队协作</td>
     <td>https://github.com/paperclipai/paperclip</td>
-    <td>85K★，Agent 团队编排，多智能体协作管理</td>
+    <td>112.6K★，Agent 团队编排，&quot;人人用来管理工作 Agent&quot;的开源应用</td>
     <td>GitHub 9 月日榜/周榜 TOP3，Agent 团队编排新标杆</td>
   </tr>
   <tr>
     <td>9</td>
-    <td>agent-skills</td>
-    <td>Addy Osmani (Google)</td>
-    <td>AI Agent 生产级工程技能集，24+ 可安装 Skill</td>
-    <td>https://github.com/addyosmani/agent-skills</td>
-    <td>资深工程师经验技能化，即插即用</td>
-    <td>Agent 技能范式开创者，97K★</td>
+    <td>skills</td>
+    <td>Anthropic</td>
+    <td>Agent Skills 官方规范+示例仓库，技能=按需加载的说明书文件夹</td>
+    <td>https://github.com/anthropics/skills</td>
+    <td>191K★，11 月 8-9 日连续日榜 #1（+1,052★/天），官方标准定义技能格式</td>
+    <td>Agent Skills 范式origin，技能生态事实标准</td>
   </tr>
   <tr>
     <td>10</td>
     <td>ruflo</td>
     <td>ruvnet</td>
-    <td>多 Agent 集群编排框架，支持自适应记忆与自主工作流调度</td>
+    <td>多 Agent 集群编排框架，&quot;The original agent harness&quot;，自适应记忆与自主工作流调度</td>
     <td>https://github.com/ruvnet/ruflo</td>
-    <td>多 Agent 集群调度，自适应记忆，10 月 GitHub 热榜</td>
+    <td>81.4K★，多 Agent 集群调度（swarms），自适应记忆，10 月 GitHub 热榜</td>
     <td>Agent 集群编排新标杆</td>
   </tr>
 </table>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI News Reading — 2026-11-11</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  .closing { font-style: italic; background: #eef3f8; padding: 14px 18px; border-radius: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+  .source a { color: #8e44ad; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回目录 Index</a>
+<h1>November 11, 2026 AI News</h1>
+
+<div class="section">
+<h2>1. Google Opens Gemini 4 Carbon to Every Paying Developer</h2>
+<div class="summary">摘要：谷歌将最强模型 Gemini 4 Carbon 全面开放给付费开发者与企业，入门价维持 2/10 美元，12 月起翻倍。</div>
+<p id="s1">Google opened Gemini 4 Carbon to every paying developer and business on Tuesday. The model first appeared two weeks ago through Fairwind, a program limited to cyber-defence teams. It now sits at the top of the Gemini family for long agentic tasks and hard software engineering. Google says Carbon ranks first on three outside tests, including CursorBench 4.0 and Zapier's AutomationBench, at less than half the cost per task of the next best external model. Pricing carries the sharper message. Carbon costs two dollars per million input tokens and ten dollars per million output tokens until November 30, then doubles. Even then it undercuts Anthropic's newest model by half. Google also previewed a swarm feature that turns one prompt into a team of agents.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">谷歌周二将 Gemini 4 Carbon 全面开放给所有付费开发者与企业客户。该模型两周前首次亮相，当时只通过 Fairwind 计划向网络安全防御团队开放；如今它是 Gemini 家族中面向长链路智能体任务和复杂软件工程的最强档。谷歌称 Carbon 在三项外部测试中排名第一——CursorBench 4.0、Perplexity 的 WANDR 和 Zapier 的 AutomationBench，且单任务成本不到表现次优的外部模型的一半。价格传递的信号更锋利：11 月 30 日之前，Carbon 每百万输入 token 收费 2 美元、输出 10 美元，12 月 1 日起翻倍。即便如此，它仍只有 Anthropic 最新模型价格的一半。发布同时，谷歌还预览了 swarm 功能，可把一条提示词变成一支协同工作的智能体团队。</div>
+<div class="source">📰 来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/" target="_blank">Google Blog — Gemini 4 Carbon now available</a></div>
+</div>
+
+<div class="section">
+<h2>2. DeepMind Proves Signal's Code Correct</h2>
+<div class="summary">摘要：谷歌 DeepMind 用 AI 智能体在四周内完成 Signal 加密代码的形式化验证，生成约 650 万行 Lean 证明。</div>
+<p id="s2">The more unusual announcement came from Google DeepMind. A team of five used a framework called AlphaProof Code to produce machine-checked proofs that the compiled code behind Signal's encryption delivers its core security promises. Agents powered by Gemini Carbon wrote about six and a half million lines of Lean, a language computers can check step by step. They covered the handshake that sets up a conversation and the ratchet that refreshes keys, proving forward secrecy, authentication, and recovery after a device is briefly compromised. The work took four weeks; similar efforts have taken experts years. To show it can catch real mistakes, the team put back two bugs Signal had already fixed, and in both cases the system proved the broken version insecure. Signal's chief technology officer called it a major breakthrough. The limits matter too: group messaging and side channels stayed outside the proof.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">更不寻常的消息来自谷歌 DeepMind。一个五人研究团队用名为 AlphaProof Code 的框架，给出了经过机器校验的证明：Signal 加密功能背后的编译后代码，确实兑现了它的核心安全承诺。由 Gemini Carbon 驱动的智能体写下了约 650 万行 Lean 代码——这是一种能让计算机逐步校验证明的语言。证明覆盖了建立会话的握手过程，以及随消息流动不断更新密钥的棘轮机制，验证了前向保密、身份认证，以及设备短暂失陷后的恢复能力。这项工作耗时四周，而同类工作曾让专家团队耗费数年。为证明该方法能抓住真实错误，团队把两个 Signal 早已修复的漏洞重新放回代码：两次系统都给出了“该版本不安全”的证明。Signal 首席技术官称这是重大突破。局限同样重要：群聊和侧信道攻击不在证明范围之内。</div>
+<div class="source">📰 来源：<a href="https://deepmind.google/blog/introducing-alphaproof-code/" target="_blank">Google DeepMind — Introducing AlphaProof Code</a></div>
+</div>
+
+<div class="section">
+<h2>3. Anthropic Turns Claude Into an Office Suite</h2>
+<div class="summary">摘要：Anthropic 在旧金山发布 Claude 表格、白板与会议三款办公工具，正面切入白领日常工作流。</div>
+<p id="s3">Anthropic spent Tuesday turning Claude from a chat window into an office suite. At an event in San Francisco it announced Claude Sheets, a spreadsheet that builds tabs, formulas and drop-downs from a sentence, then edits cells alongside a team; Claude Whiteboards, which turns a brainstorm into a board with owners and deadlines; and Claude Meetings, which joins a Google Meet call as a visible participant, drafts the plan while people talk, and leaves if an outside guest appears. Sheets and Whiteboards are in beta on all paid plans; Meetings is limited to team and enterprise customers. It also made Claude Data generally available, and its marketplace now lists more than nine thousand connectors. Microsoft shares fell more than three percent that day. The timing was deliberate: the launch landed the same morning Anthropic opened its IPO roadshow.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">Anthropic 周二把 Claude 从一个聊天窗口变成了一套办公软件。在旧金山的一场活动上，它发布了三款产品：Claude 表格可以根据一句话生成工作表、公式和下拉菜单，随后与团队一起编辑单元格；Claude 白板能把口头头脑风暴整理成带有负责人和截止日期的看板；Claude 会议则以可见参与者的身份加入 Google Meet 通话，在人们讨论时起草方案，一旦有外部访客进入便自动退出。表格与白板在所有付费套餐中处于测试阶段，会议功能仅限团队版与企业版客户。公司还让 Claude Data 正式可用，并称其应用市场已上架超过九千个连接器。微软投资者立刻作出反应：其股价当日盘中下跌超过 3%。时机是刻意安排的——这场发布正好落在 Anthropic 启动 IPO 路演的同一个上午。</div>
+<div class="source">📰 来源：<a href="https://www.theverge.com/news/anthropic-claude-sheets-meetings-whiteboards" target="_blank">The Verge — Anthropic launches Claude meeting, spreadsheet and whiteboard tools</a></div>
+</div>
+
+<div class="section">
+<h2>4. Anthropic Sets IPO Terms at Up to $1.4 Trillion</h2>
+<div class="summary">摘要：Anthropic 启动 IPO 路演，8.25 亿股定价 70–78 美元，代码 ANT，募资规模最高约 640 亿美元。</div>
+<p id="s4">That roadshow is the week's financial headline. Anthropic is offering 825 million Class A shares at 70 to 78 dollars each, under the ticker ANT on Nasdaq, a range that would raise roughly 58 to 64 billion dollars and support a valuation reported near one point four trillion. Goldman Sachs, a lead bank, expects revenue of about 52 billion dollars this year, 136 billion next year and 685 billion by 2030, most of it from businesses. Such projections are salesmanship as much as forecasting, but they explain the pace of product news: a company heading to public markets wants to show a widening surface, not a single coding tool. Two years ago Anthropic was a lab with one chatbot. This week it is selling spreadsheets and shares.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">这场路演是本周的财经头条。Anthropic 以每股 70 至 78 美元发行 8.25 亿股 A 类股票，在纳斯达克使用代码 ANT，这一区间将募资约 580 亿至 640 亿美元，对应估值据报道接近 1.4 万亿美元。主承销商之一高盛预计，公司今年营收约 520 亿美元，明年 1360 亿，到 2030 年达到 6850 亿美元，其中大部分来自企业客户。这类预测既是展望，也是推销话术。但它确实解释了产品发布的节奏：一家即将上市的公司，想展示的是一整片不断扩张的版图，而不是单一编程工具。两年前 Anthropic 还只是一个拥有一款聊天机器人的研究实验室；本周它在卖表格、会议纪要、数据看板和股票。</div>
+<div class="source">📰 来源：<a href="https://www.bloomberg.com/news/articles/2026-11-10/anthropic-ipo-roadshow" target="_blank">Bloomberg — Anthropic opens IPO roadshow with 825 million shares</a></div>
+</div>
+
+<div class="section">
+<h2>5. OpenAI Gives Businesses a Storefront Inside ChatGPT</h2>
+<div class="summary">摘要：OpenAI 在 ChatGPT 内推出企业认证主页与商业智能体，先从美国电商与线上服务商开始。</div>
+<p id="s5">OpenAI's move was smaller in scope but aimed at the same customers. It launched Businesses in ChatGPT, a beta that lets a company claim a verified profile, publish a product feed with prices, and see how people find it. ChatGPT now reaches 1.2 billion weekly users, and brands want to be present when a model recommends them. A verified business can also deploy a Business Agent that answers questions in a separate, clearly labelled conversation, grounded in the company's own information. OpenAI says ordinary chats are never shared with businesses, and that insights appear only when enough people are involved. Sponsored placements are allowed, marked as ads and kept apart from the model's answers. It is a retreat from last year's shopping cart experiment and a bet that discovery, not checkout, is where the money sits.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">OpenAI 的动作规模更小，但瞄准的是同一批客户。它推出测试版“ChatGPT 中的企业”，允许公司认领经过认证的主页、上传含价格的商品信息源，并查看人们如何找到自己。真正的看点在这项功能背后的数字：ChatGPT 如今每周触达 12 亿用户，品牌希望当模型推荐自己时能“在场”。认证企业还可以部署一个商业智能体，在一个独立且明确标注的对话中，依据企业自有信息回答问题。OpenAI 表示，普通聊天记录绝不会共享给商家，数据洞察也只有当涉及人数足够多时才会显示。赞助位是允许的，但会被标注为广告，并与模型本身的回答分开。这标志着从去年购物车实验的后撤——该实验已于 3 月关停——也押注了“发现”而非“结账”才是钱真正所在的地方。</div>
+<div class="source">📰 来源：<a href="https://thenextweb.com/news/openai-businesses-in-chatgpt" target="_blank">The Next Web — OpenAI launches Businesses in ChatGPT</a></div>
+</div>
+
+<div class="section">
+<h2>6. Nvidia's GR00T 2 Learns by Watching People</h2>
+<div class="summary">摘要：英伟达在 CoRL 发布 GR00T 2 世界动作模型，靠人类视频学技能，12 月开源权重。</div>
+<p id="s6">Robotics had its own launch. At a conference in Austin, Nvidia introduced GR00T 2, a two-billion-parameter model that predicts the next few frames of video and the robot's next actions in a single pass, then executes what it has just imagined. Nvidia reports 71 percent average success across 50 tasks after one demonstration per task, rising to 95 percent with five. The training mix leans heavily on people: more than 400,000 hours of first-person video of humans at work, plus handheld gripper demonstrations and robot teleoperation. A smaller Turbo version runs onboard a humanoid robot and needs about 124 milliseconds per prediction. The weights arrive in December. Jim Fan, who leads the robotics lab, posted a clip on X: real, autonomous, no speed up. Watching a robot wipe a spill in generated video, he said, is like watching it dream.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">机器人领域也有自己的发布会。在奥斯汀的一场会议上，英伟达发布了 GR00T 2——一个 20 亿参数的世界动作模型，它一次性预测未来几帧画面和机器人的后续动作，然后执行刚刚“想象”出的动作。英伟达称，在每项任务只给一次示范的情况下，模型在 50 项任务中的平均成功率为 71%；给五次示范后升至 95%。训练数据的构成非常依赖人类：超过 40 万小时的人类第一视角工作视频，加上手持夹爪示范和常规的机器人遥操作。更小的 Turbo 版本可直接运行在人形机器人上，每次预测约需 124 毫秒。模型权重将在 12 月开放。领导该机器人实验室的 Jim Fan 在 X 上发了一段视频，配文很直接：真实、自主、未加速。他说，看机器人擦污渍的生成视频，就像看机器人在做梦。</div>
+<div class="source">📰 来源：<a href="https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/" target="_blank">NVIDIA Blog — GR00T 2 world action model at CoRL</a></div>
+</div>
+
+<div class="section">
+<h2>Closing Thought</h2>
+<p id="s7">Put the week together and a pattern appears. Google shipped a model and a proof. Anthropic shipped an office suite and a share price. OpenAI shipped a storefront for companies, and Nvidia shipped a robot that rehearses inside its own imagination. None of it is mainly about a higher score. Each item is about trust: a proof you can check, an agent that speaks for a named brand, a spreadsheet your colleagues will actually open, a machine that practises before it touches anything. Raw capability became cheap this year. What stays scarce is evidence, interfaces, and the patience to verify.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's7')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't7')">🌐 翻译</button></div>
+<div class="translation" id="t7">把这一周拼在一起，规律就浮现了。谷歌交付了一个模型，也交付了一份证明；Anthropic 交付了一套办公软件，还有一个发行价；OpenAI 为企业交付了一个门面，英伟达则交付了一台会在自己想象中排练的机器人。这些本质上都不是关于测试分数更高。每一项都关于信任：一份你能校验的证明，一个能代表某个品牌的智能体，一份同事真的会打开的表格，一台在动手之前先练习的机器。今年，原始能力变得便宜了。真正稀缺的，是证据、界面，以及愿意去验证的耐心。</div>
+</div>
+
+<h2>重点生词表（Vocabulary）</h2>
+<table>
+<tr><th>单词/术语</th><th>音标</th><th>释义</th></tr>
+<tr><td>agentic</td><td>/eɪˈdʒentɪk/</td><td>智能体的；以自主完成任务为特征的</td></tr>
+<tr><td>cyber-defence</td><td>/ˈsaɪbə dɪˈfens/</td><td>网络防御</td></tr>
+<tr><td>undercut</td><td>/ˌʌndərˈkʌt/</td><td>以更低价格压过（竞争对手）</td></tr>
+<tr><td>encryption</td><td>/ɪnˈkrɪpʃn/</td><td>加密</td></tr>
+<tr><td>machine-checked</td><td>/məˈʃiːn tʃekt/</td><td>经机器校验的</td></tr>
+<tr><td>compiled</td><td>/kəmˈpaɪld/</td><td>编译后的（代码）</td></tr>
+<tr><td>handshake</td><td>/ˈhændʃeɪk/</td><td>（通信）握手过程</td></tr>
+<tr><td>ratchet</td><td>/ˈrætʃɪt/</td><td>棘轮（密钥逐条更新的机制）</td></tr>
+<tr><td>forward secrecy</td><td>/ˈfɔːrwərd ˈsiːkrəsi/</td><td>前向保密：事后泄露密钥也解不开旧消息</td></tr>
+<tr><td>compromise</td><td>/ˈkɑːmprəmaɪz/</td><td>（系统）失陷、被攻破</td></tr>
+<tr><td>side channel</td><td>/saɪd ˈtʃænl/</td><td>侧信道：靠时间、功耗等旁路信息攻击</td></tr>
+<tr><td>spreadsheet</td><td>/ˈspredʃiːt/</td><td>电子表格</td></tr>
+<tr><td>brainstorm</td><td>/ˈbreɪnstɔːrm/</td><td>头脑风暴；集体出主意</td></tr>
+<tr><td>roadshow</td><td>/ˈroʊdʃoʊ/</td><td>（上市前的）路演</td></tr>
+<tr><td>ticker</td><td>/ˈtɪkər/</td><td>股票代码</td></tr>
+<tr><td>valuation</td><td>/ˌvæljuˈeɪʃn/</td><td>估值</td></tr>
+<tr><td>salesmanship</td><td>/ˈseɪlzmənʃɪp/</td><td>推销技巧；推销话术</td></tr>
+<tr><td>storefront</td><td>/ˈstɔːrfrʌnt/</td><td>店面；门面</td></tr>
+<tr><td>teleoperation</td><td>/ˌtelɪˌɑːpəˈreɪʃn/</td><td>遥操作；远程操控机器人</td></tr>
+<tr><td>scarce</td><td>/skers/</td><td>稀缺的</td></tr>
+</table>
+
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li><strong>语速</strong>：全文用中速（约 110~120 词/分钟），新闻标题部分稍放慢、加重音。「朗读」按钮的音频按新闻播报语速（约 150 词/分钟）生成，可先跟读再脱稿。</li>
+<li>第 1 篇的价格句要读清楚并停顿：“two dollars per million input tokens <em>pause</em> and ten dollars per million output tokens”，随后 “then doubles on December 1”。</li>
+<li>第 2 篇 “machine-checked” 与 “forward secrecy” 是术语核心，各出现时重读；结尾 “The limits matter too” 语气压低，表示转折。</li>
+<li>第 3 篇三款产品名（Sheets / Whiteboards / Meetings）连读时逐个加重，帮助听者区分。</li>
+<li>第 4 篇数字密集：825 million、70 to 78 dollars、58 to 64 billion、685 billion，建议每个数字后停顿半秒。</li>
+<li>第 6 篇 “real, autonomous, no speed up” 是引语，读得短促有力，中间三个逗号都要断开。</li>
+<li><strong>节奏</strong>：每篇小标题后停顿 1 秒再开始正文；段落之间停顿 2 秒。Closing Thought 整体放慢，末句 “the patience to verify” 收得干净。</li>
+</ul>
+
+<script>
+const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-11-11-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}
+</script>
+
+</body>
+</html>

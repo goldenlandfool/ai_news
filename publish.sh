@@ -1,31 +1,34 @@
 #!/bin/bash
-# 同步本地 Apache 站点到 GitHub Pages 仓库并推送
+# 发布到 GitHub Pages —— 单一数据源模式
+#
+# 架构：/Library/WebServer/Documents/ai-news/news 是指向本仓库 news/ 的符号链接，
+#       HTML 与音频在磁盘上只有一份实体，本地 Apache 与 GitHub Pages 共用。
+#       因此这里不再复制任何文件，只负责生成索引页 + git 提交推送。
+# 若本地 news/ 被还原成实体目录，脚本会直接报错退出，避免悄悄产生第二份副本。
 set -e
-SRC="/Library/WebServer/Documents/ai-news"
+SITE="/Library/WebServer/Documents/ai-news"
 REPO="/Users/hsf/WorkBuddy/2026-09-29-08-46-48/ai-news-repo"
 
-/Users/hsf/.workbuddy/binaries/python/versions/3.13.12/bin/python3 - "$SRC" "$REPO" << 'EOF'
-import os, re, shutil, sys, datetime, html
+/Users/hsf/.workbuddy/binaries/python/versions/3.13.12/bin/python3 - "$SITE" "$REPO" << 'EOF'
+import os, re, sys, datetime, html
 
-SRC, DST = sys.argv[1], sys.argv[2]
-os.makedirs(f"{DST}/news/audio", exist_ok=True)
+SITE, REPO = sys.argv[1], sys.argv[2]
+NEWS = f"{REPO}/news"
 
-for f in os.listdir(f"{SRC}/news"):
-    if f.endswith(".html"):
-        s = open(f"{SRC}/news/{f}", encoding="utf-8").read()
-        s = s.replace('href="../indexs.html"', 'href="../index.html"')
-        open(f"{DST}/news/{f}", "w", encoding="utf-8").write(s)
+# --- 单一数据源断言 ---
+if not os.path.islink(f"{SITE}/news"):
+    sys.exit(f"ERROR: {SITE}/news 不是符号链接，会重新产生两份数据。请先运行迁移。")
+if os.path.realpath(f"{SITE}/news") != os.path.realpath(NEWS):
+    sys.exit(f"ERROR: {SITE}/news 指向 {os.path.realpath(f'{SITE}/news')}，期望 {NEWS}")
 
-for f in os.listdir(f"{SRC}/news/audio"):
-    if f.endswith(".m4a"):
-        shutil.copy2(f"{SRC}/news/audio/{f}", f"{DST}/news/audio/{f}")
+os.makedirs(f"{NEWS}/audio", exist_ok=True)
 
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-files = sorted([f for f in os.listdir(f"{DST}/news")
+files = sorted([f for f in os.listdir(NEWS)
                 if f.startswith("ai_news_reading_") and f.endswith(".html")], reverse=True)
 items = []
 for f in files:
-    mtime = datetime.datetime.fromtimestamp(os.path.getmtime(f"{DST}/news/{f}")).strftime("%Y-%m-%d %H:%M")
+    mtime = datetime.datetime.fromtimestamp(os.path.getmtime(f"{NEWS}/{f}")).strftime("%Y-%m-%d %H:%M")
     m = re.search(r"(\d{4})-(\d{2})-(\d{2})", f)
     title = f'{months[int(m.group(2))-1]} {int(m.group(3))}, {m.group(1)} AI News' if m else f
     items.append(f'<li><a href="news/{f}">{html.escape(title)}</a> <span class="time">{mtime}</span></li>')
@@ -58,10 +61,14 @@ page = f"""<!DOCTYPE html>
 </body>
 </html>
 """
-open(f"{DST}/index.html", "w", encoding="utf-8").write(page)
-if not os.path.exists(f"{DST}/.nojekyll"):
-    open(f"{DST}/.nojekyll", "w").write("")
-print("synced:", len(files), "pages,", len(os.listdir(f'{DST}/news/audio')), "audio files")
+
+# index.html = GitHub Pages / 本地站点首页；indexs.html 同名副本，
+# 兼容新闻页里历史写法 href="../indexs.html"（此前线上点返回目录会 404）。
+for name in ("index.html", "indexs.html"):
+    open(f"{REPO}/{name}", "w", encoding="utf-8").write(page)
+if not os.path.exists(f"{REPO}/.nojekyll"):
+    open(f"{REPO}/.nojekyll", "w").write("")
+print("indexed:", len(files), "pages,", len([f for f in os.listdir(f'{NEWS}/audio') if f.endswith('.m4a')]), "audio files (single copy)")
 EOF
 
 cd "$REPO"

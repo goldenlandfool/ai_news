@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI News Reading — 2026-11-12</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+  .source a { color: #8e44ad; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回目录 Index</a>
+<h1>November 12, 2026 AI News</h1>
+<div class="section">
+<h2>In Brief 今日新闻摘要</h2>
+<div class="summary">摘要：今日六条，一条主线——能力越来越便宜，而证据、信任与监管越来越贵。</div>
+<p id="s1">Six stories today, one question: who gets to check? Google shipped a model that judges instead of writing, at ten cents per million tokens. Fireworks AI admitted an October breach went deeper than first reported. New York opened registration under its frontier AI safety law, with a seventy-two-hour incident clock. Two Chinese labs took opposite paths: Meituan open-sourced a trillion-parameter model, while Alibaba rented a preview that expires on November twenty-fifth. Databricks gave its boss an agent that tells hard truths. At COP31, governments asked the industry for its energy bill. Capability gets cheaper; evidence and oversight get dearer.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">今天六条新闻，共用一个问题：谁来核查？谷歌推出了一款只做判断、不写文字的模型，每百万 token 只要十美分。Fireworks AI 承认十月的入侵比首次通报更深。纽约州依据前沿 AI 安全法开放登记，重大事故须在 72 小时内上报。两家中国实验室走了相反的路：美团开源了一个万亿参数模型，阿里却把预览版做成限时租借、11 月 25 日下线。Databricks 给了老板一个专说逆耳真话的智能体。在 COP31 会场，各国政府要求行业交出能源账单。能力越来越便宜；证据与监管却越来越贵。</div>
+</div>
+<div class="section">
+<h2>1. Google Ships a Model That Refuses to Write</h2>
+<div class="summary">摘要：谷歌发布 Gemini Decision 1 与 Decisions API，一次前向传播给上千个封闭式问题打分，十美分一百万输入 token，输出不计费。</div>
+<p id="s2">Google on Wednesday introduced Gemini Decision 1, a model that does not write a single word. Built for closed-set choices, it takes one shared input and up to one thousand yes-or-no questions, then scores every candidate answer in a single forward pass. Instead of sentences, it returns probabilities and a confidence score for each option in about one hundred and fifty milliseconds. The price is the point: ten cents per million input tokens and nothing for output, because there is no output. Google says that is nearly five times cheaper than its own Flash-Lite, with the lowest calibration error in its benchmarks. Sundar Pichai announced the launch on X, and @artificialanlys reported sixty-six on its Decision Index. Those benchmarks, however, come from Google itself.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">谷歌周三发布了 Gemini Decision 1，一款一个字都不写的模型。它专为封闭式选择设计：接收一份共享输入和最多一千个是非题，在一次前向传播里给每个候选答案打分。它不输出句子，而是为每个选项返回概率和置信度，耗时约 150 毫秒。价格才是重点：每百万输入 token 十美分，输出分文不收——因为根本没有输出。谷歌称，这比自家 Flash-Lite 便宜近五倍，且在其基准测试中校准误差最低。Sundar Pichai 在 X 上宣布了发布，@artificialanlys 报告它在 Decision Index 上得 66 分。不过，这些基准全部出自谷歌自己。</div>
+<div class="source">📰 来源：<a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/">Google Blog — Gemini Decisions API</a>；X 账号 @sundarpichai（Sundar Pichai）、@artificialanlys（Artificial Analysis）、@testingcatalog 报道</div>
+</div>
+<div class="section">
+<h2>2. Fireworks AI Admits Its Breach Went Much Deeper</h2>
+<div class="summary">摘要：Fireworks AI 更新十月入侵通报，账单信息、数据集与部分模型权重被触及，Notion 聊天记录亦受影响，源头指向 LLMjacking。</div>
+<p id="s3">Fireworks AI, an inference provider many agent products depend on, has widened the story of an October breach. Its first bulletin said attackers took internal credentials and API keys, and that no customer models, datasets or personal information had been touched. A November nine update reversed that. Attackers reached a third-party cloud provider hosting its research machines on October twenty-third, exposing billing addresses, invoice histories, account balances, and for some customers, incomplete model weights and datasets. Fireworks blames a group that resells stolen model access through illicit gateways, a trade now called LLMjacking. Chief executive Lin Qiao said most downloads were partial and stopped, which is only reassuring if you know which part. Notion confirmed that AI chat transcripts behind its Insights feature were exposed in fewer than one percent of workspaces.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">Fireworks AI 是许多智能体产品依赖的推理服务商，如今它把十月入侵的说法扩大了。首份通报称攻击者拿走了内部凭证和 API 密钥，客户模型、数据集与个人信息均未受影响。11 月 9 日的更新推翻了这一结论：攻击者在 10 月 23 日侵入托管其研发机器的第三方云服务商，导致账单地址、发票记录、账户余额外泄，部分客户还被触及未完成的数据集与模型权重。Fireworks 将矛头指向一个通过非法网关倒卖被盗模型访问权的团伙，这种做法如今被称作 LLMjacking。首席执行官 Lin Qiao 说大多数下载都是半截就停了——只有当你知道停在哪一段时，这话才算让人安心。Notion 证实，其 Insights 功能背后的 AI 聊天记录在不到百分之一的工作区中被波及。</div>
+<div class="source">📰 来源：<a href="https://byobot.ai/ai-news/ai-daily-newsstand-november-12-2026">BYOBot — AI Daily Newsstand, November 12</a>；<a href="https://sharedot.com/story/uitm_681ba5a659d04ee8842653c3bc7ef6ad/fireworks-ai-breach-widens-to-model-weights-notion-chats">The Hacker News 报道汇总</a></div>
+</div>
+<div class="section">
+<h2>3. New York Opens Registration Under Its AI Safety Law</h2>
+<div class="summary">摘要：纽约州 RAISE Act 开放登记，年营收超五亿美元的前沿实验室须在 2027 年 1 月 1 日前登记，重大事故 72 小时内上报。</div>
+<p id="s4">New York opened a registration portal on Tuesday under the RAISE Act, giving the largest AI labs a deadline of January first, 2027. The law covers frontier developers with more than five hundred million dollars in annual revenue, a group that includes OpenAI and Anthropic. Registered companies must publish safety frameworks, release public transparency reports, and report critical safety incidents within seventy-two hours. That clock is the strictest in the country: California&#x27;s SB 53 allows fifteen days. Fines reach one million dollars for a first violation and three million for later ones. Governor Kathy Hochul also opened a fifty-five-million-dollar research center at Binghamton University to test frontier systems. The stakes are too high, she said, to simply take AI companies at their word.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">纽约州周二依据 RAISE Act 开放登记门户，给最大的几家 AI 实验室划定了 2027 年 1 月 1 日的期限。该法覆盖年营收超过五亿美元的前沿开发商，OpenAI 与 Anthropic 都在其中。登记企业必须公布安全框架、发布公开的透明度报告，并在 72 小时内上报重大安全事故。这个时限是全美最严的：加州的 SB 53 给的是十五天。首次违规罚款可达一百万美元，之后再犯为三百万美元。州长 Kathy Hochul 还在宾汉顿大学启了一个五千五百万美元的研究中心，独立测试前沿系统。她说，风险太高，不能只听 AI 公司的一面之词。</div>
+<div class="source">📰 来源：<a href="https://aiweekly.co/alerts/new-york-opens-ai-portal-openai-anthropic-must-file-by-jan-1">AI Weekly — New York Opens AI Portal</a>；<a href="https://readthestak.com/articles/new-york-raise-act-ai-labs-register-january-2027">TechCrunch 报道汇总</a></div>
+</div>
+<div class="section">
+<h2>4. Two Chinese Labs Choose Opposite Roads</h2>
+<div class="summary">摘要：美团以 MIT 协议开源 1.6 万亿参数 LongCat-2.5；阿里 Qwen4-Max 预览版仅供订阅、不按量付费，11 月 25 日下线。</div>
+<p id="s5">Two Chinese companies illustrated opposite strategies this week. Meituan released the weights of LongCat-2.5 under the MIT license, which permits commercial use and modification without asking permission. It is a mixture-of-experts model with roughly one point six trillion parameters in total, about forty-eight billion active for each token, and a one-million-token context window. On its own benchmark table it scores eighty-eight point four on Terminal Bench version two point one, up from seventy point eight, and still prints the tests where it loses to Claude Opus five. Alibaba took the other road. Its Qwen4-Max preview arrived only through a subscription plan, with no pay-as-you-go pricing and a hard expiry date of November twenty-fifth. One lab gives away the engine; the other rents a glimpse of it for two weeks.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">本周两家中国公司展示了相反的策略。美团以 MIT 协议开放了 LongCat-2.5 的权重，无需额外授权即可商用与二次修改。这是一个混合专家模型，总参数约 1.6 万亿、每个 token 激活约 480 亿，支持百万 token 上下文。在官方基准表上，它在 Terminal Bench v2.1 得 88.4 分、高于上一代的 70.8，而且把输给 Claude Opus 5 的项目也照印不误。阿里走了另一条路：Qwen4-Max 预览版只通过订阅套餐提供，不按量付费，还挂了 11 月 25 日的硬下线日期。一家把发动机白送出去，另一家只出租两周的惊鸿一瞥。</div>
+<div class="source">📰 来源：<a href="https://www.metirai.com/blog/meituan-longcat-2-5-open-weights-mit-license-2026">Metir AI — LongCat-2.5 开源与基准</a>；<a href="https://news.qq.com/rain/a/20261111A03BYG00">每日经济新闻 — 美团开源 LongCat-2.5</a>；<a href="http://mp.weixin.qq.com/s?__biz=MzY5NzQ3NTQ3Mw==&amp;mid=2247483869&amp;idx=1&amp;sn=423757eeddb4d3b384ef95f9dd7cf95a">AI 早报 2026-11-12 — Qwen4</a></div>
+</div>
+<div class="section">
+<h2>5. Databricks Builds an Agent That Tells the Boss Bad News</h2>
+<div class="summary">摘要：Databricks 新版 Genie 可无人监督完成多步任务，CEO Ali Ghodsi 借邓巴数说明：人一多，坏消息就传不到老板耳朵里。</div>
+<p id="s6">Databricks unveiled a new version of Genie, its enterprise agent, that can carry a multi-step assignment through to the end without supervision. Chief executive Ali Ghodsi demonstrated it not with a scripted demo but with his own account. Genie had analysed the weak spots in an employee survey and prepared likely questions for a podcast. His argument rests on Dunbar&#x27;s number, the idea that a person can maintain about one hundred and fifty stable relationships. In a company of twelve thousand, he said, a salesperson will not tell the chief executive that a call collapsed. Genie draws its context from an ontology built over the data customers already store on the platform. He pitches it as an always-on source of unvarnished truth, with costs capped by swapping in cheaper models.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">Databricks 发布了企业智能体 Genie 的新版本，能在无人监督下把多步任务一路做到底。首席执行官 Ali Ghodsi 没用精心编排的演示，而是打开自己的账号。Genie 分析过员工满意度调查里得分低的部分，还为播客采访准备了可能被问到的问题。他的论据落在邓巴数上：一个人大约只能维持一百五十段稳定关系。他说，在一万两千人的公司里，销售不会跑去告诉 CEO 一通电话谈砸了。Genie 的上下文来自一套建立在客户已存数据之上的本体。如今他把它包装成一个始终在线、只说不加掩饰真话的来源，并靠换用更便宜的模型来压住成本。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth">TechCrunch — Databricks&#x27; new AI agent tells CEO Ali Ghodsi the unvarnished truth</a></div>
+</div>
+<div class="section">
+<h2>6. At COP31, the Industry Is Asked to Publish Its Energy Bill</h2>
+<div class="summary">摘要：COP31 主办国土耳其发起《安塔利亚 AI 宣言》，促企业公开 AI 能耗与水耗；目标全属自愿，研究者推「AI 能源评分」标签。</div>
+<p id="s7">At the COP31 climate summit in Antalya, the host government circulated an Antalya AI Pledge, asking technology companies to disclose how much energy and water their systems use. Its limits are plain: every goal is voluntary and creates no new obligation. Sasha Luccioni, co-founder of the Sustainable AI Group, has argued for years that the energy behind a single AI search is invisible to the person asking for it. She helped develop the AI Energy Score, a label modelled on appliance efficiency ratings, so developers can compare models by the power a task needs. Her point is not to resist AI but to choose the smallest tool that does the job. Without measurement, she says, there is nothing to improve.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's7')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't7')">🌐 翻译</button></div>
+<div class="translation" id="t7">在安塔利亚举行的 COP31 气候峰会上，主办国土耳其分发了《安塔利亚 AI 宣言》，要求科技公司公开其系统消耗多少电力与水。它的局限也很直白：所有目标都是自愿的，不产生新义务。可持续人工智能集团联合创始人 Sasha Luccioni 多年来一直指出，一次 AI 搜索背后的能耗，对提问的人完全不可见。她参与推动了「AI 能源评分」，一种仿照家电能效标识的标签，让开发者按完成一项任务所需的电力来比较模型。她的意思不是抵制 AI，而是选够用的最小工具。她说，没有测量，就无从改进。</div>
+<div class="source">📰 来源：<a href="https://www.thepaper.cn/newsDetail_forward_34453536">澎湃新闻 — COP31 AI 能耗账本</a>；<a href="http://www.chinaview.cn/20261112/d06ad648b39e407c9d5d5f386d4e6467/c.html">新华网 — COP31 Antalya Leaders&#x27; Summit</a></div>
+</div>
+<h2>重点生词表（Vocabulary）</h2>
+<table>
+<tr><th>单词/术语</th><th>音标</th><th>释义</th></tr>
+<tr><td>oversight</td><td>/ˈoʊvərsaɪt/</td><td>监管；监督（In Brief 中指对 AI 的核查）</td></tr>
+<tr><td>closed-set</td><td>/kloʊzd set/</td><td>封闭选项集的；答案限定在给定候选中</td></tr>
+<tr><td>forward pass</td><td>/ˈfɔːrwərd pæs/</td><td>前向传播：模型一次过完输入得出结果</td></tr>
+<tr><td>calibration</td><td>/ˌkælɪˈbreɪʃn/</td><td>校准；置信度与真实正确率的吻合程度</td></tr>
+<tr><td>confidence</td><td>/ˈkɑːnfɪdəns/</td><td>置信度；模型对自身判断的把握</td></tr>
+<tr><td>breach</td><td>/briːtʃ/</td><td>（安全）入侵；数据泄露事件</td></tr>
+<tr><td>credentials</td><td>/krəˈdenʃlz/</td><td>凭证；密钥、账号等访问凭据</td></tr>
+<tr><td>inference</td><td>/ˈɪnfərəns/</td><td>推理；模型实际跑出结果的过程</td></tr>
+<tr><td>illicit</td><td>/ɪˈlɪsɪt/</td><td>非法的； illicit gateways 指倒卖模型访问权的黑市网关</td></tr>
+<tr><td>reassuring</td><td>/ˌriːəˈʃʊrɪŋ/</td><td>令人安心的；让人放心的</td></tr>
+<tr><td>registration</td><td>/ˌredʒɪˈstreɪʃn/</td><td>登记；向监管机构报备注册</td></tr>
+<tr><td>transparency</td><td>/trænsˈpærənsi/</td><td>透明度；公开模型信息的报告</td></tr>
+<tr><td>violation</td><td>/ˌvaɪəˈleɪʃn/</td><td>违规；违反法规的行为</td></tr>
+<tr><td>commercial</td><td>/kəˈmɜːrʃl/</td><td>商用的；可用于商业目的</td></tr>
+<tr><td>subscription</td><td>/səbˈskrɪpʃn/</td><td>订阅；按期付费而非按量计费</td></tr>
+<tr><td>glimpse</td><td>/ɡlɪmps/</td><td>一瞥；此处指限时体验预览版</td></tr>
+<tr><td>supervision</td><td>/ˌsuːpərˈvɪʒn/</td><td>监督；无人监督即无须人盯着</td></tr>
+<tr><td>unvarnished</td><td>/ʌnˈvɑːrnɪʃt/</td><td>不加掩饰的；原原本本不加粉饰的</td></tr>
+<tr><td>voluntary</td><td>/ˈvɑːlənteri/</td><td>自愿的；不具强制约束力</td></tr>
+<tr><td>measurement</td><td>/ˈmeʒərmənt/</td><td>测量；此处指对能耗的量化统计</td></tr>
+</table>
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li>**语速**：全文用中速（约 110~120 词/分钟），新闻标题稍放慢、加重音；配套音频按新闻播报语速（约 150 词/分钟）生成。</li>
+<li>In Brief 摘要段可作开嗓热身先读：六个短句节奏均匀，末句 Capability gets cheaper; evidence and oversight get dearer 前后两半形成对照，分号处停顿半秒。</li>
+<li>第 1 篇 closed-set、forward pass、calibration error 三个术语逐个重读；ten cents per million input tokens and nothing for output 中 nothing 要读得干脆。</li>
+<li>第 2 篇按时间顺序推进：October twenty-third → a November nine update，每个时间点后停顿半秒；LLMjacking 一词重读。</li>
+<li>第 3 篇数字密集：five hundred million、January first, 2027、seventy-two hours、fifteen days、one million / three million dollars，每个数字后略顿。</li>
+<li>第 4 篇两家公司的对比句 One lab gives away the engine; the other rents a glimpse of it for two weeks 放慢，两个分句各成一个语气单元。</li>
+<li>第 5 篇 Dunbar&#x27;s number 后稍停再解释 the idea that...；unvarnished truth 是全文最该加重的一个短语。</li>
+<li>第 6 篇 voluntary 与 Without measurement 两处压低语气，表示转折与保留。</li>
+<li>**节奏**：每篇小标题后停顿 1 秒再开始正文；段落之间停顿 2 秒。全文没有结尾总结段，读完第 6 篇即可收束。</li>
+</ul>
+<script>
+const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  alert('预生成音频不可用，已切换为浏览器语音朗读。');
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-11-12-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}
+</script>
+
+</body>
+</html>

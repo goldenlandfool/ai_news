@@ -73,10 +73,17 @@ EOF
 
 cd "$REPO"
 git add -A
-if git diff --cached --quiet; then
-  echo "no changes to publish"
-else
+if ! git diff --cached --quiet; then
   git commit -m "Update AI news reading site $(date +%Y-%m-%d)"
+fi
+
+# 即使本次没有新文件变更，也要检查是否存在「已提交但未推送」的历史提交。
+# 否则「产物齐全但上次 push 失败」的情况会被 no changes 分支永久跳过。
+LOCAL=$(git rev-parse HEAD)
+REMOTE=$(git ls-remote origin main | cut -f1)
+if [ "$LOCAL" != "$REMOTE" ]; then
   git push origin main
-  echo "pushed to GitHub"
+  echo "pushed to GitHub: ${LOCAL:0:7}"
+else
+  echo "already up to date: ${LOCAL:0:7}"
 fi

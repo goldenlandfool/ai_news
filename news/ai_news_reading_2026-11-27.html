@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>November 27, 2026 AI News</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", "PingFang SC", serif; max-width: 780px; margin: 0 auto; padding: 40px 24px; line-height: 1.8; color: #2c3e50; background: #fdfcf8; }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+  h2 { font-size: 1.25em; color: #d35400; margin-top: 2em; }
+  .section { background: #fff; border: 1px solid #eee2cd; border-radius: 10px; padding: 6px 22px 18px; margin: 18px 0; }
+  .summary { background: #f8f4ec; border-left: 4px solid #e67e22; padding: 8px 14px; margin: 10px 0; font-size: 0.95em; color: #5d4e37; }
+  .btn-row { margin: 10px 0 4px; }
+  button { cursor: pointer; border: none; border-radius: 6px; padding: 7px 16px; font-size: 0.9em; margin-right: 10px; color: #fff; }
+  .btn-speak { background: #2980b9; }
+  .btn-speak.playing { background: #c0392b; }
+  .btn-trans { background: #27ae60; }
+  .btn-trans.active { background: #16a085; }
+  .translation { display: none; background: #eef7f0; border-left: 4px solid #27ae60; padding: 10px 16px; margin-top: 12px; color: #34495e; font-size: 0.95em; line-height: 1.9; }
+  .translation.show { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d5c8b2; padding: 8px 12px; text-align: left; }
+  th { background: #efe6d5; }
+  .tips li { margin-bottom: 8px; }
+  a.back { display: inline-block; margin-bottom: 16px; color: #2980b9; text-decoration: none; }
+  .source { margin-top: 12px; font-size: 0.9em; color: #7f8c8d; }
+  .source a { color: #8e44ad; }
+</style>
+</head>
+<body>
+<a class="back" href="../indexs.html">← 返回目录 Index</a>
+<h1>November 27, 2026 AI News</h1>
+<div class="section">
+<h2>In Brief 今日新闻摘要</h2>
+<div class="summary">摘要：今日六条，主线是 AI 落地现实比演示杂乱：Anthropic 迁移 API、OpenAI 私密推理、Character.AI 拍卖争议、企业 AI 无价值研究、谷歌个性化视频专利、Muse 重返亚马逊谈判。</div>
+<p id="s1">Six stories today, and they share a theme: AI meeting the real world is messier than the demo. Anthropic moved its own API from Python to Rust and let Claude write much of the code. OpenAI began testing Private Inference, which hides business data while a model runs. Forty-two state attorneys general moved to block Character.AI from auctioning millions of private chats. An Anthropic study found that one in five enterprise AI deployments delivers no value. A rejected Google patent imagines videos that cast the viewer as the star. And Amazon and Meta are talking about letting a shopping agent back into the store. The hard questions are about trust, proof, and who pays.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's1')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't1')">🌐 翻译</button></div>
+<div class="translation" id="t1">今天六条新闻，共有一个主题：AI 走进现实世界，比演示要杂乱得多。Anthropic 把自家 API 从 Python 迁到 Rust，大量代码交由 Claude 编写。OpenAI 开始测试私密推理，在模型运行时隐藏企业数据。42 位州总检察长出手阻止 Character.AI 拍卖数百万条私人聊天。Anthropic 一项研究发现，五分之一的企业 AI 部署毫无价值。谷歌一项被驳回的专利设想让用户主演为自己生成的视频。亚马逊与 Meta 则在商谈让购物智能体重返商店。难题落在信任、验证与买单之人身上。</div>
+</div>
+<div class="section">
+<h2>1. Anthropic Moves Its Own API from Python to Rust</h2>
+<div class="summary">摘要：Anthropic 工程博客披露把 Messages API 从 Python 迁到 Rust：CPU 每请求降约七成、首 token 延迟降约两成；核心路径由 Claude 一周写出，验证却花了数月。</div>
+<p id="s2">Anthropic published an engineering post this week on moving its Messages API, the main entry point for Claude, from Python to Rust. The company says public traffic switched in September with no downtime, and the Rust service uses about seventy percent less CPU per request. It also cut the median time to the first token by roughly twenty percent. The striking part is who wrote the code. Claude produced the first version of the core request path in about a week. Proving that it matched the old service took months. The older Python service served as the reference. The team shadowed real traffic through both versions and sent teams of Claude agents to find and fix differences. Humans reviewed every fix.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's2')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't2')">🌐 翻译</button></div>
+<div class="translation" id="t2">Anthropic 本周发布工程文章，讲述如何把 Claude 的主要入口 Messages API 从 Python 迁到 Rust。公司称，公开流量已于 9 月切换且没有停机，Rust 服务每个请求的 CPU 占用减少约七成，首个词元的中位等待时间缩短约两成。引人注目的是代码的作者：Claude 用大约一周写出了核心请求路径的第一版，而证明它与旧版一致却花了数月。旧版 Python 服务充当参照，团队让真实流量同时流经两个版本，并派出多组 Claude 智能体寻找并修复差异。每一项修复仍由人工审核。</div>
+<div class="source">📰 来源：<a href="https://www.anthropic.com/research/migrating-api-to-rust">Anthropic — Migrating our Messages API to Rust</a>；<a href="https://sysnote.net/news/anthropic-moves-its-messages-api-to-rust-the-port-passed-98-of-tests-but-matched">Sysnote — the port passed 98% of tests but matched a quarter of production prompts</a>；X 账号 @AnthropicAI（官方开发账号转发工程博客）</div>
+</div>
+<div class="section">
+<h2>2. OpenAI Tests Private Inference for Businesses</h2>
+<div class="summary">摘要：Altman 在 X 宣布 OpenAI 向小范围客户测试 Private Inference：用机密计算在模型运行时隔离提示词与回答；仍属 alpha，硬件、定价、可用时间均未公布。</div>
+<p id="s3">Sam Altman announced on X on Wednesday that OpenAI is testing Private Inference with a small group of customers, part of a package called Private Intelligence. It uses confidential computing, which runs a job inside hardware-protected memory that even the machine&#x27;s operator cannot read. The goal is to hide a company&#x27;s prompts and the model&#x27;s answers while it processes them. A companion feature moves abuse checks into a protected environment and stores flagged material as encrypted records in cloud storage the customer controls. OpenAI still calls Private Inference an alpha and has not said which models it covers, what it will cost, or when it will be widely available. Altman argued that stronger privacy would make frontier AI useful for far more work.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's3')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't3')">🌐 翻译</button></div>
+<div class="translation" id="t3">山姆·奥特曼周三在 X 上宣布，OpenAI 正在向一小群客户测试 Private Inference（私密推理），它属于名为 Private Intelligence 的一揽子企业隐私方案。该功能使用机密计算，把任务放在硬件保护的内存中运行，连机器操作者都无法读取，目标是让企业的提示词与模型回答在处理期间就被隔离。另一项配套功能把滥用检查移入受保护环境，并将被标记的材料以加密记录形式存入客户自控的云存储。OpenAI 仍把私密推理称为 alpha，尚未说明支持哪些模型、如何定价、何时全面开放。奥特曼认为，更强的隐私会让前沿 AI 适用于更多工作。</div>
+<div class="source">📰 来源：<a href="https://www.unite.ai/openai-begins-limited-customer-trials-of-alpha-private-inference">Unite.AI — OpenAI Begins Limited Customer Trials of Alpha Private Inference</a>；<a href="https://chipdispatch.com/articles/openai-begins-testing-private-inference-for-enterprise-data">Chip Dispatch — OpenAI begins testing Private Inference for enterprise data</a>；X 账号 @sama（Sam Altman 于 11 月 25 日宣布测试）</div>
+</div>
+<div class="section">
+<h2>3. States Fight a Character.AI Chat Auction</h2>
+<div class="summary">摘要：42 位州总检察长介入 Character.AI 破产程序，阻止其拍卖逾 2100 万个美国账户的私密聊天记录（其中逾 210 万属未成年人）；拍卖定于 12 月 1 日。</div>
+<p id="s4">A coalition of forty-two state attorneys general is intervening in Character.AI&#x27;s bankruptcy case to stop the chatbot maker from selling its users&#x27; private conversations. The company filed for Chapter Eleven bankruptcy in October, after telling consumers their data would not be sold. The attorneys general say the sale includes chat histories from more than twenty-one million United States accounts, including over two million belonging to minors, plus internet protocol addresses. Only one bidder has been disclosed: a company registered in Delaware on November thirteenth, chosen as the base bid for a December first auction. They argue a buyer would not be bound by the privacy policy and could resell the data. Several states have chatbot safety laws taking effect on January first.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's4')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't4')">🌐 翻译</button></div>
+<div class="translation" id="t4">由 42 位州总检察长组成的联盟正介入 Character.AI 的破产案，以阻止这家聊天机器人公司出售用户的私人对话。该公司曾向消费者承诺不会出售其个人信息，却在 10 月申请了第十一章破产。据总检察长们称，拟议的出售包括逾 2100 万个美国账户的聊天记录，其中超过 200 万个属于未成年人，还包含互联网协议地址等个人数据。目前只披露了一位投标方：一家于 11 月 13 日在特拉华州注册的公司，被选为 12 月 1 日拍卖的基础报价。他们认为，买方不受隐私政策约束，可能在不作告知的情况下转售数据。数个州的网络聊天机器人安全法将于次年 1 月 1 日生效。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/">TechCrunch — Character.AI plan to auction users' private chats challenged by state AGs</a>；<a href="https://byte.eco/post/coalition-of-42-ags-challenges-character-ais-data-auction-plan">Byte — Coalition of 42 AGs Challenges Character.AI's Data Auction Plan</a>； California Attorney General Rob Bonta 声明</div>
+</div>
+<div class="section">
+<h2>4. Anthropic Study: One in Five AI Projects Delivers Nothing</h2>
+<div class="summary">摘要：Anthropic《Working with AI》报告访谈 58 家美企、近 300 项部署：55% 提效，但 19% 毫无商业价值；最大障碍是人工审核量，而非工具本身难学。</div>
+<p id="s5">Anthropic released a report called Working with AI, based on sixty-six interviews at fifty-eight American companies. They studied nearly three hundred AI deployments. Fifty-five percent produced higher output or better quality; nineteen percent delivered no business value. The most common obstacle was the sheer volume of AI output that humans still had to review. Employee resistance and required expert reviews ranked close behind. One equipment maker turned off a feature that translated its product interface into ten languages, because no staff could handle support calls in those languages. The authors note that every company in the sample is an Anthropic customer, so the findings are not representative. The lesson is that the hard part is reorganizing the work.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's5')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't5')">🌐 翻译</button></div>
+<div class="translation" id="t5">Anthropic 发布名为《Working with AI》的报告，基于对 58 家使用其产品的美国公司进行的 66 次访谈，并研究了近 300 项 AI 部署。55% 的部署提升了产出或质量，19% 没有带来任何商业价值。最常见的障碍是人类仍需审核的 AI 输出量之大；员工的抵触和必需的专家评审紧随其后。有一家设备制造商关闭了把产品界面翻译成十种语言的 AI 功能，因为员工中无人能用这些语言接听客服电话。作者指出，样本中的每家公司都是 Anthropic 客户，因此结果并不具有代表性。结论是：难点在于重组工作。</div>
+<div class="source">📰 来源：<a href="https://www.anthropic.com/research/working-with-ai">Anthropic — Working with AI</a>；<a href="https://eyas.cc/en/events/ad467a40-bc1d-4492-b401-5c2b6866579c">Eyas — Anthropic study shows the hardest part of adopting AI at work has little to do with learning the tools</a>； The Decoder 报道</div>
+</div>
+<div class="section">
+<h2>5. Google Patent Would Star You in Your Own Videos</h2>
+<div class="summary">摘要：The Verge 披露谷歌被驳回的 My Channel 专利：用人口统计、观看历史、IP、GPS 生成个性化 AI 视频与广告，甚至把用户做成主角；专利申请已遭驳回但可上诉。</div>
+<p id="s6">The Verge reported this week on a rejected Google patent called My Channel. Published last week, the filing describes a system that would generate personalized videos and ads from what Google knows about a person: demographic data, viewing history, internet protocol addresses, GPS locations and age. A large language model would turn those signals into prompts and produce videos tailored to one viewer. The patent even describes making a digital avatar of the user and casting that person as the protagonist or lead character, with an ad stitcher inserting ads into the result. Google filed it last May and an examiner rejected it, though the company could appeal or resubmit a revised version. A patent describes an idea, not a shipped product.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's6')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't6')">🌐 翻译</button></div>
+<div class="translation" id="t6">《The Verge》本周报道了谷歌一项被驳回的专利，名为 My Channel。该申请上周公开，描述了一个依据谷歌对个人的了解来生成个性化视频与广告的系统，包括人口统计数据、观看历史、互联网协议地址、GPS 位置和年龄。大型语言模型会把这些信号转化为提示词，为单一观众生成定制内容。专利甚至描述为用户制作数字替身，让本人成为主角或主要角色，还提到一个向成片插入广告的广告拼接器。谷歌于去年 5 月提交申请，审查员已予以驳回，但公司可以上诉或修改后重新提交。专利描述的是一个想法，而不是已上线的产品。</div>
+<div class="source">📰 来源：<a href="https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent">The Verge — Google patent for custom AI video feeds</a>；<a href="https://readkernel.com/artificial-intelligence/google-my-channel-patent">Kernel — Google patent application describes AI video feed starring the viewer</a>； Patentlyze 首发发现</div>
+</div>
+<div class="section">
+<h2>6. Amazon and Meta Talk About Letting Muse Shop Again</h2>
+<div class="summary">摘要：TechCrunch 援引 Fortune：亚马逊与 Meta 多轮谈判，拟结束对 Meta 购物智能体 Muse 两个月的封锁；分歧在搜索结果呈现与广告处理，需双方 CEO 批准。</div>
+<p id="s7">Amazon and Meta are reportedly in talks to end a two-month blockade on Meta&#x27;s AI shopping agent, Muse. Fortune reported, as cited by TechCrunch, that the companies have held several rounds of discussion about a deal letting Muse connect directly to Amazon&#x27;s store. Two months ago, Muse users trying to check out got an error message instead of a purchase. The sticking points are not technical but about how search results would be shown and how advertising would be handled. Amazon worries a third-party agent could weaken its direct customer relationship and skip the sponsored listings its ads depend on. They also ask who handles an angry seller if an agent places the wrong order. Any deal needs approval from both chief executives. Neither company has confirmed the talks.</p>
+<div class="btn-row"><button class="btn-speak" onclick="speak(this, 's7')">🔊 朗读</button><button class="btn-trans" onclick="toggleTrans(this, 't7')">🌐 翻译</button></div>
+<div class="translation" id="t7">据《财富》报道、《TechCrunch》援引，亚马逊与 Meta 正在谈判，拟结束对 Meta 的 AI 购物智能体 Muse 长达两个月的封锁。两家公司已就一项让 Muse 直接接入亚马逊商店的协议进行了多轮讨论。两个月前，Muse 用户试图在亚马逊结账时收到错误信息而无法完成购买。分歧不在技术，而在搜索结果如何呈现、广告如何处理。亚马逊担心第三方智能体会削弱它与客户的直接关系，并绕过其广告所依赖的赞助列表。高管们还提出，如果智能体下错订单，该由谁应对愤怒的卖家。任何协议都需双方首席执行官批准。两家公司均未证实这些谈判。</div>
+<div class="source">📰 来源：<a href="https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/">TechCrunch — Amazon and Meta reportedly in talks to lift blockade on AI agent Muse</a>；<a href="https://www.recodeai.co/news/amazon-meta-near-deal-to-unblock-muse-shopping-agent.html">RecodeAI — Amazon, Meta Near Deal to Unblock Muse Shopping Agent</a></div>
+</div>
+<h2>重点生词表（Vocabulary）</h2>
+<table>
+<tr><th>单词/术语</th><th>音标</th><th>释义</th></tr>
+<tr><td>engineering</td><td>/ˌendʒɪˈnɪˈrɪŋ/</td><td>工程；此处指 Anthropic 的工程博客</td></tr>
+<tr><td>shadowed</td><td>/ˈʃædəʊd/</td><td>影随对照；让同一流量同时跑新旧两版以比对</td></tr>
+<tr><td>confidential computing</td><td>/ˌkɒnfɪˈdenʃəl kəmˈpjuːtɪŋ/</td><td>机密计算；在硬件隔离内存中处理数据</td></tr>
+<tr><td>encrypted</td><td>/ɪnˈkrɪptɪd/</td><td>加密的；转为不可直接读取的形式</td></tr>
+<tr><td>attorneys general</td><td>/əˈtɜːniz ˈdʒenərəl/</td><td>州总检察长；美国各州最高法律官员</td></tr>
+<tr><td>bankruptcy</td><td>/ˈbæŋkrʌptsi/</td><td>破产；无力偿债的法律状态</td></tr>
+<tr><td>minors</td><td>/ˈmaɪnəz/</td><td>未成年人；未达法定成年年龄者</td></tr>
+<tr><td>bidder</td><td>/ˈbɪdə/</td><td>投标方；在拍卖中出价的人或公司</td></tr>
+<tr><td>privacy policy</td><td>/ˈprɪvəsi ˈpɒləsi/</td><td>隐私政策；公司如何处理用户数据的承诺</td></tr>
+<tr><td>deployments</td><td>/dɪˈplɔɪmənts/</td><td>部署；把系统实际投入使用</td></tr>
+<tr><td>obstacle</td><td>/ˈɒbstəkl/</td><td>障碍；阻碍进展的因素</td></tr>
+<tr><td>representative</td><td>/ˌreprɪˈzentətɪv/</td><td>有代表性的；能反映总体情况的</td></tr>
+<tr><td>reorganizing</td><td>/riːˈɔːɡənaɪzɪŋ/</td><td>重组；重新安排结构与流程</td></tr>
+<tr><td>demographic</td><td>/ˌdeməˈɡræfɪk/</td><td>人口统计的；如年龄、性别等特征</td></tr>
+<tr><td>personalized</td><td>/ˈpɜːsənəlaɪzd/</td><td>个性化的；按个人特征定制</td></tr>
+<tr><td>avatar</td><td>/ˈævətɑː/</td><td>化身；代表用户的数字形象</td></tr>
+<tr><td>protagonist</td><td>/prəˈtæɡənɪst/</td><td>主角；故事的中心人物</td></tr>
+<tr><td>blockade</td><td>/blɒˈkeɪd/</td><td>封锁；阻止进入或交易</td></tr>
+<tr><td>sponsored</td><td>/ˈspɒnsəd/</td><td>赞助的；付费推广的（列表）</td></tr>
+<tr><td>chief executives</td><td>/tʃiːf ɪɡˈzekjətɪvz/</td><td>首席执行官；公司最高管理者</td></tr>
+</table>
+<h2>朗读建议（Reading Tips）</h2>
+<ul class="tips">
+<li>语速：全文用中速（约 110~120 词/分钟）朗读；配套音频按约 150 词/分钟生成，两种节奏可分别练习。</li>
+<li>In Brief 摘要段可作开嗓热身：六个主题各一句，句与句之间停半秒，末句 The hard questions are about trust, proof, and who pays 放慢收住。</li>
+<li>第 1 篇数字密集：seventy percent、twenty percent、about a week、months，每个数字后停半秒；读完 core request path 稍顿，再读出验证之难。</li>
+<li>第 2 篇 confidential computing、hardware-protected memory、Zero Data Retention 是术语，逐个读清；末句 far more work 平稳收尾。</li>
+<li>第 3 篇 forty-two、twenty-one million、two million、December first 放慢读准；末句 taking effect on January first 不要吞掉月份。</li>
+<li>第 4 篇 fifty-five percent、nineteen percent 对比重读；末句 reorganizing the work around it 略降速，突出结论。</li>
+<li>第 5 篇 demographic、internet protocol addresses、GPS locations 一串并列词用同一语调，避免越读越快；protagonist or lead character 读清。</li>
+<li>第 6 篇 sticking points、sponsored listings 重读；末句 Neither company has confirmed the talks 收住，读出「尚未定论」。</li>
+<li>节奏：每篇小标题后停 1 秒再开始正文，段落之间停 2 秒。全文没有结尾总结段，读完第 6 篇即可收束。</li>
+</ul>
+<script>const audioCache = {};
+let currentBtn = null, currentAudio = null;
+function resetBtn() {
+  if (currentBtn) { currentBtn.textContent = '🔊 朗读'; currentBtn.classList.remove('playing'); currentBtn = null; }
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch(e) {} }
+}
+function ttsFallback(id) {
+  if (!('speechSynthesis' in window)) { resetBtn(); alert('当前浏览器不支持朗读功能'); return; }
+  const el = document.getElementById(id);
+  if (!el) { resetBtn(); return; }
+  alert('预生成音频不可用，已切换为浏览器语音朗读。');
+  const u = new SpeechSynthesisUtterance(el.textContent);
+  const voices = speechSynthesis.getVoices();
+  u.voice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  u.lang = 'en-US';
+  u.rate = 0.9;
+  u.onend = u.onerror = resetBtn;
+  speechSynthesis.speak(u);
+}
+function speak(btn, id) {
+  const wasPlaying = (currentBtn === btn);
+  resetBtn();
+  if (wasPlaying) return;
+  currentBtn = btn; btn.textContent = '⏸ 播放中'; btn.classList.add('playing');
+  if (audioCache[id] === undefined) { audioCache[id] = new Audio('audio/2026-11-27-' + id + '.m4a'); }
+  const a = audioCache[id];
+  currentAudio = a;
+  a.onended = function() { resetBtn(); };
+  a.onerror = function() { currentAudio = null; ttsFallback(id); };
+  try {
+    const p = a.play();
+    if (p && p.catch) { p.catch(function() { currentAudio = null; ttsFallback(id); }); }
+  } catch (e) { currentAudio = null; ttsFallback(id); }
+}
+function toggleTrans(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  btn.classList.toggle('active');
+  btn.textContent = el.classList.contains('show') ? '🌐 收起翻译' : '🌐 翻译';
+}</script>
+<!-- ai-news traffic pixel -->
+<img src="https://ali82.iepose.cn/i.gif?p=2026-11-27" data-ai-pixel="2026-11-27" width="1" height="1" alt="" aria-hidden="true" referrerpolicy="unsafe-url" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+</body>
+</html>
